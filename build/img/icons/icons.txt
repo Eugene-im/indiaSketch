@@ -1,0 +1,292 @@
+.bg-001_facebook {
+    width: 12px; height: 13px;
+    background: url('css_sprites.png') -10px -253px;
+}
+
+x
+.bg-002_instagram {
+    width: 12px; height: 12px;
+    background: url('css_sprites.png') -10px -125px;
+}
+
+x
+.bg-003_telegram {
+    width: 12px; height: 12px;
+    background: url('css_sprites.png') -10px -157px;
+}
+
+x
+.bg-004_whatsapp {
+    width: 12px; height: 12px;
+    background: url('css_sprites.png') -10px -189px;
+}
+
+x
+.bg-bitcoin {
+    width: 36px; height: 35px;
+    background: url('css_sprites.png') -10px -1598px;
+}
+
+x
+.bg-catalog_icon {
+    width: 12px; height: 12px;
+    background: url('css_sprites.png') -10px -221px;
+}
+
+x
+.bg-catalog_icon_2 {
+    width: 20px; height: 19px;
+    background: url('css_sprites.png') -10px -678px;
+}
+
+x
+.bg-checked {
+    width: 18px; height: 14px;
+    background: url('css_sprites.png') -10px -319px;
+}
+
+x
+.bg-down_arrow {
+    width: 5px; height: 3px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-facebook_footer {
+    width: 30px; height: 30px;
+    background: url('css_sprites.png') -10px -1139px;
+}
+
+x
+.bg-facebook_menu {
+    width: 33px; height: 33px;
+    background: url('css_sprites.png') -10px -1439px;
+}
+
+x
+.bg-footer_location {
+    width: 55px; height: 71px;
+    background: url('css_sprites.png') -10px -1915px;
+}
+
+x
+.bg-green_call {
+    width: 30px; height: 30px;
+    background: url('css_sprites.png') -10px -1189px;
+}
+
+x
+.bg-heart__1_ {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -10px -717px;
+}
+
+x
+.bg-heart {
+    width: 18px; height: 16px;
+    background: url('css_sprites.png') -10px -422px;
+}
+
+x
+.bg-heart_menu {
+    width: 16px; height: 15px;
+    background: url('css_sprites.png') -10px -387px;
+}
+
+x
+.bg-heart_silver {
+    width: 28px; height: 24px;
+    background: url('css_sprites.png') -10px -957px;
+}
+
+x
+.bg-home_menu {
+    width: 16px; height: 16px;
+    background: url('css_sprites.png') -10px -458px;
+}
+
+x
+.bg-instagram_footer {
+    width: 30px; height: 30px;
+    background: url('css_sprites.png') -10px -1239px;
+}
+
+x
+.bg-instagram_menu {
+    width: 33px; height: 33px;
+    background: url('css_sprites.png') -10px -1492px;
+}
+
+x
+.bg-levels_mobile {
+    width: 26px; height: 18px;
+    background: url('css_sprites.png') -10px -640px;
+}
+
+x
+.bg-libra {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -10px -757px;
+}
+
+x
+.bg-libra_menu {
+    width: 16px; height: 16px;
+    background: url('css_sprites.png') -10px -494px;
+}
+
+x
+.bg-libra_silver {
+    width: 28px; height: 28px;
+    background: url('css_sprites.png') -10px -1091px;
+}
+
+x
+.bg-location {
+    width: 8px; height: 10px;
+    background: url('css_sprites.png') -10px -33px;
+}
+
+x
+.bg-Logo {
+    width: 156px; height: 51px;
+    background: url('css_sprites.png') -10px -1773px;
+}
+
+x
+.bg-logo_namaste {
+    width: 150px; height: 167px;
+    background: url('css_sprites.png') -10px -2288px;
+}
+
+x
+.bg-logo_namaste_copy_2 {
+    width: 126px; height: 140px;
+    background: url('css_sprites.png') -10px -2128px;
+}
+
+x
+.bg-logo_namaste_copy_3 {
+    width: 92px; height: 102px;
+    background: url('css_sprites.png') -10px -2006px;
+}
+
+x
+.bg-logo_namaste_zakaz {
+    width: 46px; height: 45px;
+    background: url('css_sprites.png') -10px -1708px;
+}
+
+x
+.bg-Logo_footer {
+    width: 156px; height: 51px;
+    background: url('css_sprites.png') -10px -1844px;
+}
+
+x
+.bg-mastercard_2 {
+    width: 46px; height: 35px;
+    background: url('css_sprites.png') -10px -1653px;
+}
+
+x
+.bg-next {
+    width: 7px; height: 11px;
+    background: url('css_sprites.png') -10px -63px;
+}
+
+x
+.bg-next_arrow {
+    width: 9px; height: 16px;
+    background: url('css_sprites.png') -10px -530px;
+}
+
+x
+.bg-next_x3 {
+    width: 27px; height: 11px;
+    background: url('css_sprites.png') -10px -94px;
+}
+
+x
+.bg-paypal {
+    width: 73px; height: 20px;
+    background: url('css_sprites.png') -10px -797px;
+}
+
+x
+.bg-qiwi {
+    width: 71px; height: 30px;
+    background: url('css_sprites.png') -10px -1289px;
+}
+
+x
+.bg-red_heart {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -10px -837px;
+}
+
+x
+.bg-red_libra {
+    width: 20px; height: 20px;
+    background: url('css_sprites.png') -10px -877px;
+}
+
+x
+.bg-search {
+    width: 13px; height: 13px;
+    background: url('css_sprites.png') -10px -286px;
+}
+
+x
+.bg-shopping_cart__1_ {
+    width: 22px; height: 20px;
+    background: url('css_sprites.png') -10px -917px;
+}
+
+x
+.bg-shopping_cart {
+    width: 33px; height: 30px;
+    background: url('css_sprites.png') -10px -1339px;
+}
+
+x
+.bg-shopping_cart_green {
+    width: 19px; height: 17px;
+    background: url('css_sprites.png') -10px -566px;
+}
+
+x
+.bg-shopping_cart_green_2 {
+    width: 19px; height: 17px;
+    background: url('css_sprites.png') -10px -603px;
+}
+
+x
+.bg-shopping_cart_silver {
+    width: 28px; height: 24px;
+    background: url('css_sprites.png') -10px -1001px;
+}
+
+x
+.bg-silver_search {
+    width: 27px; height: 26px;
+    background: url('css_sprites.png') -10px -1045px;
+}
+
+x
+.bg-user {
+    width: 14px; height: 14px;
+    background: url('css_sprites.png') -10px -353px;
+}
+
+x
+.bg-viber_footer {
+    width: 30px; height: 30px;
+    background: url('css_sprites.png') -10px -1389px;
+}
+
+x
+.bg-whatsapp_menu {
+    width: 33px; height: 33px;
+    background: url('css_sprites.png') -10px -1545px;
+}
