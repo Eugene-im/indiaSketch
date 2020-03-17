@@ -1,7 +1,33 @@
 .ico {
-    display: block;
-    background-attachment: url('../img/css_sprites.png');
+    display: inline-block;
+    background-image: url('../img/css_sprites.png');
+    vertical-align:middle;
 }
+
+.big_ico{
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url('../img/css_sprites2.png')
+}
+// big ico
+.bg-lotus {
+    width: 147px; height: 122px;
+    background-position: -10px -151px;
+}
+.bg-003_diwali {
+    width: 126px; height: 125px;
+    background-position: -10px -437px;
+}
+.bg-002_rickshaw {
+    width: 151px; height: 121px;
+    background-position: -10px -10px;
+}
+.bg-001_rupee {
+    width: 125px; height: 124px;
+    background-position:-10px -293px;
+}
+// big ico_end
+
 .bg-001_facebook {
     width: 12px; height: 13px;
     background-position: -10px -253px;
