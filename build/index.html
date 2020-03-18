@@ -13,10 +13,12 @@
 
             <header>
               <div class="content container">
-                <div class="header__firstline row justify-content-between align-items-center">
+                <div
+                  class="header__firstline row justify-content-between align-items-center"
+                >
                   <div class="header__firstline_place col-1">
                     <div class="btn-group">
-                      <span class="ico bg-location"></span> 
+                      <span class="ico bg-location"></span>
                       <button
                         class="dropdown-toggle"
                         type="button"
@@ -47,64 +49,77 @@
                       <a href="#"><span class="ico bg-004_whatsapp"></span> Whatsapp</a>
                     </li>
                   </ul>
-                </div>  
+                </div>
                 <div class="header__secondline row ">
                   <a href="#" class="header__logo col-2">
                     <img src="../img/Logo.png" alt="logo" srcset="" />
                   </a>
-                  
-                  <div class="input-group mb-3 col-3 offset-md-3">
+            
+                  <div class="header__col_search input-group mb-3 col-4 offset-md-2">
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Recipient's username"
-                      aria-label="Recipient's username"
+                      placeholder="Что Вас интересует?"
+                      aria-label="Что Вас интересует?"
                       aria-describedby="button-addon2"
                     />
                     <div class="input-group-append">
                       <button
-                        class="btn btn-outline-secondary"
+                        class="btn btn-sm"
                         type="button"
                         id="button-addon2"
                       >
-                        Button
+                        <span class="ico bg-search"></span>
                       </button>
                     </div>
                   </div>
                   <div class="secondline__asktocontact col">
-                    <div class="secondline__asktocontact_fline">заказать звонок</div>
-                    <a href="tel:88005553200" class="secondline__asktocontact_sline"
-                      >8 (800) 555-32-00</a
-                    >
+                    <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
+            
+                    <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
                   </div>
                   <div class="secondline__userbuttons col-2">
-                    <a href="#" class="btn btn-warning secondline__userbuttons_choosed"
-                      ><3</a
-                    >
+                    <a href="#" class="btn btn-warning secondline__userbuttons_choosed">
+                      <span class="choose__items_sum">3</span>
+                      <span class="ico bg-heart"></span>
+                      </a>
                     <a href="#" class="btn btn-success secondline__userbuttons_login"
-                      >login</a
-                    >
+                      >
+                      <span class="ico bg-user"></span>
+                      Вход</a>
                   </div>
                 </div>
-                <div class="header__thirdine">
-                  <ul class="nav justify-content-center">
+              </div>
+              <div class="header__thirdine">
+                <div class="content">
+                  <ul class="nav justify-content-center align-items-center">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#">Active</a>
+                      <a class="nav-link active" href="#">Преимущества</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Статьи</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link" href="#">Контакты</a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        class="nav-link disabled"
-                        href="#"
-                        tabindex="-1"
-                        aria-disabled="true"
-                        >Disabled</a
-                      >
+                      <a class="nav-link" href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Гарантия</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <span class="cart__items_sum">3</span>
+                        <span class="ico bg-shopping_cart"></span>
+                        Корзина
+                        </a>
                     </li>
                   </ul>
                 </div>
@@ -137,7 +152,7 @@
                         </div>
                         <div class="section__body container-fluid">
                             <div class="row justify-content-center">    
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -159,7 +174,7 @@
                                         </button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -181,7 +196,7 @@
                                         </button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -203,7 +218,7 @@
                                         </button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -225,7 +240,7 @@
                                         </button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -247,7 +262,7 @@
                                         </button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -269,7 +284,7 @@
                                         </button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -291,7 +306,7 @@
                                         </button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3 ml-auto">
+                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
@@ -324,26 +339,26 @@
                         <div class="section__body">
                             <div class="section__line container">
                                 <div class="row">                        
-                                    <div class="section__item col-3">
+                                    <div class="section__item col-md-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-001_rupee"></div>
                                         <div class="section__item_title">
                                             Возврат любого
                                             товара 30 дней
                                         </div>
                                     </div>
-                                    <div class="section__item col-3">
+                                    <div class="section__item col-md-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-002_rickshaw"></div>
                                         <div class="section__item_title">
                                             Более 4500 пунктов самовывоза по России
                                         </div>
                                     </div>
-                                    <div class="section__item col-3">
+                                    <div class="section__item col-md-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-lotus"></div>
                                         <div class="section__item_title">
                                             Принимаем банковские карты
                                         </div>
                                     </div>
-                                    <div class="section__item col-3">
+                                    <div class="section__item col-md-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-003_diwali"></div>
                                         <div class="section__item_title">
                                             Доставим в любую точку мира
@@ -357,7 +372,7 @@
                     <div class="main__section_article">
                         <div class="section__line article container">
                             <div class="row">
-                                <div class="section__item col-4">
+                                <div class="section__item col-md-12 col-xl-4">
                                     <div class="section__item_img">
                                         <img src="../img/article-1.png" alt="" srcset="">
                                     </div>
@@ -371,7 +386,7 @@
                                         <button class="btn btn-sm btn-success item_open">подробнее<span class="ico bg-next"></span></button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-4">
+                                <div class="section__item  col-md-12 col-xl-4">
                                     <div class="section__item_img">
                                         <img src="../img/article-2.png" alt="" srcset="">
                                     </div>
@@ -385,7 +400,7 @@
                                         <button class="btn btn-sm btn-success item_open">подробнее<span class="ico bg-next"></span></button>
                                     </div> 
                                 </div>
-                                <div class="section__item col-4">
+                                <div class="section__item  col-md-12 col-xl-4">
                                     <div class="section__item_img">
                                         <img src="../img/article-3.png" alt="" srcset="">
                                     </div>
@@ -410,37 +425,37 @@
                     <div class="content">
                         <div class="section__body container">
                             <div class="section__line partners__slider row">
-                                <div class="section__item col-2">
+                                <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
                                         <img src="../img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
-                                <div class="section__item col-2">
+                                <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
                                         <img src="../img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
-                                <div class="section__item col-2">
+                                <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
                                         <img src="../img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
-                                <div class="section__item col-2">
+                                <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
                                         <img src="../img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
-                                <div class="section__item col-2">
+                                <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
                                         <img src="../img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
-                                <div class="section__item col-2">
+                                <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
                                         <img src="../img/logo_namaste.png" alt="" srcset="">
                                     </div>
@@ -459,7 +474,7 @@
                         </div>
                         <div class="section__body container">
                             <div class="row">            
-                                <div class="section__square col-4">
+                                <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
                                                 <img src="../img/instagram-photo-1.png" alt="">
@@ -473,7 +488,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="section__square col-4">
+                                <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
                                                 <img src="../img/instagram-photo-2.png" alt="">
@@ -487,7 +502,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="section__square col-4">
+                                <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
                                                 <img src="../img/instagram-photo-3.png" alt="">
@@ -501,7 +516,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="section__square col-4">
+                                <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
                                                 <img src="../img/instagram-photo-4.png" alt="">
@@ -515,7 +530,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="section__square col-4">
+                                <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
                                                 <img src="../img/instagram-photo-5.png" alt="">
@@ -529,7 +544,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="section__square col-4">
+                                <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
                                                 <img src="../img/instagram-photo-6.png" alt="">
@@ -570,7 +585,15 @@
                 <a href="#" class="footer__logo">
                     <img src="../img/Logo.png" alt="logo" srcset="">        
                 </a>
-                <div class="footer__col_call">
+                <div class="footer__col_call secondline__asktocontact col">
+                    <a href="tel:88005553200">
+                        <span class="ico bg-green_call"></span>
+                    </a>
+            
+                    <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
+                    <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
+                  </div>
+                <!-- <div class="footer__col_call">
                     <a href="tel:88005553200">
                         <span class="ico bg-green_call"></span>
                     </a>
@@ -578,7 +601,7 @@
                         <span>8(800) 555-32-00</span>
                     </a>
                     <a href="#">заказать звонок</a>
-                </div>
+                </div> -->
                 <div class="footer_col_social">
                     <a href="#"><span class="ico bg-facebook_footer"></span></a>
                     <a href="#"><span class="ico bg-instagram_footer"></span></a>
@@ -586,25 +609,25 @@
                 </div>
             </div>
             <div class="footer__col col-6">
-                    <div class="input-group mb-3 footer__col_search">
-                        <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Recipient's username"
-                        aria-label="Recipient's username"
-                        aria-describedby="button-addon2"
-                        />
-                        <div class="input-group-append">
-                        <button
-                            class="btn btn-outline-secondary"
-                            type="button"
-                            id="button-addon2"
-                        >
-                            Button
-                        </button>
-                        </div>
+                <div class="footer__col_search input-group mb-3 col-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Что Вас интересует?"
+                      aria-label="Что Вас интересует?"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-sm"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        <span class="ico bg-search"></span>
+                      </button>
                     </div>
-                    <div class="container">
+                </div>
+                <div class="container">
                         <div class="footer__col_row row">
                             <ul class="col_row__colinside col-4">
                                 <li class="colinside__title">Title</li>

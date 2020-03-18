@@ -98,15 +98,7 @@ h2.title__fline {
     color: #c5c5c5;
   }
 }
-.btn-danger {
-  background-color: $btn-danger;
-  border-color: $btn-danger;
-}
 
-.btn-warning {
-  background: $btn-warning;
-  border-color: $btn-warning;
-}
 
 .main__section_hit button {
   min-width: 37px;
@@ -214,4 +206,19 @@ h3.title__sline {
 
   .row{padding: 27px 35px 35px 17px;}
 
+}
+
+.btn-danger {
+  background-color: $btn-danger;
+  border-color: $btn-danger;
+}
+
+.btn-warning {
+  background-color: $btn-warning;
+  border-color: $btn-warning;
+}
+
+.btn-success{
+  background-color: $btn-success;
+  border-color: $btn-success;
 }
