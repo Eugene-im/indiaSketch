@@ -50,6 +50,11 @@ html, body {
 	background-color: $body-back;
 	color: $text-color;
 }
+
+body{
+	overflow-x: hidden
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;

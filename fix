@@ -1,8 +1,9 @@
 header:
 -category dropdown
--search drop
+
 -social icons hover
 -adaptiv
+
 footer
 -adaptiv
 -yandeksmap 
@@ -18,6 +19,7 @@ https://tech.yandex.ru/maps/archive/doc/jsapi/1.x/dg/tasks/how-to-add-balloon-do
 
 main
 -popup with cart
+
 insta/articles
 -buttons
 -icons x2/x4
