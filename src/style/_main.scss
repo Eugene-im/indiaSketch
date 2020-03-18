@@ -2,7 +2,7 @@ header,
 footer {
   min-height: 100px;
   width: 100%;
-  background-color: #e3e3e3;
+//   background-color: #e3e3e3;
 }
 .content {
   max-width: 1108px;
@@ -159,7 +159,8 @@ h3.title__sline {
 .main__section_supreme,
 .main__section_partners,
 .main__section_article,
-.main__section_insta {
+.main__section_insta,
+.footer__section {
   margin-top: 55px;
 }
 

@@ -12,44 +12,105 @@
         <div class="wrap">
 
             <header>
-              <div class="content">
-                <div class="header__firstline">
-                  <div class="header__firstline_place">
+              <div class="content container">
+                <div class="header__firstline row justify-content-between align-items-center">
+                  <div class="header__firstline_place col-1">
                     <div class="btn-group">
+                      <span class="ico bg-location"></span> 
                       <button
-                        class="btn btn-secondary btn-sm dropdown-toggle"
+                        class="dropdown-toggle"
                         type="button"
                         data-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        Small button
+                        Москва
                       </button>
                       <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">link</a>
-                        <a class="dropdown-item" href="#">another link</a>
-                        <a class="dropdown-item" href="#">another link</a>
+                        <a class="dropdown-item" href="#">Орел</a>
+                        <a class="dropdown-item" href="#">Санкт-Питербург</a>
+                        <a class="dropdown-item" href="#">Казань</a>
                       </div>
                     </div>
                   </div>
-                  <ul class="header__firstline_social">
+                  <ul class="header__firstline_social col-4">
                     <li>
-                      <a href="#"><span class="ico"></span> Instagram</a>
+                      <a href="#"><span class="ico bg-002_instagram"></span> Instagram</a>
                     </li>
                     <li>
-                        <a href="#"><span class="ico"></span> Facebook</a>
+                      <a href="#"><span class="ico bg-001_facebook"></span> Facebook</a>
                     </li>
                     <li>
-                        <a href="#"><span class="ico"></span> Telegram</a>
+                      <a href="#"><span class="ico bg-003_telegram"></span> Telegram</a>
                     </li>
                     <li>
-                      <a href="#"><span class="ico"></span> Whatsapp</a>
+                      <a href="#"><span class="ico bg-004_whatsapp"></span> Whatsapp</a>
+                    </li>
+                  </ul>
+                </div>  
+                <div class="header__secondline row ">
+                  <a href="#" class="header__logo col-2">
+                    <img src="../img/Logo.png" alt="logo" srcset="" />
+                  </a>
+                  
+                  <div class="input-group mb-3 col-3 offset-md-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Recipient's username"
+                      aria-label="Recipient's username"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-outline-secondary"
+                        type="button"
+                        id="button-addon2"
+                      >
+                        Button
+                      </button>
+                    </div>
+                  </div>
+                  <div class="secondline__asktocontact col">
+                    <div class="secondline__asktocontact_fline">заказать звонок</div>
+                    <a href="tel:88005553200" class="secondline__asktocontact_sline"
+                      >8 (800) 555-32-00</a
+                    >
+                  </div>
+                  <div class="secondline__userbuttons col-2">
+                    <a href="#" class="btn btn-warning secondline__userbuttons_choosed"
+                      ><3</a
+                    >
+                    <a href="#" class="btn btn-success secondline__userbuttons_login"
+                      >login</a
+                    >
+                  </div>
+                </div>
+                <div class="header__thirdine">
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link disabled"
+                        href="#"
+                        tabindex="-1"
+                        aria-disabled="true"
+                        >Disabled</a
+                      >
                     </li>
                   </ul>
                 </div>
-                <div class="header__secondline">
-                  <a href="#" class="logo"></a>
-                  <div class="dropdown">
+              </div>
+            </header>
+            <!-- <div class="dropdown">
                     <button
                       class="btn btn-secondary dropdown-toggle"
                       type="button"
@@ -67,52 +128,7 @@
                         Something else here
                       </button>
                     </div>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Recipient's username"
-                      aria-label="Recipient's username"
-                      aria-describedby="button-addon2"
-                    />
-                    <div class="input-group-append">
-                      <button
-                        class="btn btn-outline-secondary"
-                        type="button"
-                        id="button-addon2"
-                      >
-                        Button
-                      </button>
-                    </div>
-                    <div class="secondline__asktocontact">
-                        <div class="secondline__asktocontact_fline">заказать звонок</div>
-                        <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
-                    </div>
-                    <div class="secondline__userbuttons">
-                        <a href="#" class="btn btn-warning secondline__userbuttons_choosed"><3</a>
-                        <a href="#" class="btn btn-success secondline__userbuttons_login">login</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="header__thirdine">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                      </ul>
-                </div>
-              </div>
-            </header>
+                  </div> -->
             
             
 <footer>
@@ -126,75 +142,85 @@
             <div class="map_pin__logo"></div>
         </div>
     </div>
-    <div class="content">
-        <div class="footer__col">
-            <div class="footer__logo">
-
+    <div class="content container footer__section">
+        <div class="row">        
+            <div class="footer__col col__first col-3">
+                <a href="#" class="footer__logo">
+                    <img src="../img/Logo.png" alt="logo" srcset="">        
+                </a>
+                <div class="footer__col_call">
+                    <a href="tel:88005553200">
+                        <span class="ico bg-green_call"></span>
+                    </a>
+                    <a href="tel:88005553200">
+                        <span>8(800) 555-32-00</span>
+                    </a>
+                    <a href="#">заказать звонок</a>
+                </div>
+                <div class="footer_col_social">
+                    <a href="#"><span class="ico bg-facebook_footer"></span></a>
+                    <a href="#"><span class="ico bg-instagram_footer"></span></a>
+                    <a href="#"><span class="ico bg-viber_footer"></span></a>
+                </div>
             </div>
-            <div class="footer__col_call">
-                <button class="btn btn-success"><span class="ico">call</span></button>
-            </div>
-            <div class="footer_col_social">
-                <button class="btn btn-warning"><span class="ico">fb</span></button>
-                <button class="btn btn-warning"><span class="ico">ok</span></button>
-                <button class="btn btn-warning"><span class="ico">wa</span></button>
-            </div>
-        </div>
-        <div class="footer__col">
-                <div class="input-group mb-3 footer__col_search">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Recipient's username"
-                      aria-label="Recipient's username"
-                      aria-describedby="button-addon2"
-                    />
-                    <div class="input-group-append">
-                      <button
-                        class="btn btn-outline-secondary"
-                        type="button"
-                        id="button-addon2"
-                      >
-                        Button
-                      </button>
+            <div class="footer__col col-6">
+                    <div class="input-group mb-3 footer__col_search">
+                        <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="button-addon2"
+                        />
+                        <div class="input-group-append">
+                        <button
+                            class="btn btn-outline-secondary"
+                            type="button"
+                            id="button-addon2"
+                        >
+                            Button
+                        </button>
+                        </div>
                     </div>
-                </div>
-                <div class="footer__col_row">
-                    <ul class="col_row__colinside">
-                        <li>Title</li>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                        <li>item 4</li>
-                        <li>item 5</li>
-                    </ul>
-                    <ul class="col_row__colinside">
-                        <li>Title</li>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                        <li>item 4</li>
-                        <li>item 5</li>
-                    </ul>
-                    <ul class="col_row__colinside">
-                        <li>Title</li>
-                        <li>item 1</li>
-                        <li>item 2</li>
-                        <li>item 3</li>
-                        <li>item 4</li>
-                        <li>item 5</li>
-                    </ul>
-                </div>
-        </div>
-        <div class="footer__col">
-            <div class="footer__col_payment">
-                <div class="payment_item">1</div>
-                <div class="payment_item">2</div>
-                <div class="payment_item">3</div>
-                <div class="payment_item">4</div>
+                    <div class="container">
+                        <div class="footer__col_row row">
+                            <ul class="col_row__colinside col-4">
+                                <li class="colinside__title">Title</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                                <li>item 4</li>
+                                <li>item 5</li>
+                            </ul>
+                            <ul class="col_row__colinside col-4">
+                                <li class="colinside__title">Title</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                                <li>item 4</li>
+                                <li>item 5</li>
+                            </ul>
+                            <ul class="col_row__colinside col-4">
+                                <li class="colinside__title">Title</li>
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                                <li>item 4</li>
+                                <li>item 5</li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
-            <div class="footer__col_copyright">
-                © 2020 При использовании материалов сайта обязательным условием является наличие гиперссылки
+            <div class="footer__col col-3">
+                <div class="footer__col_payment">
+                    <div class="payment_item"><span class="ico bg-mastercard_2"></span></div>
+                    <div class="payment_item"><span class="ico bg-paypal"></span></div>
+                    <div class="payment_item"><span class="ico bg-qiwi"></span></div>
+                    <div class="payment_item"><span class="ico bg-bitcoin"></span></div>
+                </div>
+                <div class="footer__col_copyright">
+                    © 2020 При использовании материалов сайта обязательным условием является наличие гиперссылки
+                </div>
             </div>
         </div>
     </div>
