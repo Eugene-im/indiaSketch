@@ -1,0 +1,610 @@
+header, footer{
+	min-height: 100px;
+	width: 100%;
+}
+
+header {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.0841893);
+}
+
+main {
+    margin-bottom: 55px;
+}
+.header-content{
+ 
+	max-width: 1108px;
+	width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 18px;
+    align-items: center;   
+}
+
+.header-logo {
+    width: 156px; height: 51px;
+    background: url('css_sprites.png') -10px -1773px;
+    display: block;
+}
+
+.call-order {
+    display: block;
+}
+.call-order a{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #4BBE82;
+}
+
+.phone-number {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+/* identical to box height */
+
+
+color: #3E3E3E;
+}
+
+
+.main-content {
+    
+    max-width: 1108px;
+	width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.wrap {
+    background: #FCFCFC;
+}
+
+.main-checkout h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #3E3E3E;
+    margin-top: 53px;
+    margin-bottom: 44px;
+}
+
+.personal-data h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3E3E3E;
+    margin-bottom: 20px;
+    
+}
+
+.personal-data h4 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3E3E3E;
+}
+
+.input-text {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 454px;
+    height: 55px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.01);
+    border: none;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.input-text::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B9B9B9;
+}
+
+.input-text[type="text"] {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 15px;
+}
+
+.input-text[type="email"] {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 15px;
+}
+.personal-data span{
+    background: #4BBB81;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    
+
+    font-family: Roboto;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    line-height: 35px;
+
+    color: #FFFFFF;
+    margin-right: 15px;
+
+}
+
+.personal-data-form {
+    margin-left: 51px
+}
+
+.delivery-form {
+    margin-left: 51px
+}
+
+.delivery h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #3E3E3E;
+    margin-bottom: 20px;
+    
+}
+
+.delivery h4 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3E3E3E;
+}
+.delivery span{
+    background: #4BBB81;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    
+
+    font-family: Roboto;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    line-height: 35px;
+
+    color: #FFFFFF;
+    margin-right: 15px;
+
+}
+
+.delivery-button {
+    display: none;
+}
+
+
+
+.radio {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+    margin: 10px 0 0 7px;
+  
+}
+.radio + label {
+	position: relative;
+	padding: 0 0 0 35px;
+    cursor: pointer;
+    display: block;
+    margin-top: 15px;
+}
+.radio + label:before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%;
+	background: #E3E3E3
+}
+.radio + label:after {
+	content: '';
+	position: absolute;
+	top: 11px;
+	left: 6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #4BBB81;
+	opacity: 0;
+	transition: .2s;
+}
+.radio:checked + label:after {
+	opacity: 1;
+}
+
+.branch {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 35px;
+}
+
+.delivery-form label {
+    font-weight: 500;
+}
+
+.delivery-form label p{
+   
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    
+    color: #3E3E3E;
+}
+
+
+
+
+.payment-method span{ 
+    background: #4BBB81;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+
+    font-family: Roboto;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    line-height: 35px;
+
+    color: #FFFFFF;
+    margin-right: 15px;
+    margin-top: 30px;
+
+}
+
+.main-order-form {
+    margin-left: 51px;
+}
+
+.main-order-form label {
+    margin-top: 24px;
+}
+
+.main-order-form .radio + label:before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #CDD1DA;
+	border-radius: 50%;
+	background: #E3E3E3
+}
+
+
+.main-order-form .radio + label:after {
+	content: '';
+	position: absolute;
+    top: 3px;
+}
+.footer-content {
+    max-width: 1108px;
+	width:100%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+footer {
+    min-height: 0;
+}
+
+.footer-copyright {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #B6B6B6;
+    width: 45%;
+}
+
+.payment__item {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16032);
+    border-radius: 4px;
+    width: 98px;
+    height: 53px;
+    margin-left: 12px;
+}
+.footer-payment_systems {
+    display: flex;
+    
+}
+
+.payment-system {
+    margin: 0 auto;
+    margin-top: 9px;
+}
+
+
+.mastercard {
+    width: 46px; height: 35px;
+    background: url('css_sprites.png') -10px -1653px;
+}
+
+.paypal {
+    width: 73px; height: 20px;
+    background: url('css_sprites.png') -10px -797px;
+    margin-top: 15px;
+}
+
+.qiwi {
+    width: 71px; height: 30px;
+    background: url('css_sprites.png') -10px -1289px;
+    margin-top: 13px;
+}
+
+.bitcoin {
+    width: 36px; height: 35px;
+    background: url('css_sprites.png') -10px -1598px;
+}
+
+.order-list {
+ 
+    margin-top: 48px;
+
+    h3 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
+        color: #3E3E3E;
+        margin-bottom: 15px;
+        
+    }
+}
+
+.order {
+    height: 489px;
+    width: 473px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.0221984);
+
+
+    .product-name {
+        font-family: Roboto;
+        font-size: 18px;
+        line-height: 21px;
+        color: #3E3E3E;
+
+    }
+
+    .product-code {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #3E3E3E;
+    }
+
+    .product-priсe {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #3E3E3E;
+    }
+
+
+    .product-quanity {
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3E3E3E;
+    }
+}
+
+
+
+.order-product__item {
+    display: flex;
+    // padding: 21px 20px 34px 20px;
+    
+}
+
+.order-product__item:nth-child(1) {
+
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-bottom: 28px;
+
+}
+
+.order-product__item:nth-child(2) {
+    padding-left: 20px;
+}
+
+.order-photo {
+    width: 46px; height: 51px;
+    background: url(css_sprites.png) -10px -1704px;
+}
+
+
+.order-info {
+    padding-left: 20px;
+   
+    .order-info__up {
+        display: flex;
+        justify-content: space-between;
+
+        .product-code {
+            padding-left: 77px;
+        }
+    }
+
+    .order-info__down {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 13px;
+        
+    }
+}
+
+
+.total-order {
+    padding: 40px 20px 20px 20px;
+    h3 {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 16px;
+        color: #3E3E3E;
+        margin-bottom: 20px;
+    }
+
+
+    .total-number {
+        font-family: Roboto;
+
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #3E3E3E;
+    }
+
+    .total-amount {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #3E3E3E;
+    }
+}
+
+
+.quantity-of-goods {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-delivery {
+    h4 {
+        display: block;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+
+    .text-delivery {
+        font-family: Roboto;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #3E3E3E;
+    }
+
+    .amount-delivery {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+
+        color: #3E3E3E;
+    }
+}
+
+.total-payable {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #F7F7F7;
+  
+
+    .total-payable__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3E3E3E;
+    }
+
+    .total-payable__amount {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: right;
+        color: #3E3E3E;
+    }
+}
+
+.button-order {
+    text-align: center;
+    margin-top: 40px;
+    
+    button {
+        background: #4BBB81;
+        border-radius: 4px;
+        padding: 18px 53px 18px 54px;
+        border: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        text-align: right;
+
+        color: #FFFFFF;
+    }
+   
+}
