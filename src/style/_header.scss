@@ -118,7 +118,7 @@ a:not([href]):hover,
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
-  color: #4BBE82;
+  color: #4bbe82;
   text-decoration-line: underline;
   text-align: right;
   display: block;
@@ -128,6 +128,39 @@ a:not([href]):hover,
   font-size: 18px;
   line-height: 21px;
   text-align: right;
-  color:$text-color;
+  color: $text-color;
   display: block;
+}
+
+.dorop__items {
+  position: absolute;
+  width: 100%;
+  max-width: 405px;
+  background: #fff;
+  z-index: 1;
+  margin: 41px 0 0 -15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.118144);
+  border-radius: 4px;
+}
+
+.drop__item{
+  display: flex;
+  padding:10px 20px 10px 15px;
+  
+  &.active .drop__item_title,
+  &.active .drop__item_description,
+  &.active .drop__item_cart,
+  &:hover .drop__item_cart,
+  &:hover .drop__item_title,
+    &:hover .drop__item_description{
+    color:$active-color;
+  }
+}
+
+.drop__item_img{
+  width: 100%;
+  max-width: 35px;
+  img{
+    width: 100%;
+  }
 }
