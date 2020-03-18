@@ -141,6 +141,7 @@ a:not([href]):hover,
   margin: 41px 0 0 -15px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.118144);
   border-radius: 4px;
+  // padding:2px ;
 }
 
 .drop__item{
@@ -152,7 +153,7 @@ a:not([href]):hover,
   &.active .drop__item_cart,
   &:hover .drop__item_cart,
   &:hover .drop__item_title,
-    &:hover .drop__item_description{
+  &:hover .drop__item_description{
     color:$active-color;
   }
 }
@@ -160,7 +161,23 @@ a:not([href]):hover,
 .drop__item_img{
   width: 100%;
   max-width: 35px;
+  margin-right: 15px;
   img{
     width: 100%;
   }
+}
+.drop__row{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop__item_description{
+  font-size: 14px;
+line-height: 16px;
+}
+
+.dnone{
+  display: none
 }
