@@ -2,12 +2,16 @@ header,
 footer {
   min-height: 100px;
   width: 100%;
-//   background-color: #e3e3e3;
+  //   background-color: #e3e3e3;
 }
 .content {
   max-width: 1108px;
   width: 100%;
   margin: 0 auto;
+}
+
+main{
+  min-height: 50vh;
 }
 
 main .content {
@@ -61,16 +65,16 @@ h2.title__fline {
 }
 
 .pin_hit {
-	background: #FF6633;
-	color: #fcfcfc;
+  background: #ff6633;
+  color: #fcfcfc;
 }
 .pin_sell {
-	background: #1C9341;
-	color: #fcfcfc;
+  background: #1c9341;
+  color: #fcfcfc;
 }
 .pin_actia {
-	background: #643B15;
-	color: #fcfcfc;
+  background: #643b15;
+  color: #fcfcfc;
 }
 
 .section__item_title {
@@ -98,7 +102,6 @@ h2.title__fline {
     color: #c5c5c5;
   }
 }
-
 
 .main__section_hit button {
   min-width: 37px;
@@ -191,21 +194,23 @@ h3.title__sline {
     position: relative;
     // background-color: red;
     width: 100%;
-	max-width: 334px;
-	overflow: hidden;
-	margin-bottom: 18px;
+    max-width: 334px;
+    overflow: hidden;
+    margin-bottom: 18px;
   }
   .section__item {
     height: 0;
     padding-top: 100%;
   }
-  .section__item_text,.button.btn{
-	  display: inline-block;
-	  vertical-align: top;
+  .section__item_text,
+  .button.btn {
+    display: inline-block;
+    vertical-align: top;
   }
 
-  .row{padding: 27px 35px 35px 17px;}
-
+  .row {
+    padding: 27px 35px 35px 17px;
+  }
 }
 
 .btn-danger {
@@ -218,7 +223,7 @@ h3.title__sline {
   border-color: $btn-warning;
 }
 
-.btn-success{
+.btn-success {
   background-color: $btn-success;
   border-color: $btn-success;
 }
