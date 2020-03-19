@@ -90,14 +90,30 @@ $(".tab__butons").click(function(e) {
 $(".tab__nav_close").click(function(e) {
     e.preventDefault();
     if (
+      
       !($(".cart__popup_block").hasClass("dnone")) &&
-      !($(".tab-content").hasClass("dnone"))
+      !($(".tab-content").hasClass("dnone"))&&
+      $('.tab__butons .nav-link').hasClass("active")
     ) {
         $(".cart__popup_block").addClass("dnone");
         $(".tab-content").addClass("dnone");
+        $('.tab__butons .nav-link').removeClass('active');
     }
   });
-
+  $("html").click(function(e) {
+    e.preventDefault();
+    if (
+      (e.target != $('.tab__nav_close')) &&
+      !($('.cart__popup_block').is(':hover')) &&
+      !($(".cart__popup_block").hasClass("dnone")) &&
+      !($(".tab-content").hasClass("dnone"))&&
+      $('.tab__butons .nav-link').hasClass("active")
+    ) {
+        $(".cart__popup_block").addClass("dnone");
+        $(".tab-content").addClass("dnone");
+        $('.tab__butons .nav-link').removeClass('active');
+    }
+  });
 
   $('#header__search').keypress(function(){
     $('.drop__items').removeClass('d-none')
