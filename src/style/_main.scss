@@ -104,6 +104,19 @@ h2.title__fline {
     color: #c5c5c5;
   }
 }
+.price_new {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4bbe82;
+}
+.price_old {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: line-through;
+  color: #c5c5c5;
+}
 
 .main__section_hit button {
   min-width: 37px;
