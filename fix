@@ -19,7 +19,7 @@ https://tech.yandex.ru/maps/archive/doc/jsapi/1.x/dg/tasks/how-to-add-balloon-do
 ....
 
 main
--popup with cart
+-popup with cart+
 
 insta/articles
 -buttons
@@ -30,7 +30,7 @@ search+
 popupcart+
 filter
 pagination
-page
+page+
 
 
 
