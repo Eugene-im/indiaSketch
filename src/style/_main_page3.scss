@@ -105,3 +105,17 @@
   background-color: #ff9933;
   border-color: #ff9933;
 }
+
+.item__slider{
+    max-width:450px;
+
+    .slider__image{
+        width:100%;
+        // max-width:450px;
+        max-height: 300px;
+        overflow: hidden;
+    }
+}
+.item__slider_small{
+    margin-top:24px;
+}

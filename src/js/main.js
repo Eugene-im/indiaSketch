@@ -1,6 +1,7 @@
 //= lib/jquery-3.4.1.slim.min.js
 //= lib/popper.min.js
 //= lib/bootstrap.min.js
+//= lib/slick.min.js
 
 $(".btn-number").click(function(e) {
   e.preventDefault();
@@ -109,3 +110,20 @@ $(".tab__nav_close").click(function(e) {
       $('.drop__items').addClass('d-none')
     }
   })
+
+
+ $('.item__slider_big').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.item__slider_small'
+});
+$('.item__slider_small').slick({
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  asNavFor: '.item__slider_big',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true
+});
