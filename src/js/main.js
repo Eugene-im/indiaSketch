@@ -120,10 +120,10 @@ $(".tab__nav_close").click(function(e) {
   asNavFor: '.item__slider_small'
 });
 $('.item__slider_small').slick({
-  slidesToShow: 6,
+  slidesToShow: 5,
   slidesToScroll: 1,
   asNavFor: '.item__slider_big',
   dots: false,
-  centerMode: true,
+  // centerMode: true,
   focusOnSelect: true
 });

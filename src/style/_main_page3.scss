@@ -116,6 +116,22 @@
         overflow: hidden;
     }
 }
+.item__slider_big{
+    .slider__image{
+        height: 300px;
+        // text-align: center;
+        img{
+            margin: 0 auto;
+            height: 100%;
+            width:auto;
+        }
+    }
+}
+
 .item__slider_small{
     margin-top:24px;
+    .slider__image{
+        background-color: #f7f7f7;
+        margin: 0 7.5px;
+    }
 }
