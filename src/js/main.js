@@ -96,3 +96,16 @@ $(".tab__nav_close").click(function(e) {
         $(".tab-content").addClass("dnone");
     }
   });
+
+
+  $('#header__search').keypress(function(){
+    $('.drop__items').removeClass('d-none')
+  })
+  $('#header__search').keypress(function(){
+    var value = $(this).val();
+    if ( value.length > 0){
+      $('.drop__items').removeClass('d-none')
+    }else{
+      $('.drop__items').addClass('d-none')
+    }
+  })
