@@ -56,7 +56,7 @@
     height: 26px;
     background: white;
   }
-  :checked + label:after {
+  &:checked + label:after {
     content: "";
     position: absolute;
     left: 5px;
