@@ -105,7 +105,10 @@ a:not([href]):hover,
     line-height: 13px;
     padding-left: 0;
     padding-right: 20px;
-    height: 38px;
+    height: 36px;
+  }
+  .btn{
+    height: 36px;
   }
   input:focus {
     outline: none;
@@ -196,6 +199,13 @@ a:not([href]):hover,
 
 .btn-lg {
   height: 38px;
+}
+
+.secondline__userbuttons{
+  padding-right: 15px;
+}
+.secondline__userbuttons_choosed{
+  margin-right:10px;
 }
 
 // .dnone{

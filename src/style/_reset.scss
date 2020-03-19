@@ -72,6 +72,19 @@ img{
 	// height: 100%;
 }
 
-.btn,.input{
+.btn{
 	height: 45px;
+}
+input{
+	height: 43px;
+}
+header .header__secondline,footer{
+	.btn{
+		height: 38px;
+	}
+	.header__col_search{
+		input,.btn{
+		   height: 36px;
+	   }
+	}
 }
