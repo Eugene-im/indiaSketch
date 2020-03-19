@@ -1,0 +1,35 @@
+.main__item_personal_page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item__slider,
+.item__description,
+.item__video {
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0671984);
+  border-radius: 4px;
+  // z
+  height: 450px;
+//   background: #cccccc;
+}
+
+.item__slider {
+  // max-width: 450px;
+  // width:100%;
+  flex: 1 1 450px;
+  margin: 0 16px 16px 0;
+}
+.item__description {
+  flex: 1 1 641px;
+}
+.item__video {
+    flex: 1 1 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    iframe{
+            width:718px;
+            height: 404px;
+    }
+  }
