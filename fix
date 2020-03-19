@@ -1,8 +1,9 @@
 header:
--category dropdown
+-category dropdown +-
 
 -social icons hover
 -adaptiv
+
 
 footer
 -adaptiv
@@ -26,7 +27,7 @@ insta/articles
 
 !!!
 search+
-popupcart
+popupcart+
 filter
 pagination
 page
