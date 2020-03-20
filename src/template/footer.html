@@ -2,27 +2,48 @@
 
 <footer>
     <div class="footer__map">
+        <div class="content">
+            <div class="footer__map_pin sm-row-rewerse">
+                <div class="map_pin__col text">
+                    <div class="map_pin__place">
+                        <div class="map_pin__place_def">
+                            Адрес
+                        </div>
+                        <div class="map_pin__place_adr">
+                            Таганская площадь, 8
+                        </div> 
+                    </div>
+                    <div class="map_pin__phone">
+                        <div class="map_pin__phone_def">
+                            Телефон
+                        </div>
+                        <a class="map_pin__phone_num" href="tel:88005553200">
+                            8 (800) 555-32-00
+                        </a>
+                        <buton class="btn btn-danger d-none d-md-block">1заказать звонок</buton>
+                    </div>
+                </div>
+                <div class="map_pin__col">
+                    <div class="map_pin__logo">
+                        <img src="./img/logo_namaste.png" alt="">
+                    </div>
+                </div>
+                <buton class="btn btn-danger d-block d-md-none col-12">2заказать звонок</buton>
+            </div>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.0277983793835!2d37.65172841623024!3d55.74064598055013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae6157ac483%3A0xf7dc0d5f8dba3222!2z0KLQsNCz0LDQvdGB0LrQsNGPINC_0LsuLCA4LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEwOTE0Nw!5e0!3m2!1sru!2sru!4v1584396190991!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A798063d01bd8cf52351cd3c6b28a8b6551f930ccfd90543b638c062a5be7e6f9&lang=ru_RU&scroll=false"></script> -->
-        <div class="footer__map_pin">
-            <div class="map_pin__col"></div>
-            <div class="map_pin__place"></div>
-            <div class="map_pin__phone"></div>
-            <div class="map_pin__col"></div>
-            <div class="map_pin__logo"></div>
-        </div>
     </div>
     <div class="content container footer__section">
         <div class="row">        
-            <div class="footer__col col__first d-none d-md-block col-md-6 col-lg-3">
+            <div class="footer__col col__first d-none d-md-flex align-items-center flex-column col-md-6 col-lg-3">
                 <a href="#" class="footer__logo">
-                    <img src="../img/Logo.png" alt="logo" srcset="">        
+                    <img src="./img/Logo.png" alt="logo" srcset="">        
                 </a>
                 <div class="footer__col_call secondline__asktocontact col">
-                    <a href="tel:88005553200">
+                    <a class="icon__sp" href="tel:88005553200">
                         <span class="ico bg-green_call"></span>
                     </a>
-            
                     <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
                   </div>
@@ -90,7 +111,7 @@
                         </div>
                     </div>
             </div>
-            <div class="footer__col col-sm-12 col-md-6 col-lg-5 col-xl-3">
+            <div class="footer__col _pay d-flex flex-column justify-content-between col-sm-12 col-md-6 col-lg-5 col-xl-3">
                 <div class="footer__col_payment">
                     <div class="payment_item"><span class="ico bg-mastercard_2"></span></div>
                     <div class="payment_item"><span class="ico bg-paypal"></span></div>
