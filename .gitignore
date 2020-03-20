@@ -1,5 +1,5 @@
-/node_modules
-/src
+/node_modules/
+/src/
 fix
 package-lock.json
 npm-shrinkwrap.json
