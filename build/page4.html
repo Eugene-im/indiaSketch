@@ -199,29 +199,182 @@
                 </div>
               </div>
             </header>
-            <div class="content container">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                        <a href="#">
-                            <span class="ico bg-home_menu"></span> Главная
-                        </a>
-                    </li>
-                  <li class="breadcrumb-item"><a href="#">Какаято ктегория</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Товар</li>
-                </ol>
-              </nav>
-            </div>
             <main>
-                <div class="content">
-                    <div class="main__empty_search">
-                        к сожалению, ничего не найдено
-                        
-                        <span class="cl404">
-                            404
-                        </span>
-                    </div>   
+              <div class="content">
+                <div class="main__section__category">
+                  <div class="category__section">
+                    <div class="category__section_title">
+                      Каталог
+                    </div>
+                    <div class="category__section_action">
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-success dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <!-- <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-success dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <!-- <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn btn-success dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Dropdown button
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <!-- <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="category__section_choose">
+                    <div class="category__section_filter">
+                      <div class="filter__section">
+                        <div class="filter__title">
+                          Подбор параметров
+                        </div>
+                        <div class="filter__param">
+                          <div class="filter__param_title">
+                            Диапазон цен
+                          </div>
+                          <div class="filter__param_action">
+                            <input type="text" />
+                            <input type="text" />
+                            <input type="range" />
+                            <input type="range" />
+                          </div>
+                        </div>
+                        <div class="filter__param">
+                          <div class="filter__param_title">
+                            Изготовитель
+                          </div>
+                          <div class="filter__param_action">
+                            <input type="checkbox" />
+                            <input type="checkbox" />
+                            <input type="checkbox" />
+                            <input type="checkbox" />
+                          </div>
+                        </div>
+                        <div class="filter__param">
+                          <div class="filter__param_title">
+                            Материал
+                          </div>
+                          <div class="filter__param_action">
+                            <input type="radio" />
+                            <input type="radio" />
+                            <input type="radio" />
+                            <input type="radio" />
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!-- <div slider id="slider-distance">
+                        <div>
+                          <div inverse-left style="width:70%;"></div>
+                          <div inverse-right style="width:70%;"></div>
+                          <div range style="left:30%;right:40%;"></div>
+                          <span thumb style="left:30%;"></span>
+                          <span thumb style="left:60%;"></span>
+                          <div sign style="left:30%;">
+                            <span id="value">30</span>
+                          </div>
+                          <div sign style="left:60%;">
+                            <span id="value">60</span>
+                          </div>
+                        </div>
+                        <input
+                          type="range"
+                          tabindex="0"
+                          value="30"
+                          max="100"
+                          min="0"
+                          step="1"
+                          oninput="
+                          this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                          var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                          var children = this.parentNode.childNodes[1].childNodes;
+                          children[1].style.width=value+'%';
+                          children[5].style.left=value+'%';
+                          children[7].style.left=value+'%';
+                          children[11].style.left=value+'%';
+                          children[11].childNodes[1].innerHTML=this.value;"
+                        />
+                      
+                        <input
+                          type="range"
+                          tabindex="0"
+                          value="60"
+                          max="100"
+                          min="0"
+                          step="1"
+                          oninput="
+                          this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                          var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                          var children = this.parentNode.childNodes[1].childNodes;
+                          children[3].style.width=(100-value)+'%';
+                          children[5].style.right=(100-value)+'%';
+                          children[9].style.left=value+'%';
+                          children[13].style.left=value+'%';
+                          children[13].childNodes[1].innerHTML=this.value;"
+                        />
+                      </div> -->
+                    </div>
+                    <div class="category__section_items">
+                      <div class="section__items"></div>
+                    </div>
+                  </div>
+                  <div class="section__items_pagination">
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                            ><</a
+                          >
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="#">></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
+              </div>
             </main>
             
 <!-- <div class="cart__popup_block">
