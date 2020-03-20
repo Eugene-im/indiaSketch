@@ -1,0 +1,140 @@
+.main__item_personal_page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item__slider,
+.item__description,
+.item__video {
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0671984);
+  border-radius: 4px;
+  padding: 25px;
+  min-height: 450px;
+  margin-bottom: 16px;
+}
+
+.item__slider {
+  flex: 1 1 450px;
+  margin: 0 16px 16px 0;
+}
+.item__description {
+  flex: 1 1 641px;
+}
+.item__video {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  iframe {
+    width: 718px;
+    height: 404px;
+  }
+}
+.main__item_personal_page {
+  .tab__wrap {
+    flex: 1 0 auto;
+  }
+  .conteiner__footer {
+    flex: 0 0 auto;
+  }
+  .tab__content_conteiner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .tab__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .drop__row {
+    display: flex;
+  }
+  .input-number {
+    padding: 3px 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    background: #f7f7f7;
+    border: none;
+  }
+  .drop__item_counter {
+    width: 94px;
+  }
+  .drop__item_costconteiner {
+    margin-right: 84px;
+  }
+  .drop__item_text {
+    width: 591px;
+    height: 79px;
+    font-size: 16px;
+    line-height: 19px;
+    overflow: hidden;
+  }
+  .cart__action_notbuy {
+    .item_fav {
+      color: #ffffff;
+    }
+    .item_buy {
+      font-size: 16px;
+      line-height: 19px;
+      color: #ff9933;
+    }
+  }
+  .item__properties {
+    display: flex;
+  }
+  .drop__row {
+    margin: 20px 0 30px;
+  }
+  .item__properti._color,
+  .item__properti._size {
+    flex: 1 1 45%;
+  }
+  .item__properties {
+    display: flex;
+  }
+}
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #ff9933;
+  border-color: #ff9933;
+}
+
+.item__slider {
+  max-width: 450px;
+
+  .slider__image {
+    width: 100%;
+    // max-width:450px;
+    max-height: 300px;
+    overflow: hidden;
+  }
+}
+.item__slider_big {
+  .slider__image {
+    height: 300px;
+    img {
+      margin: 0 auto;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+.item__slider_small {
+  margin-top: 24px;
+  .slider__image {
+    background-color: #f7f7f7;
+    margin: 0 7.5px;
+  }
+}
+
+.item__properties {
+  margin: 25px 0;
+}
+.item__properties_text {
+  margin-bottom: 15px;
+}

@@ -3,20 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="wrapper">
-        <div class="wrap">
-
             <header>
               <div class="content container">
                 <div
-                  class="header__firstline row justify-content-between align-items-center"
+                  class="header__firstline row justify-content-between align-items-center d-none d-lg-flex"
                 >
-                  <div class="header__firstline_place col-1">
+                  <div class="header__firstline_place col-lg-1">
                     <div class="btn-group">
                       <span class="ico bg-location"></span>
                       <button
@@ -35,7 +32,7 @@
                       </div>
                     </div>
                   </div>
-                  <ul class="header__firstline_social col-4">
+                  <ul class="header__firstline_social col-lg-4">
                     <li>
                       <a href="#"><span class="ico bg-002_instagram"></span> Instagram</a>
                     </li>
@@ -51,10 +48,21 @@
                   </ul>
                 </div>
                 <div class="header__secondline row align-items-center">
-                  <a href="#" class="header__logo col-2">
-                    <img src="../img/Logo.png" alt="logo" srcset="" />
+                  <a href="#" class="header__logo col-2 col-sm-2 ">
+                    <img
+                      class="d-none d-md-block"
+                      src="./img/Logo.png"
+                      alt="logo"
+                      srcset=""
+                    />
+                    <img
+                      class="d-block d-md-none"
+                      src="./img/logo_mob.png"
+                      alt="logo"
+                      srcset=""
+                    />
                   </a>
-                  <div class="category__dropdown col-2">
+                  <div class="category__dropdown col-2 col-sm-2 ">
                     <button
                       class="btn btn-success btn-lg dropdown-toggle"
                       type="button"
@@ -63,20 +71,10 @@
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                    Каталог
-                    <span class="ico bg-catalog_icon"></span>
+                      Каталог
+                      <span class="ico bg-catalog_icon"></span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <!-- <button class="dropdown-item btn-group dropright" type="button">
-                          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropright
-                          </button>
-                          <div class="dropdown-menu">
-                            <li>text</li>
-                            <li>text</li>
-                            <li>text</li>
-                          </div>
-                      </button> -->
                       <button class="dropdown-item" type="button">Another action</button>
                       <button class="dropdown-item" type="button">Another action</button>
                       <button class="dropdown-item" type="button">
@@ -86,6 +84,7 @@
                   </div>
             
                   <div class="header__col_search input-group col-4">
+                  <div class="header__col_search input-group d-none d-lg-flex col-lg-4">
                     <input
                       id="header__search"
                       type="text"
@@ -151,7 +150,124 @@
                                             </li>
                                           </ul>
                   </div>
-                  <div class="secondline__asktocontact col">
+                  <div class="category__dropdown d-lg-none col-2 col-sm-2">
+                    <div class="pos-f-t">
+                      <nav class="navbar navbar-light">
+                        <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#navbarToggleExternalContent2"
+                          aria-controls="navbarToggleExternalContent2"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </nav>
+                      <div class="collapse" id="navbarToggleExternalContent2">
+                        <div class="p-4">
+                          <div class="header__col_search input-group">
+                            <input
+                              id="header__search2"
+                              type="text"
+                              class="form-control"
+                              placeholder="Что Вас интересует?"
+                              aria-label="Что Вас интересует?"
+                              aria-describedby="button-addon2"
+                            />
+                            <div class="input-group-append">
+                              <button class="btn btn-sm" type="button" id="button-addon2">
+                                <span class="ico bg-search"></span>
+                              </button>
+                            </div>
+                            
+                                                <ul class="drop__items d-none">
+                                                    <li class="drop__item active">
+                                                      <div class="drop__item_img">
+                                                        <img src="../img/logo_namaste.png" alt="item_img" />
+                                                      </div>
+                                                      <div class="drop__row">
+                                                        <div class="drop__item_text">
+                                                          <div class="drop__item_title">Название бренда</div>
+                                                          <div class="drop__item_description">
+                                                            Более подробное название бренда
+                                                          </div>
+                                                        </div>
+                                                        <div class="drop__item_cart">
+                                                          <span class="ico bg-shopping_cart_green_2"></span>
+                                                        </div>
+                                                      </div>
+                                                    </li>
+                                                    <li class="drop__item">
+                                                      <div class="drop__item_img">
+                                                        <img src="../img/logo_namaste.png" alt="item_img" />
+                                                      </div>
+                                                      <div class="drop__row">
+                                                        <div class="drop__item_text">
+                                                          <div class="drop__item_title">Название бренда</div>
+                                                          <div class="drop__item_description">
+                                                            Более подробное название бренда
+                                                          </div>
+                                                        </div>
+                                                        <div class="drop__item_cart">
+                                                          <span class="ico bg-shopping_cart_green_2"></span>
+                                                        </div>
+                                                      </div>
+                                                    </li>
+                                                    <li class="drop__item">
+                                                      <div class="drop__item_img">
+                                                        <img src="../img/logo_namaste.png" alt="item_img" />
+                                                      </div>
+                                                      <div class="drop__row">
+                                                        <div class="drop__item_text">
+                                                          <div class="drop__item_title">Название бренда</div>
+                                                          <div class="drop__item_description">
+                                                            Более подробное название бренда
+                                                          </div>
+                                                        </div>
+                                                        <div class="drop__item_cart">
+                                                          <span class="ico bg-shopping_cart_green_2"></span>
+                                                        </div>
+                                                      </div>
+                                                    </li>
+                                                  </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="category__dropdown d-lg-none col-2 col-sm-2">
+                    <div class="pos-f-t">
+                      <nav class="navbar navbar-light">
+                        <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#navbarToggleExternalContent"
+                          aria-controls="navbarToggleExternalContent"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </nav>
+                      <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="p-4">
+                          <a class="dropdown-item" href="#">Преимущества</a>
+                          <a class="dropdown-item" href="#">Статьи</a>
+                          <a class="dropdown-item" href="#">Контакты</a>
+                          <a class="dropdown-item" href="#">Доставка и оплата</a>
+                          <a class="dropdown-item" href="#">Гарантия</a>
+                          <a class="dropdown-item" href="#">
+                            <span class="cart__items_sum">3</span>
+                            <span class="ico bg-shopping_cart"></span>
+                            Корзина
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="secondline__asktocontact d-none d-md-block col-md-2 ml-lg-3">
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
             
                     <a href="tel:88005553200" class="secondline__asktocontact_sline"
@@ -159,6 +275,7 @@
                     >
                   </div>
                   <div class="secondline__userbuttons">
+                  <div class="secondline__userbuttons d-none d-lg-block pr-0 ml-lg-3">
                     <a href="#" class="btn btn-warning secondline__userbuttons_choosed">
                       <span class="choose__items_sum">3</span>
                       <span class="ico bg-heart"></span>
@@ -169,9 +286,7 @@
                     >
                   </div>
                 </div>
-                <!-- </div> -->
-                <div class="header__thirdine">
-                  <!-- <div class="content"> -->
+                <div class="header__thirdine d-none d-md-flex">
                   <ul class="nav justify-content-center align-items-center">
                     <li class="nav-item">
                       <a class="nav-link active" href="#">Преимущества</a>
@@ -209,7 +324,7 @@
                             <div class="row justify-content-center">    
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -231,7 +346,7 @@
                                 </div>
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -253,7 +368,7 @@
                                 </div>
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -275,7 +390,7 @@
                                 </div>
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -297,7 +412,7 @@
                                 </div>
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -319,7 +434,7 @@
                                 </div>
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -341,7 +456,7 @@
                                 </div>
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -363,7 +478,7 @@
                                 </div>
                                 <div class="section__item col-md-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
-                                    <div class="section__item_img"><img src="../img/logo_namaste.png" alt="def_item" srcset=""></div>
+                                    <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
                                     <div class="section__item_description">Более детальное название бренда</div>
                                     <div class="section__item_price">
@@ -429,7 +544,7 @@
                             <div class="row">
                                 <div class="section__item col-md-12 col-xl-4">
                                     <div class="section__item_img">
-                                        <img src="../img/article-1.png" alt="" srcset="">
+                                        <img src="./img/article-1.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title">
                                         Статья номер один
@@ -443,7 +558,7 @@
                                 </div>
                                 <div class="section__item  col-md-12 col-xl-4">
                                     <div class="section__item_img">
-                                        <img src="../img/article-2.png" alt="" srcset="">
+                                        <img src="./img/article-2.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title">
                                         Статья номер один
@@ -457,7 +572,7 @@
                                 </div>
                                 <div class="section__item  col-md-12 col-xl-4">
                                     <div class="section__item_img">
-                                        <img src="../img/article-3.png" alt="" srcset="">
+                                        <img src="./img/article-3.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title">
                                         Статья номер один
@@ -482,37 +597,37 @@
                             <div class="section__line partners__slider row">
                                 <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
-                                        <img src="../img/logo_namaste.png" alt="" srcset="">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
                                 <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
-                                        <img src="../img/logo_namaste.png" alt="" srcset="">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
                                 <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
-                                        <img src="../img/logo_namaste.png" alt="" srcset="">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
                                 <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
-                                        <img src="../img/logo_namaste.png" alt="" srcset="">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
                                 <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
-                                        <img src="../img/logo_namaste.png" alt="" srcset="">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
                                 <div class="section__item  col-md-12 col-xl-2">
                                     <div class="section__item_img">
-                                        <img src="../img/logo_namaste.png" alt="" srcset="">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
                                     </div>
                                     <div class="section__item_title"></div>
                                 </div>
@@ -532,7 +647,7 @@
                                 <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
-                                                <img src="../img/instagram-photo-1.png" alt="">
+                                                <img src="./img/instagram-photo-1.png" alt="">
                                             </div>
                                             <div class="section__item_actions">
                                                 <div class="section__item_text">
@@ -546,7 +661,7 @@
                                 <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
-                                                <img src="../img/instagram-photo-2.png" alt="">
+                                                <img src="./img/instagram-photo-2.png" alt="">
                                             </div>
                                             <div class="section__item_actions">
                                                 <div class="section__item_text">
@@ -560,7 +675,7 @@
                                 <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
-                                                <img src="../img/instagram-photo-3.png" alt="">
+                                                <img src="./img/instagram-photo-3.png" alt="">
                                             </div>
                                             <div class="section__item_actions">
                                                 <div class="section__item_text">
@@ -574,7 +689,7 @@
                                 <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
-                                                <img src="../img/instagram-photo-4.png" alt="">
+                                                <img src="./img/instagram-photo-4.png" alt="">
                                             </div>
                                             <div class="section__item_actions">
                                                 <div class="section__item_text">
@@ -588,7 +703,7 @@
                                 <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
-                                                <img src="../img/instagram-photo-5.png" alt="">
+                                                <img src="./img/instagram-photo-5.png" alt="">
                                             </div>
                                             <div class="section__item_actions">
                                                 <div class="section__item_text">
@@ -602,7 +717,7 @@
                                 <div class="section__square col-md-12 col-xl-4">
                                     <div class="section__item">
                                             <div class="section__item_img">
-                                                <img src="../img/instagram-photo-6.png" alt="">
+                                                <img src="./img/instagram-photo-6.png" alt="">
                                             </div>
                                             <div class="section__item_actions">
                                                 <div class="section__item_text">
@@ -624,16 +739,7 @@
             
             </div>
             
-<!-- <div class="cart__popup_block">
-    <div class="cart__popup_button">
-        button
-    </div>
-    <div class="cart__popup_area">
-        area
-    </div>
-</div> -->
-
-<div class="cart__popup_block dnone">
+<div class="cart__popup_block d-none d-md-flex dnone">
   <div class="tab__butons">
     <div
       class="nav flex-column nav-pills"
@@ -691,7 +797,7 @@
           <div class="conteiner__main">
             <div class="drop__row">
               <div class="drop__item_img">
-                <img src="../img/logo_namaste.png" alt="" srcset="" />
+                <img src="./img/logo_namaste.png" alt="" srcset="" />
               </div>
               <div class="drop__item_text">
                 <div class="drop__item_title">Название бренда</div>
@@ -782,7 +888,7 @@
           <div class="conteiner__main">
             <div class="drop__row">
               <div class="drop__item_img">
-                <img src="../img/logo_namaste.png" alt="" srcset="" />
+                <img src="./img/logo_namaste.png" alt="" srcset="" />
               </div>
               <div class="drop__item_text">
                 <div class="drop__item_title">Название бренда</div>
@@ -873,7 +979,7 @@
           <div class="conteiner__main">
             <div class="drop__row">
               <div class="drop__item_img">
-                <img src="../img/logo_namaste.png" alt="" srcset="" />
+                <img src="./img/logo_namaste.png" alt="" srcset="" />
               </div>
               <div class="drop__item_text">
                 <div class="drop__item_title">Название бренда</div>
@@ -954,27 +1060,48 @@
 
 <footer>
     <div class="footer__map">
+        <div class="content">
+            <div class="footer__map_pin sm-row-rewerse">
+                <div class="map_pin__col text">
+                    <div class="map_pin__place">
+                        <div class="map_pin__place_def">
+                            Адрес
+                        </div>
+                        <div class="map_pin__place_adr">
+                            Таганская площадь, 8
+                        </div> 
+                    </div>
+                    <div class="map_pin__phone">
+                        <div class="map_pin__phone_def">
+                            Телефон
+                        </div>
+                        <a class="map_pin__phone_num" href="tel:88005553200">
+                            8 (800) 555-32-00
+                        </a>
+                        <buton class="btn btn-danger d-none d-md-block">Заказать звонок</buton>
+                    </div>
+                </div>
+                <div class="map_pin__col">
+                    <div class="map_pin__logo">
+                        <img src="./img/logo_namaste.png" alt="">
+                    </div>
+                </div>
+                <buton class="btn btn-danger d-block d-md-none col-12">Заказать звонок</buton>
+            </div>
+        </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.0277983793835!2d37.65172841623024!3d55.74064598055013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae6157ac483%3A0xf7dc0d5f8dba3222!2z0KLQsNCz0LDQvdGB0LrQsNGPINC_0LsuLCA4LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEwOTE0Nw!5e0!3m2!1sru!2sru!4v1584396190991!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A798063d01bd8cf52351cd3c6b28a8b6551f930ccfd90543b638c062a5be7e6f9&lang=ru_RU&scroll=false"></script> -->
-        <div class="footer__map_pin">
-            <div class="map_pin__col"></div>
-            <div class="map_pin__place"></div>
-            <div class="map_pin__phone"></div>
-            <div class="map_pin__col"></div>
-            <div class="map_pin__logo"></div>
-        </div>
     </div>
     <div class="content container footer__section">
         <div class="row">        
-            <div class="footer__col col__first col-3">
+            <div class="footer__col col__first d-none d-md-flex align-items-center flex-column col-md-6 col-lg-3">
                 <a href="#" class="footer__logo">
-                    <img src="../img/Logo.png" alt="logo" srcset="">        
+                    <img src="./img/Logo.png" alt="logo" srcset="">        
                 </a>
                 <div class="footer__col_call secondline__asktocontact col">
-                    <a href="tel:88005553200">
+                    <a class="icon__sp" href="tel:88005553200">
                         <span class="ico bg-green_call"></span>
                     </a>
-            
                     <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
                   </div>
@@ -993,8 +1120,8 @@
                     <a href="#"><span class="ico bg-viber_footer"></span></a>
                 </div>
             </div>
-            <div class="footer__col col-6">
-                <div class="footer__col_search input-group mb-3 col-12">
+            <div class="footer__col d-none d-lg-block col-lg-4 col-xl-6">
+                <div class="footer__col_search input-group col-12">
                     <input
                       type="text"
                       class="form-control"
@@ -1092,7 +1219,7 @@
                         </div>
                     </div>
             </div>
-            <div class="footer__col col-3">
+            <div class="footer__col _pay d-flex flex-column justify-content-between col-sm-12 col-md-6 col-lg-5 col-xl-3 ml-xl-4">
                 <div class="footer__col_payment">
                     <div class="payment_item"><span class="ico bg-mastercard_2"></span></div>
                     <div class="payment_item"><span class="ico bg-paypal"></span></div>

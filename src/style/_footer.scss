@@ -1,0 +1,141 @@
+.col_row__colinside li {
+  font-size: 14px;
+  line-height: 16px;
+  color: #3e3e3e;
+}
+li.colinside__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3e3e3e;
+}
+.footer__col_copyright {
+  font-size: 12px;
+  line-height: 14px;
+  color: #b6b6b6;
+}
+.footer__col._pay {
+  // width: 100%;
+  max-width: 238px;
+  margin-left:39px
+}
+.footer__col_payment {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  // max-width: 254px;
+  width: 100%;
+  // height: 118px;
+}
+.payment_item {
+  width: 98px;
+  height: 53px;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.16032);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer__col_call {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__section {
+  margin-bottom: 55px;
+}
+.footer__map {
+  position: relative;
+}
+
+.footer__map_pin {
+  min-height: 199px;
+  max-width: 439px;
+  width: 100%;
+  position: absolute;
+  margin: 101px 10px 0 10px;
+  background-color: #fff;
+  display: flex;
+  padding: 15px 30px 15px 15px;
+  justify-self: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0671984);
+  border-radius: 4px;
+}
+
+.map_pin__logo {
+  width: 100%;
+  max-width: 92px;
+}
+
+.map_pin__col.text {
+  flex: 1 1 252px;
+}
+.map_pin__col {
+  flex: 0 0 92px;
+}
+.map_pin__place_def,
+.map_pin__phone_def {
+  font-size: 14px;
+  line-height: 16px;
+}
+.map_pin__phone_num,
+.map_pin__place_adr {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: inherit;
+  display: block;
+}
+
+.map_pin__phone {
+  .btn {
+    max-width: 170px;
+    height: 32px;
+    padding: 4px 0;
+  }
+}
+.map_pin__phone_num,
+.map_pin__place {
+  margin-bottom: 15px;
+}
+
+.footer__col_search {
+  margin-bottom: 31px;
+}
+// // .footer__col_call,
+// // .footer_col_social,
+.footer__logo {
+  max-width: 156px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.icon__sp {
+  display: block;
+  margin-bottom: 10px;
+}
+
+// .footer__logo{
+//   display: block;}
+
+.colinside__title {
+  margin-bottom: 11px;
+}
+.col_row__colinside li {
+  margin: 8px 0;
+}
+
+@media (max-width:768px){
+  .footer__col._pay {
+    max-width: initial;
+    margin-left:unset
+  }
+  .footer__map_pin{
+    max-width: initial;
+    position: relative;
+  }
+}
