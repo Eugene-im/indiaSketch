@@ -143,3 +143,8 @@ $('.item__slider_small').slick({
   // centerMode: true,
   focusOnSelect: true
 });
+$('.partners__slider').slick({
+  slidesToShow: 5,
+  arrows: false,
+  dots: false
+})

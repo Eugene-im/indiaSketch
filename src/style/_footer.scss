@@ -18,7 +18,9 @@ li.colinside__title {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 118px;
+  // max-width: 254px;
+  width: 100%;
+  // height: 118px;
 }
 .payment_item {
   width: 98px;
@@ -29,6 +31,7 @@ li.colinside__title {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .footer__col_call {
   display: flex;
