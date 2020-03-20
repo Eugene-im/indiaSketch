@@ -18,18 +18,12 @@ https://tech.yandex.ru/maps/archive/doc/jsapi/1.x/dg/tasks/how-to-add-balloon-do
 <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A798063d01bd8cf52351cd3c6b28a8b6551f930ccfd90543b638c062a5be7e6f9&lang=ru_RU&scroll=false"></script>
 ....
 
-main
--popup with cart+
-
 insta/articles
 -buttons
 -icons x2/x4
 
 !!!
-search+
-popupcart+
 filter
-pagination
 page+
 
 

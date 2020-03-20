@@ -49,7 +49,18 @@
                 </div>
                 <div class="header__secondline row align-items-center">
                   <a href="#" class="header__logo col-2 col-sm-2 ">
-                    <img src="./img/Logo.png" alt="logo" srcset="" />
+                    <img
+                      class="d-none d-md-block"
+                      src="./img/Logo.png"
+                      alt="logo"
+                      srcset=""
+                    />
+                    <img
+                      class="d-block d-md-none"
+                      src="./img/logo_mob.png"
+                      alt="logo"
+                      srcset=""
+                    />
                   </a>
                   <div class="category__dropdown col-2 col-sm-2 ">
                     <button
@@ -71,18 +82,6 @@
                       </button>
                     </div>
                   </div>
-            
-                  <!-- <button class="dropdown-item btn-group dropright" type="button">
-                              <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropright
-                              </button>
-                              <div class="dropdown-menu">
-                                <li>text</li>
-                                <li>text</li>
-                                <li>text</li>
-                              </div>
-                          </button> -->
-            
                   <div class="header__col_search input-group d-none d-lg-flex col-lg-4">
                     <input
                       id="header__search"
@@ -150,43 +149,120 @@
                                           </ul>
                   </div>
                   <div class="category__dropdown d-lg-none col-2 col-sm-2">
-                    <button
-                      class="btn btn-success btn-lg dropdown-toggle"
-                      type="button"
-                      id="dropdownMenu3"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      SCH
-                      <span class="ico bg-catalog_icon"></span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">
-                        Something else here
-                      </button>
-                    </div>
+                    <div class="pos-f-t">
+                      <nav class="navbar navbar-light">
+                        <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#navbarToggleExternalContent2"
+                          aria-controls="navbarToggleExternalContent2"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </nav>
+                      <div class="collapse" id="navbarToggleExternalContent2">
+                        <div class="p-4">
+                          <div class="header__col_search input-group">
+                            <input
+                              id="header__search2"
+                              type="text"
+                              class="form-control"
+                              placeholder="Что Вас интересует?"
+                              aria-label="Что Вас интересует?"
+                              aria-describedby="button-addon2"
+                            />
+                            <div class="input-group-append">
+                              <button class="btn btn-sm" type="button" id="button-addon2">
+                                <span class="ico bg-search"></span>
+                              </button>
+                            </div>
+                            
+                                                <ul class="drop__items d-none">
+                                                    <li class="drop__item active">
+                                                      <div class="drop__item_img">
+                                                        <img src="../img/logo_namaste.png" alt="item_img" />
+                                                      </div>
+                                                      <div class="drop__row">
+                                                        <div class="drop__item_text">
+                                                          <div class="drop__item_title">Название бренда</div>
+                                                          <div class="drop__item_description">
+                                                            Более подробное название бренда
+                                                          </div>
+                                                        </div>
+                                                        <div class="drop__item_cart">
+                                                          <span class="ico bg-shopping_cart_green_2"></span>
+                                                        </div>
+                                                      </div>
+                                                    </li>
+                                                    <li class="drop__item">
+                                                      <div class="drop__item_img">
+                                                        <img src="../img/logo_namaste.png" alt="item_img" />
+                                                      </div>
+                                                      <div class="drop__row">
+                                                        <div class="drop__item_text">
+                                                          <div class="drop__item_title">Название бренда</div>
+                                                          <div class="drop__item_description">
+                                                            Более подробное название бренда
+                                                          </div>
+                                                        </div>
+                                                        <div class="drop__item_cart">
+                                                          <span class="ico bg-shopping_cart_green_2"></span>
+                                                        </div>
+                                                      </div>
+                                                    </li>
+                                                    <li class="drop__item">
+                                                      <div class="drop__item_img">
+                                                        <img src="../img/logo_namaste.png" alt="item_img" />
+                                                      </div>
+                                                      <div class="drop__row">
+                                                        <div class="drop__item_text">
+                                                          <div class="drop__item_title">Название бренда</div>
+                                                          <div class="drop__item_description">
+                                                            Более подробное название бренда
+                                                          </div>
+                                                        </div>
+                                                        <div class="drop__item_cart">
+                                                          <span class="ico bg-shopping_cart_green_2"></span>
+                                                        </div>
+                                                      </div>
+                                                    </li>
+                                                  </ul>
+                          </div>
+                        </div>
+                      </div>
                   </div>
                   <div class="category__dropdown d-lg-none col-2 col-sm-2">
-                    <button
-                      class="btn btn-success btn-lg dropdown-toggle"
-                      type="button"
-                      id="dropdownMenu3"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      =
-                      <span class="ico bg-catalog_icon"></span>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">
-                        Something else here
-                      </button>
+                    <div class="pos-f-t">
+                      <nav class="navbar navbar-light">
+                        <button
+                          class="navbar-toggler"
+                          type="button"
+                          data-toggle="collapse"
+                          data-target="#navbarToggleExternalContent"
+                          aria-controls="navbarToggleExternalContent"
+                          aria-expanded="false"
+                          aria-label="Toggle navigation"
+                        >
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      </nav>
+                      <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="p-4">
+                          <a class="dropdown-item" href="#">Преимущества</a>
+                          <a class="dropdown-item" href="#">Статьи</a>
+                          <a class="dropdown-item" href="#">Контакты</a>
+                          <a class="dropdown-item" href="#">Доставка и оплата</a>
+                          <a class="dropdown-item" href="#">Гарантия</a>
+                          <a class="dropdown-item" href="#">
+                            <span class="cart__items_sum">3</span>
+                            <span class="ico bg-shopping_cart"></span>
+                            Корзина
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div class="secondline__asktocontact d-none d-md-block col-md-2 ml-lg-3">
@@ -207,9 +283,7 @@
                     >
                   </div>
                 </div>
-                <!-- </div> -->
                 <div class="header__thirdine d-none d-md-flex">
-                  <!-- <div class="content"> -->
                   <ul class="nav justify-content-center align-items-center">
                     <li class="nav-item">
                       <a class="nav-link active" href="#">Преимущества</a>
