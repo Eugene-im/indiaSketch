@@ -17,7 +17,7 @@ li.colinside__title {
 .footer__col._pay {
   // width: 100%;
   max-width: 238px;
-  margin-left:46px
+  margin-left:39px
 }
 .footer__col_payment {
   display: flex;
@@ -133,5 +133,9 @@ li.colinside__title {
   .footer__col._pay {
     max-width: initial;
     margin-left:unset
+  }
+  .footer__map_pin{
+    max-width: initial;
+    position: relative;
   }
 }
