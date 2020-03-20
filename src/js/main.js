@@ -2,6 +2,7 @@
 //= lib/popper.min.js
 //= lib/bootstrap.min.js
 //= lib/slick.min.js
+//= lib/multirange.js
 
 $(".btn-number").click(function(e) {
   e.preventDefault();
@@ -148,3 +149,10 @@ $('.partners__slider').slick({
   arrows: false,
   dots: false
 })
+
+// $('.ghost').on('input', function(){
+// var min = $('.ghost').attr('style');
+// var max = $('.ghost').attr('style');
+//   $('#multiMin').val(min);
+//   $('#multiMax').val(max);
+// })
