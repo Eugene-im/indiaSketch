@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -18,88 +86,118 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html, body {
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1;
+
+html,
+body {
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
 	height: 100%;
 	background-color: $body-back;
 	color: $text-color;
 }
 
-body{
+body {
 	overflow-x: hidden
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-.wrap {
-  flex: 1 0 auto;
-}
-footer {
-  flex: 0 0 auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
 
-img{
+.wrap {
+	flex: 1 0 auto;
+}
+
+footer {
+	flex: 0 0 auto;
+}
+
+img {
 	width: 100%;
 	// height: 100%;
 }
 
-.btn{
+.btn {
 	height: 45px;
 }
-input{
+
+input {
 	height: 43px;
 }
-header .header__secondline,footer{
-	.btn{
+
+header .header__secondline,
+footer {
+	.btn {
 		height: 38px;
 	}
-	.header__col_search{
-		input{
-		   height: 35px;
-	   }
-	   .btn{
-		height: 36px;
-	}
+
+	.header__col_search {
+		input {
+			height: 35px;
+		}
+
+		.btn {
+			height: 36px;
+		}
 	}
 }
-*:hover{
+// *,
+*:hover {
 	transition: 1.2s;
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
-    background-color: transparent;
-&:hover{
-	color: $btn-warning;
-}
+a {
+	color: inherit;
+	text-decoration: none;
+	background-color: transparent;
+
+	&:hover {
+		color: $btn-warning;
+	}
 }
