@@ -9,8 +9,7 @@ $breadcrumb-divider: quote(">");
 }
 .breadcrumb-item {
   font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
+  @include fs14;
   text-decoration-line: underline;
   color: #b6b6b6;
   &.active{

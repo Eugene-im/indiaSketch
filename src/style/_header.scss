@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   li a {
-    font-size: 12px;
-    line-height: 14px;
+    @include fs12;
     color: #3e3e3e;
   }
   li a:hover {
@@ -34,8 +33,7 @@
 }
 .dropdown-item,
 .dropdown-toggle {
-  font-size: 14px;
-  line-height: 16px;
+  @include fs14;
 }
 
 .header__secondline {
@@ -48,8 +46,7 @@
   background-color: #4bbb81;
 }
 .nav-link {
-  font-size: 16px;
-  line-height: 19px;
+  @include fs16;
   text-align: center;
   color: #ffffff;
   padding: 18px 43px;
@@ -121,8 +118,7 @@ a:not([href]):hover,
 }
 .secondline__asktocontact_fline {
   font-weight: 300;
-  font-size: 12px;
-  line-height: 14px;
+  @include fs12;
   color: #4bbe82;
   text-decoration-line: underline;
   text-align: right;
@@ -130,8 +126,7 @@ a:not([href]):hover,
 }
 .secondline__asktocontact_sline {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
+  @include fs18;
   text-align: right;
   color: $text-color;
   display: block;
@@ -179,8 +174,7 @@ a:not([href]):hover,
 }
 
 .drop__item_description {
-  font-size: 14px;
-  line-height: 16px;
+  @include fs14;
 }
 
 .category__dropdown {

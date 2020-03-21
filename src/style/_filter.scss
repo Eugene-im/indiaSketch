@@ -47,8 +47,7 @@
 
   .filter__param_title {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    @include fs14;
     color: #3E3E3E;
   }
 
@@ -58,8 +57,7 @@
 
   .filter__title {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
+    @include fs16;
     padding: 18px 20px;
   }
 }

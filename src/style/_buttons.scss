@@ -1,0 +1,35 @@
+.btn-danger {
+    background-color: $btn-danger;
+    border-color: $btn-danger;
+  }
+  
+  .btn-danger:hover,
+  .btn-outline-danger {
+    color:$btn-danger;
+    background-color: #fff;
+    border-color: $btn-danger;
+  }
+  
+  .btn-warning {
+    background-color: $btn-warning;
+    border-color: $btn-warning;
+  }
+  
+  .btn-warning:hover,
+  .btn-outline-warning {
+    color:$btn-warning;
+    background-color: #fff;
+    border-color: $btn-warning;
+  }
+  
+  .btn-success {
+    background-color: $btn-success;
+    border-color: $btn-success;
+  }
+  
+  .btn-success:hover,
+  .btn-outline-success {
+    color:$btn-success;
+    background-color: #fff;
+    border-color: $btn-success;
+  }

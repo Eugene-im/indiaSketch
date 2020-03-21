@@ -22,11 +22,8 @@ main .content {
 }
 
 h2.title__fline {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
+  @include fs24;
   text-align: center;
-  color: #3e3e3e;
 }
 
 .section__title {
@@ -58,8 +55,7 @@ h2.title__fline {
 .section__item_pin {
   padding: 2px 4px;
   align-self: self-end;
-  font-size: 12px;
-  line-height: 14px;
+  @include fs12;
   text-align: center;
 }
 
@@ -85,26 +81,22 @@ h2.title__fline {
 
 .section__item_title {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
+  @include fs18;
 }
 
 .section__item_description {
-  font-size: 16px;
-  line-height: 19px;
+  @include fs16;
 }
 
 .section__item_price {
   .price_new {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+    @include fs24;
+    font-weight: 700;
     color: #4bbe82;
   }
 
   .price_old {
-    font-weight: 500;
-    font-size: 16px;
+    @include fs16;
     line-height: 19px;
     text-decoration-line: line-through;
     color: #c5c5c5;
@@ -112,16 +104,14 @@ h2.title__fline {
 }
 
 .price_new {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  @include fs24;
+  font-weight: 700;
   color: #4bbe82;
 }
 
 .price_old {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
+  @include fs16;
   text-decoration-line: line-through;
   color: #c5c5c5;
 }
@@ -147,8 +137,7 @@ h2.title__fline {
 //   }
 
 h3.title__sline {
-  font-size: 16px;
-  line-height: 19px;
+  @include fs16;
   text-align: center;
 }
 
@@ -229,7 +218,7 @@ h3.title__sline {
       margin: -60px 0 0 10px
     }
 
-    
+
   }
 
 
@@ -321,19 +310,4 @@ h3.title__sline {
   .row {
     padding: 27px 35px 35px 17px;
   }
-}
-
-.btn-danger {
-  background-color: $btn-danger;
-  border-color: $btn-danger;
-}
-
-.btn-warning {
-  background-color: $btn-warning;
-  border-color: $btn-warning;
-}
-
-.btn-success {
-  background-color: $btn-success;
-  border-color: $btn-success;
 }

@@ -2,8 +2,10 @@
 @import "slick";
 @import "slick-theme";
 @import "fonts";
+@import "mixin";
 @import "icons";
 @import "color";
+@import "buttons";
 @import "filter";
 @import "multirange";
 @import "checkbox";
@@ -19,3 +21,4 @@
 @import "main_page404";
 @import "popup_cart";   
 @import "footer";
+@import "mediaq";

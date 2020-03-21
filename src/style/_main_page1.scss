@@ -1,29 +1,31 @@
-header, footer{
-	min-height: 100px;
-	width: 100%;
+header,
+footer {
+    min-height: 100px;
+    width: 100%;
 }
 
-header.payment__page  {
+header.payment__page {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.0841893);
 }
 
 main {
     margin-bottom: 55px;
 }
-.header-content{
- 
-	max-width: 1108px;
-	width:100%;
-    margin:0 auto;
+
+.header-content {
+    max-width: 1108px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 18px;
-    align-items: center;   
+    align-items: center;
 }
 
 .header-logo {
-    width: 156px; height: 51px;
+    width: 156px;
+    height: 51px;
     background: url('css_sprites.png') -10px -1773px;
     display: block;
 }
@@ -31,40 +33,25 @@ main {
 .call-order {
     display: block;
 }
-.call-order a{
-    font-family: Roboto;
-    font-style: normal;
+
+.call-order a {
     font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-
+    @include fs12;
     text-decoration-line: underline;
-
     color: #4BBE82;
 }
 
 .phone-number {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-/* identical to box height */
-
-
-color: #3E3E3E;
+    @include fs18;
 }
 
-
 .main-content {
-    
     max-width: 1108px;
-	width:100%;
-    margin:0 auto;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .wrap {
@@ -72,32 +59,19 @@ color: #3E3E3E;
 }
 
 .main-checkout h2 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #3E3E3E;
+    @include fs24;
     margin-top: 53px;
     margin-bottom: 44px;
 }
 
 .personal-data h3 {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    color: #3E3E3E;
+    @include fs16;
     margin-bottom: 20px;
-    
 }
 
 .personal-data h4 {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3E3E3E;
+    @include fs14;
 }
 
 .input-text {
@@ -112,49 +86,34 @@ color: #3E3E3E;
 }
 
 .input-text::placeholder {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
+    @include fs14;
     color: #B9B9B9;
 }
 
 .input-text[type="text"] {
-    font-family: Roboto;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    @include fs14;
     padding-left: 15px;
 }
 
 .input-text[type="email"] {
-    font-family: Roboto;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
+    @include fs14;
     padding-left: 15px;
 }
-.personal-data span{
+
+.personal-data span {
     background: #4BBB81;
     height: 36px;
     width: 36px;
     display: inline-block;
     border-radius: 100%;
     text-align: center;
-    
-
-    font-family: Roboto;
-
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    @include fs16;
     line-height: 35px;
-
     color: #FFFFFF;
     margin-right: 15px;
-
 }
 
 .personal-data-form {
@@ -166,89 +125,76 @@ color: #3E3E3E;
 }
 
 .delivery h3 {
-    font-family: Roboto;
-    font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    color: #3E3E3E;
+    @include fs16;
     margin-bottom: 20px;
-    
 }
 
 .delivery h4 {
-    font-family: Roboto;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    color: #3E3E3E;
+    @include fs14;
 }
-.delivery span{
+
+.delivery span {
     background: #4BBB81;
     height: 36px;
     width: 36px;
     display: inline-block;
     border-radius: 100%;
     text-align: center;
-    
-
-    font-family: Roboto;
-
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    @include fs16;
     line-height: 35px;
-
     color: #FFFFFF;
     margin-right: 15px;
-
 }
 
 .delivery-button {
     display: none;
 }
 
-
-
 .radio {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
     margin: 10px 0 0 7px;
-  
 }
-.radio + label {
-	position: relative;
-	padding: 0 0 0 35px;
+
+.radio+label {
+    position: relative;
+    padding: 0 0 0 35px;
     cursor: pointer;
     display: block;
     margin-top: 15px;
 }
-.radio + label:before {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border: 1px solid #CDD1DA;
-	border-radius: 50%;
-	background: #E3E3E3
+
+.radio+label:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CDD1DA;
+    border-radius: 50%;
+    background: #E3E3E3
 }
-.radio + label:after {
-	content: '';
-	position: absolute;
-	top: 11px;
-	left: 6px;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background: #4BBB81;
-	opacity: 0;
-	transition: .2s;
+
+.radio+label:after {
+    content: '';
+    position: absolute;
+    top: 11px;
+    left: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #4BBB81;
+    opacity: 0;
+    transition: .2s;
 }
-.radio:checked + label:after {
-	opacity: 1;
+
+.radio:checked+label:after {
+    opacity: 1;
 }
 
 .branch {
@@ -261,40 +207,24 @@ color: #3E3E3E;
     font-weight: 500;
 }
 
-.delivery-form label p{
-   
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+.delivery-form label p {
+    @include fs14;
     line-height: 25px;
-    
-    color: #3E3E3E;
 }
 
-
-
-
-.payment-method span{ 
+.payment-method span {
     background: #4BBB81;
     height: 36px;
     width: 36px;
     display: inline-block;
     border-radius: 100%;
     text-align: center;
-
-    font-family: Roboto;
-
     font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    @include fs16;
     line-height: 35px;
-
     color: #FFFFFF;
     margin-right: 15px;
     margin-top: 30px;
-
 }
 
 .main-order-form {
@@ -305,28 +235,28 @@ color: #3E3E3E;
     margin-top: 24px;
 }
 
-.main-order-form .radio + label:before {
-	content: '';
-	position: absolute;
-	top: -3px;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border: 1px solid #CDD1DA;
-	border-radius: 50%;
-	background: #E3E3E3
+.main-order-form .radio+label:before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CDD1DA;
+    border-radius: 50%;
+    background: #E3E3E3
 }
 
-
-.main-order-form .radio + label:after {
-	content: '';
-	position: absolute;
+.main-order-form .radio+label:after {
+    content: '';
+    position: absolute;
     top: 3px;
 }
+
 .footer-content {
     max-width: 1108px;
-	width:100%;
-    margin:0 auto;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
@@ -338,12 +268,7 @@ footer {
 }
 
 .footer-copyright {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-
+    @include fs12;
     color: #B6B6B6;
     width: 45%;
 }
@@ -356,9 +281,9 @@ footer {
     height: 53px;
     margin-left: 12px;
 }
+
 .footer-payment_systems {
     display: flex;
-    
 }
 
 .payment-system {
@@ -366,43 +291,39 @@ footer {
     margin-top: 9px;
 }
 
-
 .mastercard {
-    width: 46px; height: 35px;
+    width: 46px;
+    height: 35px;
     background: url('css_sprites.png') -10px -1653px;
 }
 
 .paypal {
-    width: 73px; height: 20px;
+    width: 73px;
+    height: 20px;
     background: url('css_sprites.png') -10px -797px;
     margin-top: 15px;
 }
 
 .qiwi {
-    width: 71px; height: 30px;
+    width: 71px;
+    height: 30px;
     background: url('css_sprites.png') -10px -1289px;
     margin-top: 13px;
 }
 
 .bitcoin {
-    width: 36px; height: 35px;
+    width: 36px;
+    height: 35px;
     background: url('css_sprites.png') -10px -1598px;
 }
 
 .order-list {
- 
     margin-top: 48px;
 
     h3 {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        /* identical to box height */
-        color: #3E3E3E;
+        @include fs18;
         margin-bottom: 15px;
-        
     }
 }
 
@@ -412,56 +333,33 @@ footer {
     background: #FFFFFF;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.0221984);
 
-
     .product-name {
-        font-family: Roboto;
-        font-size: 18px;
-        line-height: 21px;
-        color: #3E3E3E;
-
+        @include fs18;
     }
 
     .product-code {
-        font-family: Roboto;
-        font-size: 14px;
-        line-height: 16px;
+        @include fs14;
 
-        color: #3E3E3E;
     }
 
     .product-priсe {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-
-        color: #3E3E3E;
+        @include fs16;
     }
-
 
     .product-quanity {
-        font-family: Roboto;
-        font-size: 16px;
-        line-height: 19px;
-        color: #3E3E3E;
+        @include fs16;
     }
 }
-
-
 
 .order-product__item {
     display: flex;
-    // padding: 21px 20px 34px 20px;
-    
 }
 
 .order-product__item:nth-child(1) {
-
     padding-top: 18px;
     padding-left: 20px;
     padding-bottom: 28px;
-
 }
 
 .order-product__item:nth-child(2) {
@@ -469,14 +367,14 @@ footer {
 }
 
 .order-photo {
-    width: 46px; height: 51px;
+    width: 46px;
+    height: 51px;
     background: url(css_sprites.png) -10px -1704px;
 }
 
-
 .order-info {
     padding-left: 20px;
-   
+
     .order-info__up {
         display: flex;
         justify-content: space-between;
@@ -490,42 +388,29 @@ footer {
         display: flex;
         justify-content: space-between;
         padding-top: 13px;
-        
     }
 }
-
 
 .total-order {
     padding: 40px 20px 20px 20px;
+
     h3 {
-        font-family: Roboto;
         font-weight: 500;
-        font-size: 16px;
-        color: #3E3E3E;
+        @include fs16;
         margin-bottom: 20px;
     }
 
-
     .total-number {
-        font-family: Roboto;
+        @include fs14;
 
-        font-size: 14px;
-        line-height: 16px;
-
-        color: #3E3E3E;
     }
 
     .total-amount {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
+        @include fs14;
 
-        color: #3E3E3E;
     }
 }
-
 
 .quantity-of-goods {
     display: flex;
@@ -542,22 +427,15 @@ footer {
     padding-top: 10px;
 
     .text-delivery {
-        font-family: Roboto;
-        font-size: 14px;
-        line-height: 16px;
+        @include fs14;
 
-        color: #3E3E3E;
     }
 
     .amount-delivery {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        text-align: right;
+        @include fs14;
 
-        color: #3E3E3E;
+        text-align: right;
     }
 }
 
@@ -566,45 +444,31 @@ footer {
     justify-content: space-between;
     padding: 20px;
     background: #F7F7F7;
-  
 
     .total-payable__text {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-        color: #3E3E3E;
+        @include fs16;
     }
 
     .total-payable__amount {
-        font-family: Roboto;
-        font-style: normal;
         font-weight: bold;
-        font-size: 18px;
+        @include fs18;
         text-align: right;
-        color: #3E3E3E;
     }
 }
 
 .button-order {
     text-align: center;
     margin-top: 40px;
-    
+
     button {
         background: #4BBB81;
         border-radius: 4px;
         padding: 18px 53px 18px 54px;
         border: none;
-        font-family: Roboto;
-        font-style: normal;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 19px;
-
+        @include fs16;
         text-align: right;
-
         color: #FFFFFF;
     }
-   
 }

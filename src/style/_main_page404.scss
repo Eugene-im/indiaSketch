@@ -1,7 +1,5 @@
 .cl404 {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  @include fs24;
   color: #4bbe82;
 }
 
