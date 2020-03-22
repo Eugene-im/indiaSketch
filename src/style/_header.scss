@@ -49,7 +49,7 @@
   @include fs16;
   text-align: center;
   color: #ffffff;
-  padding: 18px 43px;
+  padding: 20px 43px;
 }
 a:not([href]),
 a:not([href]):hover,
@@ -205,4 +205,8 @@ a:not([href]):hover,
 
 .header__thirdine{
   margin-top:19px;
+}
+
+.cart_sp{
+  padding-top: 16px;
 }

@@ -5,6 +5,7 @@
 //= lib/map.js
 //= lib/multirange.js
 //= lib/mpop.min.js
+//= lib/nouislider.min.js
 
 
 $(document).ready(function () {
@@ -211,13 +212,38 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).ekkoLightbox();
   });
-  
+
 });
+"use strict";
 
+(function () {
+  var _PRICE_SLIDER = document.getElementById('slider');
 
-// $('.ghost').on('input', function(){
-// var min = $('.ghost').attr('style');
-// var max = $('.ghost').attr('style');
-//   $('#multiMin').val(min);
-//   $('#multiMax').val(max);
-// })
+  var _PRICE_NODES = [document.getElementById('data-first-node'), document.getElementById('data-last-node')];
+  noUiSlider.create(_PRICE_SLIDER, {
+    start: [parseInt(_PRICE_SLIDER.getAttribute('data-first-value') || 0), parseInt(_PRICE_SLIDER.getAttribute('data-last-value') || 1000)],
+    connect: true,
+    range: {
+      'min': parseInt(_PRICE_SLIDER.getAttribute('data-min') || 0),
+      'max': parseInt(_PRICE_SLIDER.getAttribute('data-max') || 1000)
+    }
+  });
+
+  for (var _i = 0, _PRICE_NODES2 = _PRICE_NODES; _i < _PRICE_NODES2.length; _i++) {
+    var node = _PRICE_NODES2[_i];
+    node.setAttribute('min', parseInt(_PRICE_SLIDER.getAttribute('data-min') || 0));
+    node.setAttribute('max', parseInt(_PRICE_SLIDER.getAttribute('data-max') || 1000));
+  }
+
+  _PRICE_NODES[0].addEventListener('change', function () {
+    _PRICE_SLIDER.noUiSlider.set([this.value, null]);
+  });
+
+  _PRICE_NODES[1].addEventListener('change', function () {
+    _PRICE_SLIDER.noUiSlider.set([null, this.value]);
+  });
+
+  _PRICE_SLIDER.noUiSlider.on('update', function (values, handle, unencoded, isTap, positions) {
+    _PRICE_NODES[handle].value = parseInt(values[handle] || 0);
+  });
+})();

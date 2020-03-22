@@ -1,7 +1,7 @@
--header
 -category dropdown +-
 -icons+-
 -buttons+-
--filter
+-header-mob
+-filtr
 
--mobile fix den page
+-pay-page-mob
