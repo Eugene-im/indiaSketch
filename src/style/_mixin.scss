@@ -38,3 +38,12 @@
     font-size: 12px;
     line-height: 14px;
 }
+
+@mixin icons($name,$w,$h){
+  .bg-#{$name} {
+    width: $w;
+    height: $h;
+    block-size: cover;
+    background: url('../img/#{name}.png');
+  }
+}
