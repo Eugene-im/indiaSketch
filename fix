@@ -1,17 +1,7 @@
 -header
 -category dropdown +-
--icons
--buttons
--yandeksmap
+-icons+-
+-buttons+-
 -filter
---checkbox
+
 -mobile fix den page
-
-https://tech.yandex.ru/maps/archive/doc/jsapi/1.x/dg/tasks/how-to-add-balloon-docpage/
-
-... 
-<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/taganskaya_ploshchad_10/Z04YcAJkS0IPQFtvfXt1cXlqbA==/?ll=37.654278%2C55.740598&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Таганская площадь, 10 на карте Москвы, ближайшее метро Таганская — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CKqKfFyO" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-
-
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A798063d01bd8cf52351cd3c6b28a8b6551f930ccfd90543b638c062a5be7e6f9&lang=ru_RU&scroll=false"></script>
-....

@@ -2,6 +2,7 @@
 //= lib/popper.min.js
 //= lib/bootstrap.min.js
 //= lib/slick.min.js
+//= lib/map.js
 //= lib/multirange.js
 //= lib/mpop.min.js
 

@@ -64,11 +64,12 @@ li.colinside__title {
   background-color: #fff;
   display: flex;
   padding: 15px 30px 15px 15px;
-  justify-self: space-between;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.0671984);
   border-radius: 4px;
+  z-index: 3;
 }
 
 .map_pin__logo {
