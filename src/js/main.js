@@ -4,6 +4,9 @@
 //= lib/slick.min.js
 //= lib/multirange.js
 //= lib/mpop.min.js
+//= lib/smartpoto.min.js
+
+
 $(document).ready(function () {
 
   $(".btn-number").click(function (e) {
@@ -203,13 +206,15 @@ $(document).ready(function () {
       }
     }]
   });
-  
+
+  $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+    e.preventDefault();
+    $(this).ekkoLightbox();
   });
   
-    $(document).on('click', 'img', function (e) {
-      e.preventDefault();
-      $(this).ekkoLightbox();
-    });
+});
+  
+
 
 // $('.ghost').on('input', function(){
 // var min = $('.ghost').attr('style');

@@ -2,13 +2,11 @@
 -category dropdown +-
 -icons
 -buttons
--map
--magic popup
-
-
-
-
+-checkbox
 -yandeksmap 
+-filter
+
+-mobile fix den page
 
 https://tech.yandex.ru/maps/archive/doc/jsapi/1.x/dg/tasks/how-to-add-balloon-docpage/
 
