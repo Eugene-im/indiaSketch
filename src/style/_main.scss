@@ -1,6 +1,6 @@
 header,
 footer {
-  min-height: 100px;
+  // min-height: 100px;
   width: 100%;
   //   background-color: #e3e3e3;
 }
@@ -309,5 +309,50 @@ h3.title__sline {
 
   .row {
     padding: 27px 35px 35px 17px;
+  }
+}
+
+.main__section_hit {
+  @include for-size(md) {
+
+    .btn-danger:hover,
+    .btn-outline-danger {
+
+      background-color: $btn-danger;
+      border-color: $btn-danger;
+    }
+
+    .btn-outline-danger:hover,
+    .btn-danger {
+      color: $btn-danger;
+      background-color: #fff;
+      border-color: $btn-danger;
+    }
+
+    .btn-warning:hover,
+    .btn-outline-warning {
+      background-color: $btn-warning;
+      border-color: $btn-warning;
+    }
+
+    .btn-outline-warning:hover,
+    .btn-warning {
+      color: $btn-warning;
+      background-color: #fff;
+      border-color: $btn-warning;
+    }
+
+    // .btn-success:hover,
+    // .btn-outline-success {
+    //   background-color: $btn-success;
+    //   border-color: $btn-success;
+    // }
+
+    // .btn-outline-success:hover,
+    // .btn-success {
+    //   color: $btn-success;
+    //   background-color: #fff;
+    //   border-color: $btn-success;
+    // }
   }
 }

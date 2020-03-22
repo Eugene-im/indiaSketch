@@ -135,7 +135,13 @@ $('.item__slider_big').slick({
   arrows: false,
   fade: true,
   infinite: true,
-  asNavFor: '.item__slider_small'
+  asNavFor: '.item__slider_small',
+  responsive: [{
+    breakpoint: 992,
+    settings: {
+      dots: true
+    }
+  }]
 });
 $('.item__slider_small').slick({
   slidesToShow: 5,
@@ -143,8 +149,16 @@ $('.item__slider_small').slick({
   slidesToScroll: 1,
   asNavFor: '.item__slider_big',
   dots: false,
-  // centerMode: true,
-  focusOnSelect: true
+  arrows:false,
+  focusOnSelect: true,
+  responsive: [{
+    breakpoint: 992,
+    settings: {
+      // centerMode: true,
+      vertical:true,
+      verticalSwiping:true
+    }
+  }]
 });
 
 $('.partners__slider').slick({
@@ -165,7 +179,7 @@ $('.partners__slider_mobile_1').slick({
   responsive: [{
     breakpoint: 80000,
     settings: "unslick",
-    breakpoint:768,
+    breakpoint: 768,
     settings: {
       slidesToShow: 2,
       arrows: false,
@@ -178,7 +192,7 @@ $('.partners__slider_mobile_2').slick({
   responsive: [{
     breakpoint: 80000,
     settings: "unslick",
-    breakpoint:768,
+    breakpoint: 768,
     settings: {
       slidesToShow: 2,
       arrows: false,
