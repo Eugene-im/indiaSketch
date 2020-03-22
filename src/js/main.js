@@ -3,204 +3,214 @@
 //= lib/bootstrap.min.js
 //= lib/slick.min.js
 //= lib/multirange.js
+//= lib/mpop.min.js
+$(document).ready(function () {
 
-$(".btn-number").click(function (e) {
-  e.preventDefault();
+  $(".btn-number").click(function (e) {
+    e.preventDefault();
 
-  fieldName = $(this).attr("data-field");
-  type = $(this).attr("data-type");
-  var input = $("input[name='" + fieldName + "']");
-  var currentVal = parseInt(input.val());
-  if (!isNaN(currentVal)) {
-    if (type == "minus") {
-      if (currentVal > input.attr("min")) {
-        input.val(currentVal - 1).change();
+    fieldName = $(this).attr("data-field");
+    type = $(this).attr("data-type");
+    var input = $("input[name='" + fieldName + "']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+      if (type == "minus") {
+        if (currentVal > input.attr("min")) {
+          input.val(currentVal - 1).change();
+        }
+        if (parseInt(input.val()) == input.attr("min")) {
+          $(this).attr("disabled", true);
+        }
+      } else if (type == "plus") {
+        if (currentVal < input.attr("max")) {
+          input.val(currentVal + 1).change();
+        }
+        if (parseInt(input.val()) == input.attr("max")) {
+          $(this).attr("disabled", true);
+        }
       }
-      if (parseInt(input.val()) == input.attr("min")) {
-        $(this).attr("disabled", true);
-      }
-    } else if (type == "plus") {
-      if (currentVal < input.attr("max")) {
-        input.val(currentVal + 1).change();
-      }
-      if (parseInt(input.val()) == input.attr("max")) {
-        $(this).attr("disabled", true);
-      }
+    } else {
+      input.val(0);
     }
-  } else {
-    input.val(0);
-  }
-});
-$(".input-number").focusin(function () {
-  $(this).data("oldValue", $(this).val());
-});
-$(".input-number").change(function () {
-  minValue = parseInt($(this).attr("min"));
-  maxValue = parseInt($(this).attr("max"));
-  valueCurrent = parseInt($(this).val());
+  });
+  $(".input-number").focusin(function () {
+    $(this).data("oldValue", $(this).val());
+  });
+  $(".input-number").change(function () {
+    minValue = parseInt($(this).attr("min"));
+    maxValue = parseInt($(this).attr("max"));
+    valueCurrent = parseInt($(this).val());
 
-  name = $(this).attr("name");
-  if (valueCurrent >= minValue) {
-    $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr(
-      "disabled"
-    );
-  } else {
-    alert("Sorry, the minimum value was reached");
-    $(this).val($(this).data("oldValue"));
-  }
-  if (valueCurrent <= maxValue) {
-    $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr(
-      "disabled"
-    );
-  } else {
-    alert("Sorry, the maximum value was reached");
-    $(this).val($(this).data("oldValue"));
-  }
-});
-$(".input-number").keydown(function (e) {
-  // Allow: backspace, delete, tab, escape, enter and .
-  if (
-    $.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-    // Allow: Ctrl+A
-    (e.keyCode == 65 && e.ctrlKey === true) ||
-    // Allow: home, end, left, right
-    (e.keyCode >= 35 && e.keyCode <= 39)
-  ) {
-    // let it happen, don't do anything
-    return;
-  }
-  // Ensure that it is a number and stop the keypress
-  if (
-    (e.shiftKey || e.keyCode < 48 || e.keyCode > 57) &&
-    (e.keyCode < 96 || e.keyCode > 105)
-  ) {
+    name = $(this).attr("name");
+    if (valueCurrent >= minValue) {
+      $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr(
+        "disabled"
+      );
+    } else {
+      alert("Sorry, the minimum value was reached");
+      $(this).val($(this).data("oldValue"));
+    }
+    if (valueCurrent <= maxValue) {
+      $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr(
+        "disabled"
+      );
+    } else {
+      alert("Sorry, the maximum value was reached");
+      $(this).val($(this).data("oldValue"));
+    }
+  });
+  $(".input-number").keydown(function (e) {
+    // Allow: backspace, delete, tab, escape, enter and .
+    if (
+      $.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+      // Allow: Ctrl+A
+      (e.keyCode == 65 && e.ctrlKey === true) ||
+      // Allow: home, end, left, right
+      (e.keyCode >= 35 && e.keyCode <= 39)
+    ) {
+      // let it happen, don't do anything
+      return;
+    }
+    // Ensure that it is a number and stop the keypress
+    if (
+      (e.shiftKey || e.keyCode < 48 || e.keyCode > 57) &&
+      (e.keyCode < 96 || e.keyCode > 105)
+    ) {
+      e.preventDefault();
+    }
+  });
+
+  $(".tab__butons").click(function (e) {
     e.preventDefault();
-  }
-});
-
-$(".tab__butons").click(function (e) {
-  e.preventDefault();
-  if (
-    $(".cart__popup_block").hasClass("dnone") &&
-    $(".tab-content").hasClass("dnone")
-  ) {
-    $(".cart__popup_block").removeClass("dnone");
-    $(".tab-content").removeClass("dnone");
-  }
-});
-$(".tab__nav_close").click(function (e) {
-  e.preventDefault();
-  if (
-
-    !($(".cart__popup_block").hasClass("dnone")) &&
-    !($(".tab-content").hasClass("dnone")) &&
-    $('.tab__butons .nav-link').hasClass("active")
-  ) {
-    $(".cart__popup_block").addClass("dnone");
-    $(".tab-content").addClass("dnone");
-    $('.tab__butons .nav-link').removeClass('active');
-  }
-});
-$("html").click(function (e) {
-  if (
-    (e.target != $('.tab__nav_close')) &&
-    !($('.cart__popup_block').is(':hover')) &&
-    !($(".cart__popup_block").hasClass("dnone")) &&
-    !($(".tab-content").hasClass("dnone")) &&
-    $('.tab__butons .nav-link').hasClass("active")
-  ) {
+    if (
+      $(".cart__popup_block").hasClass("dnone") &&
+      $(".tab-content").hasClass("dnone")
+    ) {
+      $(".cart__popup_block").removeClass("dnone");
+      $(".tab-content").removeClass("dnone");
+    }
+  });
+  $(".tab__nav_close").click(function (e) {
     e.preventDefault();
-    $(".cart__popup_block").addClass("dnone");
-    $(".tab-content").addClass("dnone");
-    $('.tab__butons .nav-link').removeClass('active');
-  }
-});
+    if (
 
-$('#header__search').keypress(function () {
-  $('.drop__items').removeClass('d-none')
-})
-$('#header__search').keypress(function () {
-  var value = $(this).val();
-  if (value.length > 0) {
+      !($(".cart__popup_block").hasClass("dnone")) &&
+      !($(".tab-content").hasClass("dnone")) &&
+      $('.tab__butons .nav-link').hasClass("active")
+    ) {
+      $(".cart__popup_block").addClass("dnone");
+      $(".tab-content").addClass("dnone");
+      $('.tab__butons .nav-link').removeClass('active');
+    }
+  });
+  $("html").click(function (e) {
+    if (
+      (e.target != $('.tab__nav_close')) &&
+      !($('.cart__popup_block').is(':hover')) &&
+      !($(".cart__popup_block").hasClass("dnone")) &&
+      !($(".tab-content").hasClass("dnone")) &&
+      $('.tab__butons .nav-link').hasClass("active")
+    ) {
+      e.preventDefault();
+      $(".cart__popup_block").addClass("dnone");
+      $(".tab-content").addClass("dnone");
+      $('.tab__butons .nav-link').removeClass('active');
+    }
+  });
+
+  $('#header__search').keypress(function () {
     $('.drop__items').removeClass('d-none')
-  } else {
-    $('.drop__items').addClass('d-none')
-  }
-})
+  })
+  $('#header__search').keypress(function () {
+    var value = $(this).val();
+    if (value.length > 0) {
+      $('.drop__items').removeClass('d-none')
+    } else {
+      $('.drop__items').addClass('d-none')
+    }
+  })
 
 
-$('.item__slider_big').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: false,
-  fade: true,
-  infinite: true,
-  asNavFor: '.item__slider_small',
-  responsive: [{
-    breakpoint: 992,
-    settings: {
-      dots: true
-    }
-  }]
-});
-$('.item__slider_small').slick({
-  slidesToShow: 5,
-  infinite: true,
-  slidesToScroll: 1,
-  asNavFor: '.item__slider_big',
-  dots: false,
-  arrows:false,
-  focusOnSelect: true,
-  responsive: [{
-    breakpoint: 992,
-    settings: {
-      // centerMode: true,
-      vertical:true,
-      verticalSwiping:true
-    }
-  }]
-});
+  $('.item__slider_big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    infinite: true,
+    asNavFor: '.item__slider_small',
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        dots: true
+      }
+    }]
+  });
+  $('.item__slider_small').slick({
+    slidesToShow: 5,
+    infinite: true,
+    slidesToScroll: 1,
+    asNavFor: '.item__slider_big',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        // centerMode: true,
+        vertical: true,
+        verticalSwiping: true
+      }
+    }]
+  });
 
-$('.partners__slider').slick({
-  slidesToShow: 5,
-  arrows: false,
-  dots: false,
-  infinite: true,
-  responsive: [{
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      asNavFor: '.partners__slider_mobile_2,.partners__slider_mobile_1'
-    }
-  }]
-})
-$('.partners__slider_mobile_1').slick({
-  responsive: [{
-    breakpoint: 80000,
-    settings: "unslick",
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 2,
-      arrows: false,
-      dots: false,
-      asNavFor: '.partners__slider_mobile_2,.partners__slider'
-    }
-  }]
-})
-$('.partners__slider_mobile_2').slick({
-  responsive: [{
-    breakpoint: 80000,
-    settings: "unslick",
-    breakpoint: 768,
-    settings: {
-      slidesToShow: 2,
-      arrows: false,
-      dots: false,
-      asNavFor: '.partners__slider_mobile_1,.partners__slider'
-    }
-  }]
-})
+  $('.partners__slider').slick({
+    slidesToShow: 5,
+    arrows: false,
+    dots: false,
+    infinite: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        asNavFor: '.partners__slider_mobile_2,.partners__slider_mobile_1'
+      }
+    }]
+  })
+  $('.partners__slider_mobile_1').slick({
+    responsive: [{
+      breakpoint: 80000,
+      settings: "unslick",
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+        dots: false,
+        asNavFor: '.partners__slider_mobile_2,.partners__slider'
+      }
+    }]
+  });
+  $('.partners__slider_mobile_2').slick({
+    responsive: [{
+      breakpoint: 80000,
+      settings: "unslick",
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        arrows: false,
+        dots: false,
+        asNavFor: '.partners__slider_mobile_1,.partners__slider'
+      }
+    }]
+  });
+  
+  });
+  
+    $(document).on('click', 'img', function (e) {
+      e.preventDefault();
+      $(this).ekkoLightbox();
+    });
+
 // $('.ghost').on('input', function(){
 // var min = $('.ghost').attr('style');
 // var max = $('.ghost').attr('style');
