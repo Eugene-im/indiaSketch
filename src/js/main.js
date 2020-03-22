@@ -4,7 +4,6 @@
 //= lib/slick.min.js
 //= lib/multirange.js
 //= lib/mpop.min.js
-//= lib/smartpoto.min.js
 
 
 $(document).ready(function () {
@@ -213,7 +212,6 @@ $(document).ready(function () {
   });
   
 });
-  
 
 
 // $('.ghost').on('input', function(){
