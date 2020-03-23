@@ -49,7 +49,7 @@
                   </ul>
                 </div>
                 <div
-                  class="header__secondline row align-items-lg-center align-items-sm-start justify-content-between pl-1 pr-1"
+                  class="header__secondline row align-items-center justify-content-between pl-1 pr-1"
                 >
                   <a href="#" class="header__logo col-2 col-sm-2 ">
                       <img
@@ -65,17 +65,19 @@
                         srcset=""
                       />
                     </a>
-                  <div class="category__dropdown col-2 col-sm-2 ">
+                  <div class="category__dropdown d-none d-lg-block col-lg-2 ">
                     <button
-                      class="btn btn-success btn-lg dropdown-toggle"
+                      class="justify-content-center justify-content-md-between btn btn-success btn-lg dropdown-toggle"
                       type="button"
                       id="dropdownMenu2"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
+                    <span>
                       Каталог
-                      <span class="ico bg-catalog-icon2"></span>
+                    </span>
+                      <span class="ico bg-catalog-icon2 d-none d-md-inline-block"></span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                       <button class="dropdown-item" type="button">Another action</button>
@@ -151,125 +153,97 @@
                                             </li>
                                           </ul>
                   </div>
-                  <div class="category__dropdown d-lg-none col-2 col-sm-2">
-                    <div class="pos-f-t">
-                      <nav class="navbar navbar-light">
-                        <button
-                          class="navbar-toggler"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#navbarToggleExternalContent2"
-                          aria-controls="navbarToggleExternalContent2"
-                          aria-expanded="false"
-                          aria-label="Toggle navigation"
-                        >
-                          <span class="ico bg-search"></span>
-                        </button>
-                      </nav>
-                      <div class="collapse" id="navbarToggleExternalContent2">
-                        <div class="p-4">
-                          <div class="header__col_search input-group">
-                            <input
-                              id="header__search2"
-                              type="text"
-                              class="form-control"
-                              placeholder="Что Вас интересует?"
-                              aria-label="Что Вас интересует?"
-                              aria-describedby="button-addon2"
-                            />
-                            <!-- <div class="input-group-append">
-                              <button class="btn btn-sm" type="button" id="button-addon2">
-                                <span class="ico bg-search"></span>
-                              </button>
-                            </div> -->
-                            
-                                                <ul class="drop__items d-none">
-                                                    <li class="drop__item active">
-                                                      <div class="drop__item_img">
-                                                        <img src="./img/logo_namaste.png" alt="item_img" />
-                                                      </div>
-                                                      <div class="drop__row">
-                                                        <div class="drop__item_text">
-                                                          <div class="drop__item_title">Название бренда</div>
-                                                          <div class="drop__item_description">
-                                                            Более подробное название бренда
-                                                          </div>
-                                                        </div>
-                                                        <div class="drop__item_cart">
-                                                          <span class="ico bg-shopping-cart-green2"></span>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    <li class="drop__item">
-                                                      <div class="drop__item_img">
-                                                        <img src="./img/logo_namaste.png" alt="item_img" />
-                                                      </div>
-                                                      <div class="drop__row">
-                                                        <div class="drop__item_text">
-                                                          <div class="drop__item_title">Название бренда</div>
-                                                          <div class="drop__item_description">
-                                                            Более подробное название бренда
-                                                          </div>
-                                                        </div>
-                                                        <div class="drop__item_cart">
-                                                          <span class="ico bg-shopping-cart-green2"></span>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    <li class="drop__item">
-                                                      <div class="drop__item_img">
-                                                        <img src="./img/logo_namaste.png" alt="item_img" />
-                                                      </div>
-                                                      <div class="drop__row">
-                                                        <div class="drop__item_text">
-                                                          <div class="drop__item_title">Название бренда</div>
-                                                          <div class="drop__item_description">
-                                                            Более подробное название бренда
-                                                          </div>
-                                                        </div>
-                                                        <div class="drop__item_cart">
-                                                          <span class="ico bg-shopping-cart-green2"></span>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                  </ul>
-                          </div>
-                        </div>
-                      </div>
+                  <nav class="navbar col-10 d-lg-none">
+                  
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler btn real btn-success col-6 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent0" aria-controls="navbarSupportedContent0" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      Каталог
+                  
+                    </button>
+                    <button class="navbar-toggler btn btn-outline-secondary col-2 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="ico bg-search_button_mob"></span>
+                  
+                    </button>
+                    <button class="navbar-toggler btn btn-outline-secondary col-2 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="cart__items_sum">3</span>
+                      <span class="ico bg-shopping-cart-mobile"></span>
+                    </button>
+                  
+                    <button class="navbar-toggler btn real btn-outline-secondary col-2 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="ico bg-catalog-icon2"></span>
+                  
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent0">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                      </ul>
+                  
                     </div>
-                  </div>
-                  <a class="btn btn-outline-secondary d-lg-none col-1 col-sm-1" href="#">
-                    <span class="cart__items_sum">3</span>
-                    <span class="ico bg-shopping-cart-dd"></span>
-                  </a>
-                  <div
-                    class="category__dropdown d-lg-none col-2 col-sm-2 justify-content-between"
-                  >
-                    <div class="pos-f-t">
-                      <nav class="navbar navbar-light">
-                        <button
-                          class="navbar-toggler"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#navbarToggleExternalContent"
-                          aria-controls="navbarToggleExternalContent"
-                          aria-expanded="false"
-                          aria-label="Toggle navigation"
-                        >
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                      </nav>
-                      <div class="collapse" id="navbarToggleExternalContent">
-                        <div class="p-4">
-                          <a class="dropdown-item" href="#">Преимущества</a>
-                          <a class="dropdown-item" href="#">Статьи</a>
-                          <a class="dropdown-item" href="#">Контакты</a>
-                          <a class="dropdown-item" href="#">Доставка и оплата</a>
-                          <a class="dropdown-item" href="#">Гарантия</a>
-                        </div>
-                      </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                      </ul>
+                  
                     </div>
-                  </div>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing2</a>
+                        </li>
+                      </ul>
+                  
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home3 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features3</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing3</a>
+                        </li>
+                      </ul>
+                  
+                    </div>
+                  
+                  </nav>
                   <div class="secondline__asktocontact d-none d-md-block col-md-2">
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
             
@@ -317,6 +291,10 @@
             </header>
             <main>
                 <div class="content site__ui">
+            
+            
+            
+            
                     </br> </br>
                     <h3>
                         normall
@@ -415,7 +393,7 @@
                             <label for="styled-checkbox-3"></label>
                             <input class="styled-checkbox" id="styled-checkbox-4" type="radio" value="value4" name="variant1">
                             <label for="styled-checkbox-4"></label>
-                            
+            
                         </div>
                         </br>
                         <div class="item__properties_radio d-flex flex-column circle color">
@@ -423,15 +401,16 @@
                             <label for="styled-checkbox-11">
                                 text
                             </label>
-                            <input class="styled-checkbox" id="styled-checkbox-12" type="radio" value="value2" name="variant2" checked="">
+                            <input class="styled-checkbox" id="styled-checkbox-12" type="radio" value="value2" name="variant2"
+                                checked="">
                             <label for="styled-checkbox-12"></label>
                             <input class="styled-checkbox" id="styled-checkbox-13" type="radio" value="value3" name="variant2">
                             <label for="styled-checkbox-13"></label>
                             <input class="styled-checkbox" id="styled-checkbox-14" type="radio" value="value4" name="variant2">
                             <label for="styled-checkbox-14"></label>
-                        
+            
                         </div>
-                        
+            
                     </div>
                     </br>
                     <div class="checkbox">
@@ -446,36 +425,35 @@
                             <label for="styled-checkbox-23"></label>
                             <input class="styled-checkbox" id="styled-checkbox-24" type="checkbox" value="value4">
                             <label for="styled-checkbox-24"></label>
-                        
+            
                         </div>
                         <div class="item__properties_radio d-flex flex-column plus color">
                             <input class="styled-checkbox" id="styled-checkbox-31" type="checkbox" value="value1">
                             <label for="styled-checkbox-31">
                                 text
                             </label>
-                            <input class="styled-checkbox" id="styled-checkbox-32" type="checkbox" value="value2"
-                                checked="">
+                            <input class="styled-checkbox" id="styled-checkbox-32" type="checkbox" value="value2" checked="">
                             <label for="styled-checkbox-32"></label>
                             <input class="styled-checkbox" id="styled-checkbox-33" type="checkbox" value="value3">
                             <label for="styled-checkbox-33"></label>
                             <input class="styled-checkbox" id="styled-checkbox-34" type="checkbox" value="value4">
                             <label for="styled-checkbox-34"></label>
-                        
+            
                         </div>
                     </div>
                     <div class="range">
                         <input type="number" id="data-first-node">
                         <input type="number" id="data-last-node">
-                        <div id="slider" data-min="0" data-max="400" data-first-value="0" data-last-value="400"></div>        
+                        <div id="slider" data-min="0" data-max="400" data-first-value="0" data-last-value="400"></div>
                     </div>
-                </br>
-                </br>
-                <h3> ico </h3>
+                    </br>
+                    </br>
+                    <h3> ico </h3>
             
-            </br>
-            <span class="ico bg-instagram"></span>
-            <span class="ico bg-instagram_2"></span>
-            <span class="ico bg-"></span>
+                    </br>
+                    <span class="ico bg-instagram"></span>
+                    <span class="ico bg-instagram_2"></span>
+                    <span class="ico bg-"></span>
                 </div>
             </main>
             

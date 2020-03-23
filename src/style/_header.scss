@@ -1,24 +1,29 @@
 .header__firstline_social {
   display: flex;
   justify-content: space-between;
+
   li a {
     @include fs12;
     color: #3e3e3e;
   }
+
   li a:hover {
     color: #4bbe82;
     text-decoration: none;
   }
 }
+
 .header__firstline {
   height: 38px;
 }
+
 .dropdown-menu {
   width: 139px;
   height: 90px;
   padding: 0;
   border: 0;
 }
+
 .dropdown-item {
   padding: 7px 14px;
 }
@@ -26,11 +31,13 @@
 .dropdown-item:hover {
   color: #4bbb81;
 }
+
 .dropdown-toggle {
   border: none;
   outline: none;
   background: transparent;
 }
+
 .dropdown-item,
 .dropdown-toggle {
   @include fs14;
@@ -40,30 +47,36 @@
   margin-top: 10px;
   // margin-right: 12px;
 }
+
 .header__thirdine {
   // height: 60px;
   border-radius: 4px;
   background-color: #4bbb81;
 }
+
 .nav-link {
   @include fs16;
   text-align: center;
   color: #ffffff;
   padding: 20px 43px;
 }
+
 a:not([href]),
 a:not([href]):hover,
 .nav-link:hover {
   color: #ffffff;
 }
+
 .nav-item {
   height: 60px;
   border-right: 0.5px solid #74c099;
   border-left: 0.5px solid #74c099;
 }
+
 .nav-item:first-child {
   border-left: none;
 }
+
 .nav-item:last-child {
   border-right: none;
 }
@@ -72,6 +85,7 @@ a:not([href]):hover,
   background: #74c099;
   border-radius: 4px;
 }
+
 .choose__items_sum,
 .cart__items_sum {
   position: absolute;
@@ -87,15 +101,18 @@ a:not([href]):hover,
   text-align: center;
   color: #ffffff;
 }
+
 .choose__items_sum {
   background-color: #4bbe82;
   margin-top: -11px;
   margin-left: 20px;
 }
+
 .footer__col_search,
 .header__col_search {
   border: 0.5px solid #4bbe82;
   border-radius: 4px;
+
   input {
     border: none;
     font-weight: 300;
@@ -105,17 +122,21 @@ a:not([href]):hover,
     padding-right: 20px;
     height: 35px;
   }
-  .btn{
+
+  .btn {
     height: 36px;
   }
+
   input:focus {
     outline: none;
     box-shadow: none;
   }
+
   input::placeholder {
     color: #b9b9b9;
   }
 }
+
 .secondline__asktocontact_fline {
   font-weight: 300;
   @include fs12;
@@ -124,6 +145,7 @@ a:not([href]):hover,
   text-align: right;
   display: block;
 }
+
 .secondline__asktocontact_sline {
   font-weight: 500;
   @include fs18;
@@ -162,10 +184,12 @@ a:not([href]):hover,
   width: 100%;
   max-width: 35px;
   margin-right: 15px;
+
   img {
     width: 100%;
   }
 }
+
 .drop__row {
   width: 100%;
   display: flex;
@@ -182,6 +206,7 @@ a:not([href]):hover,
     display: none;
     border: none;
   }
+
   #dropdownMenu2 {
     max-width: 185px;
     width: 100%;
@@ -196,17 +221,30 @@ a:not([href]):hover,
   height: 38px;
 }
 
-.secondline__userbuttons{
+.secondline__userbuttons {
   margin-right: 15px;
 }
-.secondline__userbuttons_choosed{
-  margin-right:8px;
+
+.secondline__userbuttons_choosed {
+  margin-right: 8px;
 }
 
-.header__thirdine{
-  margin-top:19px;
+.header__thirdine {
+  margin-top: 19px;
 }
 
-.cart_sp{
+.cart_sp {
   padding-top: 16px;
+}
+
+#myTabmob {
+  .nav-item {
+    border: none;
+    padding: 0;
+  }
+
+  &.nav-tabs {
+    align-items: center;
+    border: none;
+  }
 }

@@ -119,6 +119,19 @@ $(document).ready(function () {
       $(".cart__popup_block").addClass("dnone");
       $(".tab-content").addClass("dnone");
       $('.tab__butons .nav-link').removeClass('active');
+    }else if(
+              (e.target != $('#myTabContentmob')) && (
+              (e.target != $('#myTabmob'))           )
+            ){
+              if(
+                $('#myTabContentmob .tab-pane').hasClass('active')&&
+                $('#myTabContentmob .tab-pane').hasClass('show')
+              ){
+                $('#myTabmob .nav-item').removeClass('active');
+                $('#myTabmob .nav-item').attr({'aria-selected' :'false'});
+                $('#myTabContentmob .tab-pane').removeClass('active');
+                $('#myTabContentmob .tab-pane').removeClass('show');
+              }
     }
   });
 
