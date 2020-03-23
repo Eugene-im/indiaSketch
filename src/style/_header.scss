@@ -1,0 +1,266 @@
+.header__firstline_social {
+  display: flex;
+  justify-content: space-between;
+
+  li a {
+    @include fs12;
+    color: #3e3e3e;
+  }
+
+  li a:hover {
+    color: #4bbe82;
+    text-decoration: none;
+  }
+}
+
+.header__firstline {
+  height: 38px;
+}
+
+.dropdown-menu {
+  width: 139px;
+  height: 90px;
+  padding: 0;
+  border: 0;
+}
+
+.dropdown-item {
+  padding: 7px 14px;
+}
+
+.dropdown-item:hover {
+  color: #4bbb81;
+}
+
+.dropdown-toggle {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.dropdown-item,
+.dropdown-toggle {
+  @include fs14;
+}
+
+.header__secondline {
+  margin-top: 10px;
+  // margin-right: 12px;
+}
+
+.header__thirdine {
+  // height: 60px;
+  border-radius: 4px;
+  background-color: #4bbb81;
+}
+
+.nav-link {
+  @include fs16;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 43px;
+}
+
+a:not([href]),
+a:not([href]):hover,
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-item {
+  height: 60px;
+  border-right: 0.5px solid #74c099;
+  border-left: 0.5px solid #74c099;
+}
+
+.nav-item:first-child {
+  border-left: none;
+}
+
+.nav-item:last-child {
+  border-right: none;
+}
+
+.nav-item:hover {
+  background: #74c099;
+  border-radius: 4px;
+}
+
+.choose__items_sum,
+.cart__items_sum {
+  position: absolute;
+  margin-top: -8px;
+  margin-left: 25px;
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  background-color: #ff9933;
+  display: block;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.choose__items_sum {
+  background-color: #4bbe82;
+  margin-top: -11px;
+  margin-left: 20px;
+}
+
+.footer__col_search,
+.header__col_search {
+  border: 0.5px solid #4bbe82;
+  border-radius: 4px;
+
+  input {
+    border: none;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 0;
+    padding-right: 20px;
+    height: 35px;
+  }
+
+  .btn {
+    height: 36px;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  input::placeholder {
+    color: #b9b9b9;
+  }
+}
+
+.secondline__asktocontact_fline {
+  font-weight: 300;
+  @include fs12;
+  color: #4bbe82;
+  text-decoration-line: underline;
+  text-align: right;
+  display: block;
+}
+
+.secondline__asktocontact_sline {
+  font-weight: 500;
+  @include fs18;
+  text-align: right;
+  color: $text-color;
+  display: block;
+}
+
+.drop__items {
+  position: absolute;
+  width: 100%;
+  max-width: 405px;
+  background: #fff;
+  z-index: 1;
+  margin: 41px 0 0 -15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.118144);
+  border-radius: 4px;
+  // padding:2px ;
+}
+
+.drop__item {
+  display: flex;
+  padding: 10px 20px 10px 15px;
+
+  &.active .drop__item_title,
+  &.active .drop__item_description,
+  &.active .drop__item_cart,
+  &:hover .drop__item_cart,
+  &:hover .drop__item_title,
+  &:hover .drop__item_description {
+    color: $active-color;
+  }
+}
+
+.drop__item_img {
+  width: 100%;
+  max-width: 35px;
+  margin-right: 15px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.drop__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drop__item_description {
+  @include fs14;
+}
+
+.category__dropdown {
+  .dropdown-toggle::after {
+    display: none;
+    border: none;
+  }
+
+  #dropdownMenu2 {
+    max-width: 185px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4BBB81;
+  }
+}
+
+.btn-lg {
+  height: 38px;
+}
+
+.secondline__userbuttons {
+  margin-right: 15px;
+}
+
+.secondline__userbuttons_choosed {
+  margin-right: 8px;
+}
+
+.header__thirdine {
+  margin-top: 19px;
+}
+
+.cart_sp {
+  padding-top: 16px;
+}
+
+.real.btn-outline-success {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.148246);
+  border-radius: 4px;
+}
+
+.real.btn-success {
+  background-color: $btn-success;
+  border-color: $btn-success;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    border-color: $btn-success;
+    color: $btn-success;
+  }
+}
+
+.mob {
+.nav-item:hover{
+  .nav-link{
+    color: #fff;
+  }
+}
+  .nav-link{
+    color: inherit;
+  }
+}
