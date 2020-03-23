@@ -12,9 +12,22 @@
         <div class="wrap">
 <header class="payment__page">
     <div class="header-content">
-    <a href="#" class="header-logo">
+    <a href="#" class="header__logo col-2 col-sm-2 ">
+        <img
+          class="d-none d-md-block"
+          src="./img/Logo.png"
+          alt="logo"
+          srcset=""
+        />
+        <img
+          class="d-block d-md-none"
+          src="./img/logo_mob.png"
+          alt="logo"
+          srcset=""
+        />
+      </a>
     <a href="tel:8(800)555-32-00" class="header-number">
-        <div class="call-order">
+        <div class="call-order d-flex flex-column align-items-end">
             <a href="tel:8(800)555-32-00">Заказать звонок</a>
             <div class="phone-number">8 (800) 555-32-00</div>
         </div>
@@ -143,7 +156,7 @@
             &copy 2020 При использованииматериалов сайта обязательным условием является наличие гиперссылки
         </div>
         <div class="footer-payment_systems">
-            <div class="payment__item ">
+            <!-- <div class="payment__item ">
                 <div class="payment-system mastercard"></div>
             </div>
             <div class="payment__item ">
@@ -154,6 +167,12 @@
             </div>
             <div class="payment__item ">
                 <div class="payment-system bitcoin"></div>
+            </div> -->
+            <div class="footer__col_payment">
+                <div class="payment_item mr-3"><span class="ico bg-mastercard-2"></span></div>
+                <div class="payment_item mr-3"><span class="ico bg-paypal"></span></div>
+                <div class="payment_item mr-3"><span class="ico bg-qiwi"></span></div>
+                <div class="payment_item"><span class="ico bg-bitcoin"></span></div>
             </div>
         </div>
     </div>
