@@ -237,14 +237,30 @@ a:not([href]):hover,
   padding-top: 16px;
 }
 
-#myTabmob {
-  .nav-item {
-    border: none;
-    padding: 0;
-  }
+.real.btn-outline-success {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.148246);
+  border-radius: 4px;
+}
 
-  &.nav-tabs {
-    align-items: center;
-    border: none;
+.real.btn-success {
+  background-color: $btn-success;
+  border-color: $btn-success;
+  color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    border-color: $btn-success;
+    color: $btn-success;
+  }
+}
+
+.mob {
+.nav-item:hover{
+  .nav-link{
+    color: #fff;
+  }
+}
+  .nav-link{
+    color: inherit;
   }
 }
