@@ -1,46 +1,178 @@
-.site__ui {
-    @include for-size(md) {
+@include for-size(minmd) {
 
-        .btn-danger:hover,
-        .btn-outline-danger {
+    // .btn-danger:hover,
+    // .btn-outline-danger {
+    //     background-color: $btn-danger;
+    //     border-color: $btn-danger;
+    // }
 
-            background-color: $btn-danger;
-            border-color: $btn-danger;
-        }
+    // .btn-outline-danger:hover,
+    // .btn-danger {
+    //     color: $btn-danger;
+    //     background-color: #fff;
+    //     border-color: $btn-danger;
+    // }
 
-        .btn-outline-danger:hover,
-        .btn-danger {
-            color: $btn-danger;
-            background-color: #fff;
-            border-color: $btn-danger;
-        }
+    // .btn-warning:hover,
+    // .btn-outline-warning {
+    //     background-color: $btn-warning;
+    //     border-color: $btn-warning;
+    // }
 
-        .btn-warning:hover,
-        .btn-outline-warning {
-            background-color: $btn-warning;
-            border-color: $btn-warning;
-        }
+    // .btn-outline-warning:hover,
+    // .btn-warning {
+    //     color: $btn-warning;
+    //     background-color: #fff;
+    //     border-color: $btn-warning;
+    // }
 
-        .btn-outline-warning:hover,
-        .btn-warning {
+    // .btn-outline-warning,
+    // .btn-outline-warning:hover {
+    //     color: #fff;
+    //     background-color: $btn-warning;
+    //     border-color: $btn-warning;
+    // }
+
+    // .btn-outline-danger,
+    // .btn-outline-danger:hover {
+    //     color: #fff;
+    //     background-color: $btn-danger;
+    //     border-color: $btn-danger;
+    // }
+
+    ///@include
+
+    .btn-outline-danger:hover,
+    .btn-danger {
+        background-color: $btn-danger;
+        border-color: $btn-danger;
+    }
+
+    .btn-danger:hover,
+    .btn-outline-danger {
+        color: $btn-danger;
+        background-color: #fff;
+        border-color: $btn-danger;
+    }
+
+    .btn-outline-warning:hover,
+    .btn-warning {
+        background-color: $btn-warning;
+        border-color: $btn-warning;
+    }
+
+    
+    .btn-outline-success:hover,
+    .btn-success {
+        background-color: $btn-success;
+        border-color: $btn-success;
+    }
+    
+    .btn-warning:hover,
+    .btn-outline-warning {
+        color: $btn-warning;
+        background-color: #fff;
+        border-color: $btn-warning;
+    }
+    .btn-success:hover,
+    .btn-outline-success {
+        color: $btn-success;
+        background-color: #fff;
+        border-color: $btn-success;
+    }
+    .item_fav{
+        &.btn-warning:hover,
+        &.btn-outline-warning {
             color: $btn-warning;
             background-color: #fff;
             border-color: $btn-warning;
         }
-
-        // .btn-success:hover,
-        // .btn-outline-success {
-        //   background-color: $btn-success;
-        //   border-color: $btn-success;
-        // }
-
-        // .btn-outline-success:hover,
-        // .btn-success {
-        //   color: $btn-success;
-        //   background-color: #fff;
-        //   border-color: $btn-success;
-        // }
     }
+    .item_buy{
+
+        // &.btn-danger:hover,
+        &.btn-outline-danger:hover {
+            color: #fff;
+            background-color: $btn-danger;
+            border-color: $btn-danger;
+        }
+    }
+}
+
+@include for-size(md) {
+
+    .btn-danger:hover,
+    .btn-outline-danger {
+        background-color: $btn-danger;
+        border-color: $btn-danger;
+    }
+
+    .btn-outline-danger:hover,
+    .btn-danger {
+        color: $btn-danger;
+        background-color: #fff;
+        border-color: $btn-danger;
+    }
+
+    .btn-warning:hover,
+    .btn-outline-warning {
+        background-color: $btn-warning;
+        border-color: $btn-warning;
+    }
+
+    .btn-outline-warning:hover,
+    .btn-warning {
+        color: $btn-warning;
+        background-color: #fff;
+        border-color: $btn-warning;
+    }
+
+    .btn-outline-warning,
+    .btn-outline-warning:hover {
+        color: #fff;
+        background-color: $btn-warning;
+        border-color: $btn-warning;
+    }
+
+    .btn-outline-danger,
+    .btn-outline-danger:hover {
+        color: #fff;
+        background-color: $btn-danger;
+        border-color: $btn-danger;
+    }
+
+    .cart__action_notbuy .item_fav{
+        &.btn-warning:hover{
+            color: #fff;
+            background-color: $btn-warning;
+            border-color: $btn-warning;
+        }
+    }
+    .cart__action_notbuy .item_buy{
+
+        // &.btn-danger:hover,
+        &.btn-outline-danger:hover {
+            color: $btn-danger;
+            background-color: #fff;
+            border-color: $btn-danger;
+        }
+    }
+
+    // .btn-success:hover,
+    // .btn-outline-success {
+    //   background-color: $btn-success;
+    //   border-color: $btn-success;
+    // }
+
+    // .btn-outline-success:hover,
+    // .btn-success {
+    //   color: $btn-success;
+    //   background-color: #fff;
+    //   border-color: $btn-success;
+    // }
+}
+
+.site__ui {
 
     .circle {
 
@@ -149,16 +281,16 @@
             background: #fff;
             width: 2px;
             height: 2px;
-            box-shadow: 
-                        2px  0     0 #fff,
-                        4px  0    0 #fff,
-                        4px  0    0 #fff,
-                        4px  2px  0 #fff,
-                        4px  4px  0 #fff,
-                        4px -2px  0 #fff,
-                        4px -4px  0 #fff,
-                        6px  0    0 #fff,
-                        8px  0    0 #fff;
+            box-shadow:
+                2px 0 0 #fff,
+                4px 0 0 #fff,
+                4px 0 0 #fff,
+                4px 2px 0 #fff,
+                4px 4px 0 #fff,
+                4px -2px 0 #fff,
+                4px -4px 0 #fff,
+                6px 0 0 #fff,
+                8px 0 0 #fff;
             transform: rotate(0);
         }
     }

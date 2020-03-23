@@ -103,6 +103,7 @@
   }
 
   .drop__item_cost {
+    font-weight: 500;
     @include fs14;
   }
 
@@ -120,6 +121,12 @@
     input,
     button {
       height: 45px;
+      background: #F7F7F7;
+      border-radius: 4px;
+      text-align: center;
+    }
+    input{
+      border: 0;
     }
   }
 
@@ -127,6 +134,10 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 25px;
+  }
+
+  .drop__item_remove {
+    transform: rotate(45deg);
   }
 
   .drop__item_text {
