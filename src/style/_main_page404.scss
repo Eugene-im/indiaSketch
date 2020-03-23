@@ -1,0 +1,12 @@
+.cl404 {
+  @include fs24;
+  color: #4bbe82;
+}
+
+.main__empty_search {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

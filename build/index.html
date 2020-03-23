@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
 </head>
 
             <header>
@@ -27,54 +28,56 @@
                       </button>
                       <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Орел</a>
-                        <a class="dropdown-item" href="#">Санкт-Питербург</a>
+                        <a class="dropdown-item" href="#">Санкт-Петербург</a>
                         <a class="dropdown-item" href="#">Казань</a>
                       </div>
                     </div>
                   </div>
                   <ul class="header__firstline_social col-lg-4">
                     <li>
-                      <a href="#"><span class="ico bg-002_instagram"></span> Instagram</a>
+                      <a href="#"><span class="ico bg-instagram"></span> Instagram</a>
                     </li>
                     <li>
-                      <a href="#"><span class="ico bg-001_facebook"></span> Facebook</a>
+                      <a href="#"><span class="ico bg-facebook"></span> Facebook</a>
                     </li>
                     <li>
-                      <a href="#"><span class="ico bg-003_telegram"></span> Telegram</a>
+                      <a href="#"><span class="ico bg-telegram"></span> Telegram</a>
                     </li>
                     <li>
-                      <a href="#"><span class="ico bg-004_whatsapp"></span> Whatsapp</a>
+                      <a href="#"><span class="ico bg-whatsapp"></span> Whatsapp</a>
                     </li>
                   </ul>
                 </div>
                 <div
-                  class="header__secondline row align-items-lg-center align-items-sm-start justify-content-between pl-1 pr-1"
+                  class="header__secondline row align-items-center justify-content-between pl-1 pr-1"
                 >
                   <a href="#" class="header__logo col-2 col-sm-2 ">
-                    <img
-                      class="d-none d-md-block"
-                      src="./img/Logo.png"
-                      alt="logo"
-                      srcset=""
-                    />
-                    <img
-                      class="d-block d-md-none"
-                      src="./img/logo_mob.png"
-                      alt="logo"
-                      srcset=""
-                    />
-                  </a>
-                  <div class="category__dropdown col-2 col-sm-2 ">
+                      <img
+                        class="d-none d-md-block"
+                        src="./img/Logo.png"
+                        alt="logo"
+                        srcset=""
+                      />
+                      <img
+                        class="d-block d-md-none"
+                        src="./img/logo_mob.png"
+                        alt="logo"
+                        srcset=""
+                      />
+                    </a>
+                  <div class="category__dropdown d-none d-lg-block col-lg-2 ">
                     <button
-                      class="btn btn-success btn-lg dropdown-toggle"
+                      class="justify-content-center justify-content-md-between btn btn-success btn-lg dropdown-toggle"
                       type="button"
                       id="dropdownMenu2"
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
+                    <span>
                       Каталог
-                      <span class="ico bg-catalog_icon"></span>
+                    </span>
+                      <span class="ico bg-catalog-icon2 d-none d-md-inline-block"></span>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                       <button class="dropdown-item" type="button">Another action</button>
@@ -112,7 +115,7 @@
                                                   </div>
                                                 </div>
                                                 <div class="drop__item_cart">
-                                                  <span class="ico bg-shopping_cart_green_2"></span>
+                                                  <span class="ico bg-shopping-cart-green2"></span>
                                                 </div>
                                               </div>
                                             </li>
@@ -128,7 +131,7 @@
                                                   </div>
                                                 </div>
                                                 <div class="drop__item_cart">
-                                                  <span class="ico bg-shopping_cart_green_2"></span>
+                                                  <span class="ico bg-shopping-cart-green2"></span>
                                                 </div>
                                               </div>
                                             </li>
@@ -144,131 +147,103 @@
                                                   </div>
                                                 </div>
                                                 <div class="drop__item_cart">
-                                                  <span class="ico bg-shopping_cart_green_2"></span>
+                                                  <span class="ico bg-shopping-cart-green2"></span>
                                                 </div>
                                               </div>
                                             </li>
                                           </ul>
                   </div>
-                  <div class="category__dropdown d-lg-none col-2 col-sm-2">
-                    <div class="pos-f-t">
-                      <nav class="navbar navbar-light">
-                        <button
-                          class="navbar-toggler"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#navbarToggleExternalContent2"
-                          aria-controls="navbarToggleExternalContent2"
-                          aria-expanded="false"
-                          aria-label="Toggle navigation"
-                        >
-                          <span class="ico bg-search"></span>
-                        </button>
-                      </nav>
-                      <div class="collapse" id="navbarToggleExternalContent2">
-                        <div class="p-4">
-                          <div class="header__col_search input-group">
-                            <input
-                              id="header__search2"
-                              type="text"
-                              class="form-control"
-                              placeholder="Что Вас интересует?"
-                              aria-label="Что Вас интересует?"
-                              aria-describedby="button-addon2"
-                            />
-                            <!-- <div class="input-group-append">
-                              <button class="btn btn-sm" type="button" id="button-addon2">
-                                <span class="ico bg-search"></span>
-                              </button>
-                            </div> -->
-                            
-                                                <ul class="drop__items d-none">
-                                                    <li class="drop__item active">
-                                                      <div class="drop__item_img">
-                                                        <img src="./img/logo_namaste.png" alt="item_img" />
-                                                      </div>
-                                                      <div class="drop__row">
-                                                        <div class="drop__item_text">
-                                                          <div class="drop__item_title">Название бренда</div>
-                                                          <div class="drop__item_description">
-                                                            Более подробное название бренда
-                                                          </div>
-                                                        </div>
-                                                        <div class="drop__item_cart">
-                                                          <span class="ico bg-shopping_cart_green_2"></span>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    <li class="drop__item">
-                                                      <div class="drop__item_img">
-                                                        <img src="./img/logo_namaste.png" alt="item_img" />
-                                                      </div>
-                                                      <div class="drop__row">
-                                                        <div class="drop__item_text">
-                                                          <div class="drop__item_title">Название бренда</div>
-                                                          <div class="drop__item_description">
-                                                            Более подробное название бренда
-                                                          </div>
-                                                        </div>
-                                                        <div class="drop__item_cart">
-                                                          <span class="ico bg-shopping_cart_green_2"></span>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                    <li class="drop__item">
-                                                      <div class="drop__item_img">
-                                                        <img src="./img/logo_namaste.png" alt="item_img" />
-                                                      </div>
-                                                      <div class="drop__row">
-                                                        <div class="drop__item_text">
-                                                          <div class="drop__item_title">Название бренда</div>
-                                                          <div class="drop__item_description">
-                                                            Более подробное название бренда
-                                                          </div>
-                                                        </div>
-                                                        <div class="drop__item_cart">
-                                                          <span class="ico bg-shopping_cart_green_2"></span>
-                                                        </div>
-                                                      </div>
-                                                    </li>
-                                                  </ul>
-                          </div>
-                        </div>
-                      </div>
+                  <nav class="navbar col-10 d-lg-none">
+                  
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler btn real btn-success col-6 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent0" aria-controls="navbarSupportedContent0" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      Каталог
+                  
+                    </button>
+                    <button class="navbar-toggler btn btn-outline-secondary col-2 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="ico bg-search_button_mob"></span>
+                  
+                    </button>
+                    <button class="navbar-toggler btn btn-outline-secondary col-2 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="cart__items_sum">3</span>
+                      <span class="ico bg-shopping-cart-mobile"></span>
+                    </button>
+                  
+                    <button class="navbar-toggler btn real btn-outline-secondary col-2 toggler-example" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent3" aria-expanded="false"
+                      aria-label="Toggle navigation">
+                      <span class="ico bg-catalog-icon2"></span>
+                  
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent0">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                      </ul>
+                  
                     </div>
-                  </div>
-                  <a class="btn btn-outline-secondary d-lg-none col-1 col-sm-1" href="#">
-                    <span class="cart__items_sum">3</span>
-                    <span class="ico bg-shopping_cart__2_"></span>
-                  </a>
-                  <div
-                    class="category__dropdown d-lg-none col-2 col-sm-2 justify-content-between"
-                  >
-                    <div class="pos-f-t">
-                      <nav class="navbar navbar-light">
-                        <button
-                          class="navbar-toggler"
-                          type="button"
-                          data-toggle="collapse"
-                          data-target="#navbarToggleExternalContent"
-                          aria-controls="navbarToggleExternalContent"
-                          aria-expanded="false"
-                          aria-label="Toggle navigation"
-                        >
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                      </nav>
-                      <div class="collapse" id="navbarToggleExternalContent">
-                        <div class="p-4">
-                          <a class="dropdown-item" href="#">Преимущества</a>
-                          <a class="dropdown-item" href="#">Статьи</a>
-                          <a class="dropdown-item" href="#">Контакты</a>
-                          <a class="dropdown-item" href="#">Доставка и оплата</a>
-                          <a class="dropdown-item" href="#">Гарантия</a>
-                        </div>
-                      </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                      </ul>
+                  
                     </div>
-                  </div>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home2 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing2</a>
+                        </li>
+                      </ul>
+                  
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+                  
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home3 <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features3</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing3</a>
+                        </li>
+                      </ul>
+                  
+                    </div>
+                  
+                  </nav>
                   <div class="secondline__asktocontact d-none d-md-block col-md-2">
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
             
@@ -287,7 +262,7 @@
                   </div>
                 </div>
             
-                <div class="header__thirdine d-none d-md-flex">
+                <div class="header__thirdine d-none d-lg-flex">
                   <ul class="nav justify-content-center align-items-center">
                     <li class="nav-item">
                       <a class="nav-link active" href="#">Преимущества</a>
@@ -305,9 +280,9 @@
                       <a class="nav-link" href="#">Гарантия</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link cart_sp" href="#">
                         <span class="cart__items_sum">3</span>
-                        <span class="ico bg-shopping_cart"></span> Корзина
+                        <span class="ico bg-shopping-cart-green"></span> Корзина
                       </a>
                     </li>
                   </ul>
@@ -321,183 +296,199 @@
                             <h2 class="title__fline">Хит продаж</h2>
                         </div>
                         <div class="section__body container-fluid">
-                            <div class="row justify-content-center">    
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                            <div class="row justify-content-center">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal">
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
+                                    </div>
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal">
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
+                                    </div>
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal">
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
+                                    </div>
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal"> 
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
+                                    </div>
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal">
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
+                                    </div>
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal">
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
+                                    </div>
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal">
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
+                                    </div>
                                 </div>
-                                <div class="section__item col-md-6 col-lg-4 col-xl-3">
+                                <div class="section__item col-6 col-lg-4 col-xl-3">
                                     <div class="section__item_pin pin_new">Новинка</div>
                                     <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
                                     <div class="section__item_title">Название бренда</div>
-                                    <div class="section__item_description">Более детальное название бренда</div>
+                                    <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
                                     <div class="section__item_price">
                                         <span class="price_new">999 руб.</span>
                                         <span class="price_old">1999 руб.</span>
                                     </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-success item_buy">
-                                            <span class="ico bg-shopping_cart__1_"></span>
-                                            Заказать
+                                    <div class="section__item_actions d-flex justify-content-stretch">
+                                        <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                                            <span class="ico bg-shopping-cart"></span>
+                                            <span class="d-none d-md-inline">
+                                                Заказать
+                                            </span>
                                         </button>
-                                        <button class="btn btn-danger item_follow">
-                                            <span class="ico bg-heart__1_"></span>
-                                        </button> 
-                                        <button class="btn btn-warning item_equal">
+                                        <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                                            <span class="ico bg-heart"></span>
+                                        </button>
+                                        <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
                                             <span class="ico bg-libra"></span>
                                         </button>
-                                    </div> 
-                                </div>      
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -508,27 +499,27 @@
                         </div>
                         <div class="section__body">
                             <div class="section__line container">
-                                <div class="row">                        
-                                    <div class="section__item col-md-6 col-xl-3">
+                                <div class="row">
+                                    <div class="section__item col-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-001_rupee"></div>
                                         <div class="section__item_title">
                                             Возврат любого
                                             товара 30 дней
                                         </div>
                                     </div>
-                                    <div class="section__item col-md-6 col-xl-3">
+                                    <div class="section__item col-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-002_rickshaw"></div>
                                         <div class="section__item_title">
                                             Более 4500 пунктов самовывоза по России
                                         </div>
                                     </div>
-                                    <div class="section__item col-md-6 col-xl-3">
+                                    <div class="section__item col-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-lotus"></div>
                                         <div class="section__item_title">
                                             Принимаем банковские карты
                                         </div>
                                     </div>
-                                    <div class="section__item col-md-6 col-xl-3">
+                                    <div class="section__item col-6 col-xl-3">
                                         <div class="section__item_img big_ico bg-003_diwali"></div>
                                         <div class="section__item_title">
                                             Доставим в любую точку мира
@@ -536,53 +527,86 @@
                                     </div>
                                 </div>
                             </div>
-                            
+            
                         </div>
                     </div>
                     <div class="main__section_article">
-                        <div class="section__line article container">
-                            <div class="row">
+                        <div class="section__line article">
+                            <div class="row justify-content-center">
                                 <div class="section__item col-md-12 col-xl-4">
                                     <div class="section__item_img">
                                         <img src="./img/article-1.png" alt="" srcset="">
                                     </div>
-                                    <div class="section__item_title">
-                                        Статья номер один
+                                    <div class="section__item_text">
+                                        <div class="section__item_title">
+                                            Статья номер один
+                                        </div>
+                                        <div class="section__item_description">
+                                            Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу
+                                            (специалистов) участие в формировании системы обучения кадров, соответствует насущным
+                                            потребностям
+                                        </div>
+                                        <div class="section__item_actions">
+                                            <button class="item_open">
+                                                <span class="b-text">
+                                                    Подробнее
+                                                </span>
+                                                <span class="bt">
+                                                    <span class="ico bg-next"></span>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="section__item_description">
-                                        Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям
-                                    </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-sm btn-success item_open">подробнее<span class="ico bg-next"></span></button>
-                                    </div> 
                                 </div>
-                                <div class="section__item  col-md-12 col-xl-4">
+                                <div class="section__item central col-md-12 col-xl-4">
                                     <div class="section__item_img">
                                         <img src="./img/article-2.png" alt="" srcset="">
                                     </div>
-                                    <div class="section__item_title">
-                                        Статья номер один
+                                    <div class="section__item_text">
+                                        <div class="section__item_title">
+                                            Статья номер один
+                                        </div>
+                                        <div class="section__item_description">
+                                            Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу
+                                            (специалистов) участие в формировании системы обучения кадров, соответствует насущным
+                                            потребностям
+                                        </div>
+                                        <div class="section__item_actions">
+                                            <button class="item_open">
+                                                <span class="b-text">
+                                                    Подробнее
+                                                </span>
+                                                <span class="bt">
+                                                    <span class="ico bg-next"></span>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="section__item_description">
-                                        Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям
-                                    </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-sm btn-success item_open">подробнее<span class="ico bg-next"></span></button>
-                                    </div> 
                                 </div>
-                                <div class="section__item  col-md-12 col-xl-4">
+                                <div class="section__item col-md-12 col-xl-4">
                                     <div class="section__item_img">
                                         <img src="./img/article-3.png" alt="" srcset="">
                                     </div>
-                                    <div class="section__item_title">
-                                        Статья номер один
+                                    <div class="section__item_text">
+                                        <div class="section__item_title">
+                                            Статья номер один
+                                        </div>
+                                        <div class="section__item_description">
+                                            Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу
+                                            (специалистов) участие в формировании системы обучения кадров, соответствует насущным
+                                            потребностям
+                                        </div>
+                                        <div class="section__item_actions">
+                                            <button class="item_open">
+                                                <span class="b-text">
+                                                    Подробнее
+                                                </span>
+                                                <span class="bt">
+                                                    <span class="ico bg-next"></span>
+                                                </span>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="section__item_description">
-                                        Разнообразный и богатый опыт укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании системы обучения кадров, соответствует насущным потребностям
-                                    </div>
-                                    <div class="section__item_actions">
-                                        <button class="btn btn-sm btn-success item_open">подробнее<span class="ico bg-next"></span></button>
-                                    </div> 
                                 </div>
                             </div>
                         </div>
@@ -632,6 +656,82 @@
                                     <div class="section__item_title"></div>
                                 </div>
                             </div>
+                            <div class="section__line partners__slider_mobile_1 d-md-none d-sm-flex row">
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                            </div>
+                            <div class="section__line partners__slider_mobile_2 d-md-none d-sm-flex row">
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                                <div class="section__item  col-md-12 col-xl-2">
+                                    <div class="section__item_img">
+                                        <img src="./img/logo_namaste.png" alt="" srcset="">
+                                    </div>
+                                    <div class="section__item_title"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="section__footer"></div>
@@ -642,92 +742,114 @@
                             <h2 class="title__fline">Мы в Instagram</h2>
                             <h3 class="title__sline">Узнай о Нас больше!</h3>
                         </div>
-                        <div class="section__body container">
-                            <div class="row">            
-                                <div class="section__square col-md-12 col-xl-4">
-                                    <div class="section__item">
-                                            <div class="section__item_img">
-                                                <img src="./img/instagram-photo-1.png" alt="">
-                                            </div>
-                                            <div class="section__item_actions">
-                                                <div class="section__item_text">
-                                                    <div class="section__item_title">Заголовок публицкации</div>
-                                                    <div class="section__item_description">Краткое описание публикации</div>
-                                                </div>
-                                                <button class="btn btn-sm btn-success item_open"><span class="ico bg-next"></span></button>
-                                            </div>
+                        <div class="section__body row justify-content-center">
+                            <div class="section__square col-5 col-xl-4">
+                                <div class="section__item">
+                                    <div class="section__item_img">
+                                        <img src="./img/instagram-photo-1.png" alt="">
+                                    </div>
+                                    <div class="section__item_actions">
+                                        <div class="section__item_text">
+                                            <div class="section__item_title">Заголовок публицкации</div>
+                                            <div class="section__item_description d-none d-md-block">Краткое описание публикации</div>
+                                        </div>
+                                        <button class="item_open">
+                                            <span class="bt">
+                                                <span class="ico bg-next"></span>
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="section__square col-md-12 col-xl-4">
-                                    <div class="section__item">
-                                            <div class="section__item_img">
-                                                <img src="./img/instagram-photo-2.png" alt="">
-                                            </div>
-                                            <div class="section__item_actions">
-                                                <div class="section__item_text">
-                                                    <div class="section__item_title">Заголовок публицкации</div>
-                                                    <div class="section__item_description">Краткое описание публикации</div>
-                                                </div>
-                                                <button class="btn btn-sm btn-success item_open"><span class="ico bg-next"></span></button>
-                                            </div>
+                            </div>
+                            <div class="section__square col-5 col-xl-4">
+                                <div class="section__item">
+                                    <div class="section__item_img">
+                                        <img src="./img/instagram-photo-2.png" alt="">
+                                    </div>
+                                    <div class="section__item_actions">
+                                        <div class="section__item_text">
+                                            <div class="section__item_title">Заголовок публицкации</div>
+                                            <div class="section__item_description d-none d-md-block">Краткое описание публикации</div>
+                                        </div>
+                                        <button class="item_open">
+                                            <span class="bt">
+                                                <span class="ico bg-next"></span>
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="section__square col-md-12 col-xl-4">
-                                    <div class="section__item">
-                                            <div class="section__item_img">
-                                                <img src="./img/instagram-photo-3.png" alt="">
-                                            </div>
-                                            <div class="section__item_actions">
-                                                <div class="section__item_text">
-                                                    <div class="section__item_title">Заголовок публицкации</div>
-                                                    <div class="section__item_description">Краткое описание публикации</div>
-                                                </div>
-                                                <button class="btn btn-sm btn-success item_open"><span class="ico bg-next"></span></button>
-                                            </div>
+                            </div>
+                            <div class="section__square col-5 col-xl-4">
+                                <div class="section__item">
+                                    <div class="section__item_img">
+                                        <img src="./img/instagram-photo-3.png" alt="">
+                                    </div>
+                                    <div class="section__item_actions">
+                                        <div class="section__item_text">
+                                            <div class="section__item_title">Заголовок публицкации</div>
+                                            <div class="section__item_description d-none d-md-block">Краткое описание публикации</div>
+                                        </div>
+                                        <button class="item_open">
+                                            <span class="bt">
+                                                <span class="ico bg-next"></span>
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="section__square col-md-12 col-xl-4">
-                                    <div class="section__item">
-                                            <div class="section__item_img">
-                                                <img src="./img/instagram-photo-4.png" alt="">
-                                            </div>
-                                            <div class="section__item_actions">
-                                                <div class="section__item_text">
-                                                    <div class="section__item_title">Заголовок публицкации</div>
-                                                    <div class="section__item_description">Краткое описание публикации</div>
-                                                </div>
-                                                <button class="btn btn-sm btn-success item_open"><span class="ico bg-next"></span></button>
-                                            </div>
+                            </div>
+                            <div class="section__square col-5 col-xl-4">
+                                <div class="section__item">
+                                    <div class="section__item_img">
+                                        <img src="./img/instagram-photo-4.png" alt="">
+                                    </div>
+                                    <div class="section__item_actions">
+                                        <div class="section__item_text">
+                                            <div class="section__item_title">Заголовок публицкации</div>
+                                            <div class="section__item_description d-none d-md-block">Краткое описание публикации</div>
+                                        </div>
+                                        <button class="item_open">
+                                            <span class="bt">
+                                                <span class="ico bg-next"></span>
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="section__square col-md-12 col-xl-4">
-                                    <div class="section__item">
-                                            <div class="section__item_img">
-                                                <img src="./img/instagram-photo-5.png" alt="">
-                                            </div>
-                                            <div class="section__item_actions">
-                                                <div class="section__item_text">
-                                                    <div class="section__item_title">Заголовок публицкации</div>
-                                                    <div class="section__item_description">Краткое описание публикации</div>
-                                                </div>
-                                                <button class="btn btn-sm btn-success item_open"><span class="ico bg-next"></span></button>
-                                            </div>
+                            </div>
+                            <div class="section__square col-5 col-xl-4">
+                                <div class="section__item">
+                                    <div class="section__item_img">
+                                        <img src="./img/instagram-photo-5.png" alt="">
+                                    </div>
+                                    <div class="section__item_actions">
+                                        <div class="section__item_text">
+                                            <div class="section__item_title">Заголовок публицкации</div>
+                                            <div class="section__item_description d-none d-md-block">Краткое описание публикации</div>
+                                        </div>
+                                        <button class="item_open">
+                                            <span class="bt">
+                                                <span class="ico bg-next"></span>
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="section__square col-md-12 col-xl-4">
-                                    <div class="section__item">
-                                            <div class="section__item_img">
-                                                <img src="./img/instagram-photo-6.png" alt="">
-                                            </div>
-                                            <div class="section__item_actions">
-                                                <div class="section__item_text">
-                                                    <div class="section__item_title">Заголовок публицкации</div>
-                                                    <div class="section__item_description">Краткое описание публикации</div>
-                                                </div>
-                                                <button class="btn btn-sm btn-success item_open"><span class="ico bg-next"></span></button>
-                                            </div>
+                            </div>
+                            <div class="section__square col-5 col-xl-4">
+                                <div class="section__item">
+                                    <div class="section__item_img">
+                                        <img src="./img/instagram-photo-6.png" alt="">
                                     </div>
-                                </div> 
+                                    <div class="section__item_actions">
+                                        <div class="section__item_text">
+                                            <div class="section__item_title">Заголовок публицкации</div>
+                                            <div class="section__item_description d-none d-md-block">Краткое описание публикации</div>
+                                        </div>
+                                        <button class="item_open">
+                                            <span class="bt">
+                                                <span class="ico bg-next"></span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -757,7 +879,7 @@
         aria-selected="true"
         >
         <span class="cart__items_sum">3</span>
-        <span class="ico bg-shopping_cart__2_"></span
+        <span class="ico bg-shopping-cart-dd"></span
       ></a>
       <a
         class="nav-link"
@@ -767,7 +889,7 @@
         role="tab"
         aria-controls="v-pills-profile"
         aria-selected="false"
-        ><span class="ico bg-Shape"></span
+        ><span class="ico bg-heart-silver"></span
       ></a>
       <a
         class="nav-link"
@@ -777,7 +899,7 @@
         role="tab"
         aria-controls="v-pills-messages"
         aria-selected="false"
-        ><span class="ico bg-Shape_1_"></span
+        ><span class="ico bg-libra-silver"></span
       ></a>
     </div>
   </div>
@@ -1089,8 +1211,8 @@
                 <buton class="btn btn-danger d-block d-md-none col-12">Заказать звонок</buton>
             </div>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.0277983793835!2d37.65172841623024!3d55.74064598055013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54ae6157ac483%3A0xf7dc0d5f8dba3222!2z0KLQsNCz0LDQvdGB0LrQsNGPINC_0LsuLCA4LCDQnNC-0YHQutCy0LAsINCg0L7RgdGW0Y8sIDEwOTE0Nw!5e0!3m2!1sru!2sru!4v1584396190991!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A798063d01bd8cf52351cd3c6b28a8b6551f930ccfd90543b638c062a5be7e6f9&lang=ru_RU&scroll=false"></script> -->
+        <div id="YMapsID" style="width:100%;height:400px" class="YMaps YMaps-cursor-grab">        
+        </div>
     </div>
     <div class="content container footer__section">
         <div class="row">        
@@ -1100,7 +1222,7 @@
                 </a>
                 <div class="footer__col_call secondline__asktocontact col">
                     <a class="icon__sp" href="tel:88005553200">
-                        <span class="ico bg-green_call"></span>
+                        <span class="ico bg-green-call"></span>
                     </a>
                     <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
@@ -1115,9 +1237,9 @@
                     <a href="#">заказать звонок</a>
                 </div> -->
                 <div class="footer_col_social">
-                    <a href="#"><span class="ico bg-facebook_footer"></span></a>
-                    <a href="#"><span class="ico bg-instagram_footer"></span></a>
-                    <a href="#"><span class="ico bg-viber_footer"></span></a>
+                    <a href="#"><span class="ico bg-facebook-footer"></span></a>
+                    <a href="#"><span class="ico bg-instagram-footer"></span></a>
+                    <a href="#"><span class="ico bg-viber-footer"></span></a>
                 </div>
             </div>
             <div class="footer__col d-none d-lg-block col-lg-4 col-xl-6">
@@ -1152,7 +1274,7 @@
                                                   </div>
                                                 </div>
                                                 <div class="drop__item_cart">
-                                                  <span class="ico bg-shopping_cart_green_2"></span>
+                                                  <span class="ico bg-shopping-cart-green2"></span>
                                                 </div>
                                               </div>
                                             </li>
@@ -1168,7 +1290,7 @@
                                                   </div>
                                                 </div>
                                                 <div class="drop__item_cart">
-                                                  <span class="ico bg-shopping_cart_green_2"></span>
+                                                  <span class="ico bg-shopping-cart-green2"></span>
                                                 </div>
                                               </div>
                                             </li>
@@ -1184,7 +1306,7 @@
                                                   </div>
                                                 </div>
                                                 <div class="drop__item_cart">
-                                                  <span class="ico bg-shopping_cart_green_2"></span>
+                                                  <span class="ico bg-shopping-cart-green2"></span>
                                                 </div>
                                               </div>
                                             </li>
@@ -1193,35 +1315,35 @@
                 <div class="container">
                         <div class="footer__col_row row">
                             <ul class="col_row__colinside col-4">
-                                <li class="colinside__title">Title</li>
-                                <li>item 1</li>
-                                <li>item 2</li>
-                                <li>item 3</li>
-                                <li>item 4</li>
-                                <li>item 5</li>
+                                <li class="colinside__title">Каталог</li>
+                                <li><a href="#">Пункт первый</a></li>
+                                <li><a href="#">Второй пункт</a></li>
+                                <li><a href="#">Ссылка номер три</a></li>
+                                <li><a href="#">По счету четвертая</a></li>
+                                <li><a href="#">Пятая последняя</a></li>
                             </ul>
                             <ul class="col_row__colinside col-4">
-                                <li class="colinside__title">Title</li>
-                                <li>item 1</li>
-                                <li>item 2</li>
-                                <li>item 3</li>
-                                <li>item 4</li>
-                                <li>item 5</li>
+                                <li class="colinside__title">Меню</li>
+                                <li><a href="#">Гарантия</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Статьи</a></li>
+                                <li><a href="#">Преимущества</a></li>
                             </ul>
                             <ul class="col_row__colinside col-4">
-                                <li class="colinside__title">Title</li>
-                                <li>item 1</li>
-                                <li>item 2</li>
-                                <li>item 3</li>
-                                <li>item 4</li>
-                                <li>item 5</li>
+                                <li class="colinside__title">Каталог</li>
+                                <li><a href="#">Пункт первый</a></li>
+                                <li><a href="#">Второй пункт</a></li>
+                                <li><a href="#">Ссылка номер три</a></li>
+                                <li><a href="#">По счету четвертая</a></li>
+                                <li><a href="#">Пятая последняя</a></li>
                             </ul>
                         </div>
                     </div>
             </div>
             <div class="footer__col _pay d-flex flex-column justify-content-between col-sm-12 col-md-6 col-lg-5 col-xl-3 ml-xl-4">
                 <div class="footer__col_payment">
-                    <div class="payment_item"><span class="ico bg-mastercard_2"></span></div>
+                    <div class="payment_item"><span class="ico bg-mastercard-2"></span></div>
                     <div class="payment_item"><span class="ico bg-paypal"></span></div>
                     <div class="payment_item"><span class="ico bg-qiwi"></span></div>
                     <div class="payment_item"><span class="ico bg-bitcoin"></span></div>

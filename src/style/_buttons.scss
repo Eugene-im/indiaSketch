@@ -1,0 +1,57 @@
+// .btn-outline-danger:hover,
+// .btn-danger {
+//   background-color: $btn-danger;
+//   border-color: $btn-danger;
+// }
+
+// .btn-danger:hover,
+// .btn-outline-danger {
+//   color: $btn-danger;
+//   background-color: #fff;
+//   border-color: $btn-danger;
+// }
+
+// .btn-outline-warning:hover,
+// .btn-warning {
+//   background-color: $btn-warning;
+//   border-color: $btn-warning;
+// }
+
+// .btn-warning:hover,
+// .btn-outline-warning {
+//   color: $btn-warning;
+//   background-color: #fff;
+//   border-color: $btn-warning;
+// }
+
+// .btn-outline-success:hover,
+// .btn-success {
+//   background-color: $btn-success;
+//   border-color: $btn-success;
+// }
+
+// .btn-success:hover,
+// .btn-outline-success {
+//   color: $btn-success;
+//   background-color: #fff;
+//   border-color: $btn-success;
+// }
+
+// @mixin btn($type) {
+//   .btn-outline-#{$type}:hover,
+//   .btn-#{$type} {
+//     background-color: '$'+#{$type};
+//     border-color: '$'+#{$type};
+//   }
+  
+//   .btn-#{$type}:hover,
+//   .btn-outline-#{$type} {
+//     color: '$'+#{$type};
+//     background-color: #fff;
+//     border-color: '$'+#{$type};
+//   }   
+// }
+
+// @include btn(success);
+// @include btn(danger);
+// @include btn(warning);
