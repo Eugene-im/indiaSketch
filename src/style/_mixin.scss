@@ -23,6 +23,12 @@
     }
   }
 
+  @else if $size==minlg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
   @else if $size==xl {
     @media (max-width: 1200px) {
       @content;
@@ -62,7 +68,7 @@
 }
 
 @mixin icons($name, $w, $h, $hover) {
-  @if (($hover==h) and (($name==shopping-cart) or ($name==home) or ($name==catalog-icon) or ($name==search_button_mob) or ($name==shopping-cart-mobile) or ($name==shopping-cart-dd) or ($name==heart-silver) or ($name==libra-silver))) {
+  @if (($hover==h) and (($name==shopping-cart) or ($name==home) or ($name==next-arrow) or ($name==catalog-icon) or ($name==search_button_mob) or ($name==shopping-cart-mobile) or ($name==shopping-cart-dd) or ($name==heart-silver) or ($name==libra-silver))) {
     .bg-#{$name} {
       width: $w;
       height: $h;

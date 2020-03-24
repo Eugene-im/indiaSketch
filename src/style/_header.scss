@@ -237,9 +237,14 @@ a:not([href]):hover,
   padding-top: 16px;
 }
 
-.real.btn-outline-success {
+.real.btn-outline-secondary {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.148246);
   border-radius: 4px;
+
+  &:hover {
+  background-color: $btn-warning;
+  border-color: $btn-warning;
+  }
 }
 
 .real.btn-success {
@@ -255,12 +260,13 @@ a:not([href]):hover,
 }
 
 .mob {
-.nav-item:hover{
-  .nav-link{
-    color: #fff;
+  .nav-item:hover {
+    .nav-link {
+      color: #fff;
+    }
   }
-}
-  .nav-link{
+
+  .nav-link {
     color: inherit;
   }
 }

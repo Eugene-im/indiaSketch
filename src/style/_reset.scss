@@ -188,8 +188,11 @@ footer {
 		}
 	}
 }
-*:hover {
-	transition: 1.2s;
+*{
+// border-radius: 4px;
+	:hover {
+		transition: 1.2s;
+	}
 }
 
 a {

@@ -181,7 +181,7 @@ $(document).ready(function () {
   });
 
   $('.partners__slider').slick({
-    slidesToShow: 5,
+    slidesToShow: 6,
     arrows: false,
     dots: false,
     infinite: true,
@@ -230,7 +230,7 @@ $(document).ready(function () {
 
 function DropDown(el) {
   this.dd = el;
-  this.placeholder = this.dd.children('div.arrow_d');
+  this.placeholder = this.dd.find('div.arrow_d .choosed');
   this.opts = this.dd.find('ul.drop li');
   this.val = '';
   this.index = -1;
