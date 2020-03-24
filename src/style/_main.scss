@@ -309,34 +309,34 @@ h3.title__sline {
 }
 
 .main__section_hit {
-  @include for-size(md) {
+  // @include for-size(md) {
 
-    .btn-danger:hover,
-    .btn-outline-danger {
+  //   .btn-danger:hover,
+  //   .btn-outline-danger {
 
-      background-color: $btn-danger;
-      border-color: $btn-danger;
-    }
+  //     background-color: $btn-danger;
+  //     border-color: $btn-danger;
+  //   }
 
-    .btn-outline-danger:hover,
-    .btn-danger {
-      color: $btn-danger;
-      background-color: #fff;
-      border-color: $btn-danger;
-    }
+  //   .btn-outline-danger:hover,
+  //   .btn-danger {
+  //     color: $btn-danger;
+  //     background-color: #fff;
+  //     border-color: $btn-danger;
+  //   }
 
-    .btn-warning:hover,
-    .btn-outline-warning {
-      background-color: $btn-warning;
-      border-color: $btn-warning;
-    }
+  //   .btn-warning:hover,
+  //   .btn-outline-warning {
+  //     background-color: $btn-warning;
+  //     border-color: $btn-warning;
+  //   }
 
-    .btn-outline-warning:hover,
-    .btn-warning {
-      color: $btn-warning;
-      background-color: #fff;
-      border-color: $btn-warning;
-    }
+  //   .btn-outline-warning:hover,
+  //   .btn-warning {
+  //     color: $btn-warning;
+  //     background-color: #fff;
+  //     border-color: $btn-warning;
+  //   }
 
     // .btn-success:hover,
     // .btn-outline-success {
@@ -350,5 +350,5 @@ h3.title__sline {
     //   background-color: #fff;
     //   border-color: $btn-success;
     // }
-  }
+  // }
 }
