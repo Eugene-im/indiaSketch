@@ -40,12 +40,13 @@
     @include fs18;
   }
 
-  .drop__item_action_buttons{
-    button{
+  .drop__item_action_buttons {
+    button {
       height: 24px;
       width: 24px;
     }
   }
+
   .drop__item_counter {
     width: 136px;
 
@@ -93,12 +94,17 @@
   padding: 9px;
 
   .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
     background: #F7F7F7;
     color: inherit;
     border: none;
     width: 37px;
     height: 37px;
     margin: 0 10px;
+    border-radius: 4px;
 
     &.current,
     &:hover {

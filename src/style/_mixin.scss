@@ -10,7 +10,7 @@
       @content;
     }
   }
-  
+
   @else if $size==minmd {
     @media (min-width: 768px) {
       @content;
@@ -62,7 +62,7 @@
 }
 
 @mixin icons($name, $w, $h, $hover) {
-  @if $hover==h {
+  @if (($hover==h) and (($name==shopping-cart) or ($name==home) or ($name==catalog-icon) or ($name==search_button_mob) or ($name==shopping-cart-mobile) or ($name==shopping-cart-dd) or ($name==heart-silver) or ($name==libra-silver))) {
     .bg-#{$name} {
       width: $w;
       height: $h;
@@ -78,29 +78,45 @@
       transition: 1.2s;
     }
 
-    @if ($name == shopping-cart) or ($name == search_button_mob )or($name == shopping-cart-mobile) {
-      @include for-size(md){
-        .bg-#{$name} {
-          background-image: url('../img/icons/h/'+$name+'.png');
-        }
-        *:hover>.bg-#{$name} {
-          background-image: url('../img/icons/h/'+$name+'-hover.png');
-        } 
+    @include for-size(md) {
+      .bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'.png');
       }
-    }@else{
 
-      @include for-size(md){
-        .bg-#{$name} {
-          background-image: url('../img/icons/h/'+$name+'-hover.png');
-        }
-        *:hover>.bg-#{$name} {
-          background-image: url('../img/icons/h/'+$name+'.png');
-        } 
+      *:hover>.bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'-hover.png');
       }
     }
   }
 
-  @else if $hover==nh {
+  @else if(($hover==h)) {
+    .bg-#{$name} {
+      width: $w;
+      height: $h;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../img/icons/h/'+$name+'.png');
+
+    }
+
+    *:hover>.bg-#{$name} {
+      background-image: url('../img/icons/h/'+$name+'-hover.png');
+      transition: 1.2s;
+    }
+
+    @include for-size(md) {
+      .bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'-hover.png');
+      }
+
+      *:hover>.bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'.png');
+      }
+    }
+  }
+
+  @else {
     .bg-#{$name} {
       width: $w;
       height: $h;
@@ -110,4 +126,5 @@
       background-image: url('../img/icons/nh/'+$name+'.png');
     }
   }
+
 }

@@ -36,7 +36,43 @@
 
 // big ico_end
 
-@include icons(next, 12px, 12px, h);
+// @include icons(next, 12px, 12px, h);
+// @include icons(star_s, 12px, 12px, h);
+// @include icons(star_g, 12px, 12px, h);
+
+.bg-star_g {
+    width: 12px;
+    height: 12px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/icons/h/star_g.png');
+
+}
+
+.bg-star_g:hover {
+    background-image: url('../img/icons/h/star_g-hover.png');
+    transition: 1.2s;
+}
+
+.bg-star_s {
+    width: 12px;
+    height: 12px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/icons/h/star_s.png');
+
+}
+
+.bg-star_s:hover {
+    background-image: url('../img/icons/h/star_s-hover.png');
+    transition: 1.2s;
+}
+
+.rev.bg-next-arrow{
+    transform: rotate(180deg);
+}
 
 .bg-next {
     width: 6px;
@@ -45,7 +81,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-image: url('../img/icons/h/next.png');
-
 }
 
 *:hover>.bg-next {
@@ -61,8 +96,6 @@
 @include icons(libra-silver, 25px, 27px, h);
 @include icons(instagram, 12px, 12px, h);
 @include icons(telegram, 12px, 12px, h);
-@include icons(star_s, 12px, 12px, h);
-@include icons(star_g, 12px, 12px, h);
 @include icons(heart-silver, 24px, 24px, h);
 @include icons(search_button_mob, 26px, 26px, h);
 
@@ -73,6 +106,7 @@
 @include icons(user, 12px, 12px, h);
 @include icons(home, 12px, 12px, h);
 @include icons(heart, 16px, 18px, h);
+@include icons(heart2, 16px, 18px, h);
 @include icons(catalog-icon, 12px, 12px, h);
 @include icons(catalog-icon2, 17px, 17px, h);
 @include icons(shopping-cart, 22px, 20px, h);
