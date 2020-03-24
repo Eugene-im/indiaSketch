@@ -70,13 +70,30 @@
 
   }
 
-  .selected__param_item {
-    background: #F4F4F4;
-    border-radius: 4px;
-    height: 36px;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
+
+
+}
+
+.selected__param_item {
+  background: #F4F4F4;
+  border-radius: 4px;
+  height: 36px;
+  padding: 10px;
+  padding-right: 20px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+
+  @include for-size(minlg) {
+    display: none;
+  }
+}
+
+
+.tooggled {
+  @include for-size(lg) {
+    max-height: 55px !important;
+    overflow: hidden !important;
+    transition: 1.2s;
   }
 }

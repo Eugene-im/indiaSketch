@@ -136,9 +136,7 @@
     line-height: 25px;
   }
 
-  .drop__item_remove {
-    transform: rotate(45deg);
-  }
+
 
   .drop__item_text {
     max-width: 270px;
@@ -191,4 +189,8 @@
 .conteiner__footer_fline {
   display: flex;
   justify-content: space-between;
+}
+.drop__item_remove {
+  transform: rotate(45deg);
+  cursor: pointer;
 }

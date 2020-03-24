@@ -207,13 +207,14 @@ a:not([href]):hover,
     border: none;
   }
 
-  #dropdownMenu2 {
+  .dropdown-toggle {
     max-width: 185px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #4BBB81;
+    border: 1px solid $btn-success;
   }
 }
 

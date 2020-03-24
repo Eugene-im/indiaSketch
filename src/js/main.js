@@ -119,19 +119,21 @@ $(document).ready(function () {
       $(".cart__popup_block").addClass("dnone");
       $(".tab-content").addClass("dnone");
       $('.tab__butons .nav-link').removeClass('active');
-    }else if(
-              (e.target != $('#myTabContentmob')) && (
-              (e.target != $('#myTabmob'))           )
-            ){
-              if(
-                $('#myTabContentmob .tab-pane').hasClass('active')&&
-                $('#myTabContentmob .tab-pane').hasClass('show')
-              ){
-                $('#myTabmob .nav-item').removeClass('active');
-                $('#myTabmob .nav-item').attr({'aria-selected' :'false'});
-                $('#myTabContentmob .tab-pane').removeClass('active');
-                $('#myTabContentmob .tab-pane').removeClass('show');
-              }
+    } else if (
+      (e.target != $('#myTabContentmob')) && (
+        (e.target != $('#myTabmob')))
+    ) {
+      if (
+        $('#myTabContentmob .tab-pane').hasClass('active') &&
+        $('#myTabContentmob .tab-pane').hasClass('show')
+      ) {
+        $('#myTabmob .nav-item').removeClass('active');
+        $('#myTabmob .nav-item').attr({
+          'aria-selected': 'false'
+        });
+        $('#myTabContentmob .tab-pane').removeClass('active');
+        $('#myTabContentmob .tab-pane').removeClass('show');
+      }
     }
   });
 
@@ -228,49 +230,65 @@ $(document).ready(function () {
 
 
 
-function DropDown(el) {
-  this.dd = el;
-  this.placeholder = this.dd.find('div.arrow_d .choosed');
-  this.opts = this.dd.find('ul.drop li');
-  this.val = '';
-  this.index = -1;
-  this.initEvents();
-}
+  function DropDown(el) {
+    this.dd = el;
+    this.placeholder = this.dd.find('div.arrow_d .choosed');
+    this.opts = this.dd.find('ul.drop li');
+    this.val = '';
+    this.index = -1;
+    this.initEvents();
+  }
 
-DropDown.prototype = {
-  initEvents: function () {
+  DropDown.prototype = {
+    initEvents: function () {
       var obj = this;
       obj.dd.on('click', function (e) {
-          e.preventDefault();
-          e.stopPropagation();
-          $(this).toggleClass('active');
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).toggleClass('active');
       });
       obj.opts.on('click', function () {
-          var opt = $(this);
-          obj.val = opt.text();
-          obj.index = opt.index();
-          obj.placeholder.text(obj.val);
-          opt.siblings().removeClass('selected');
-          opt.filter(':contains("' + obj.val + '")').addClass('selected');
+        var opt = $(this);
+        obj.val = opt.text();
+        obj.index = opt.index();
+        obj.placeholder.text(obj.val);
+        opt.siblings().removeClass('selected');
+        opt.filter(':contains("' + obj.val + '")').addClass('selected');
       }).change();
-  },
-  getValue: function () {
+    },
+    getValue: function () {
       return this.val;
-  },
-  getIndex: function () {
+    },
+    getIndex: function () {
       return this.index;
-  }
-};
+    }
+  };
 
-$(function () {
-  // create new variable for each menu
-  var dd1 = new DropDown($('#noble-gases'));
-  // var dd2 = new DropDown($('#other-gases'));
-  $(document).click(function () {
+  $(function () {
+    // create new variable for each menu
+    var dd1 = new DropDown($('#noble-gases'));
+    // var dd2 = new DropDown($('#other-gases'));
+    $(document).click(function () {
       // close menu on document click
       $('.wrap-drop').removeClass('active');
+    });
   });
-});
+
+  $( window ).on('load',function() {
+    console.log($( window ).width());
+    if($( window ).width() <= 972 ){
+      $(".filter__section ").addClass("tooggled")
+    }
+  });
+
+  $('.toogl-btn').click(function(){
+    $(".filter__section").toggleClass("tooggled")
+  })
+
+  $(".drop__item_remove").click(function(e){
+    e.preventDefault();
+    $(this).parent().hide()
+  })
 
 });
 "use strict";

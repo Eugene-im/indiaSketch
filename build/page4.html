@@ -11,19 +11,12 @@
 
             <header>
               <div class="content container">
-                <div
-                  class="header__firstline row justify-content-between align-items-center d-none d-lg-flex"
-                >
+                <div class="header__firstline row justify-content-between align-items-center d-none d-lg-flex">
                   <div class="header__firstline_place col-lg-1">
                     <div class="btn-group">
                       <span class="ico bg-location"></span>
-                      <button
-                        class="dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                      <button class="dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
                         Москва
                       </button>
                       <div class="dropdown-menu">
@@ -48,9 +41,7 @@
                     </li>
                   </ul>
                 </div>
-                <div
-                  class="header__secondline row align-items-start align-items-lg-center justify-content-between pl-1 pr-1"
-                >
+                <div class="header__secondline row align-items-start align-items-lg-center justify-content-between pl-1 pr-1">
                   <a href="#" class="header__logo col-2 col-sm-2 ">
                       <img
                         class="d-none d-md-block"
@@ -65,37 +56,63 @@
                         srcset=""
                       />
                     </a>
-                  <div class="category__dropdown d-none d-lg-block col-lg-2 ">
-                    <button
-                      class="justify-content-center justify-content-md-between btn btn-success btn-lg dropdown-toggle"
-                      type="button"
-                      id="dropdownMenu2"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                    <span>
-                      Каталог
-                    </span>
+                  <div class="category__dropdown d-none d-lg-block col-lg-2 dropdown dd_catalog">
+                    <button class="justify-content-center justify-content-md-between btn btn-success btn-lg dropdown-toggle"
+                      type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span>
+                        Каталог
+                      </span>
                       <span class="ico bg-catalog-icon2 d-none d-md-inline-block"></span>
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">Another action</button>
-                      <button class="dropdown-item" type="button">
-                        Something else here
-                      </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <ul class="menu">
+                        <li class="dropdown-item">
+                          <a href="#">Action</a>
+                          <span class="ico micro rot-r bg-down-arrow"></span>
+                          <ul class="menu">
+                            <li class="dropdown-item">
+                              <a href="#">Action</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a href="#">Another action</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a href="#">Something else here</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a href="#">Something else here</a>
+                            </li>
+                            <li class="dropdown-item">
+                              <a href="#">Something else here</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="#">Another action</a>
+                          <span class="ico micro rot-r bg-down-arrow"></span>
+            
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="#">Something else here</a>
+                          <span class="ico micro rot-r bg-down-arrow"></span>
+            
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="#">Something else here</a>
+                          <span class="ico micro rot-r bg-down-arrow"></span>
+            
+                        </li>
+                        <li class="dropdown-item">
+                          <a href="#">Something else here</a>
+                          <span class="ico micro rot-r bg-down-arrow"></span>
+            
+                        </li>
+                      </ul>
                     </div>
                   </div>
                   <div class="header__col_search input-group d-none d-lg-flex col-lg-4">
-                    <input
-                      id="header__search"
-                      type="text"
-                      class="form-control"
-                      placeholder="Что Вас интересует?"
-                      aria-label="Что Вас интересует?"
-                      aria-describedby="button-addon2"
-                    />
+                    <input id="header__search" type="text" class="form-control" placeholder="Что Вас интересует?"
+                      aria-label="Что Вас интересует?" aria-describedby="button-addon2" />
                     <div class="input-group-append">
                       <button class="btn btn-sm" type="button" id="button-addon2">
                         <span class="ico bg-search"></span>
@@ -246,9 +263,7 @@
                   <div class="secondline__asktocontact d-none d-lg-block col-md-2">
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
             
-                    <a href="tel:88005553200" class="secondline__asktocontact_sline"
-                      >8 (800) 555-32-00</a
-                    >
+                    <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
                   </div>
                   <div class="secondline__userbuttons d-none d-lg-block pr-0">
                     <a href="#" class="btn btn-warning secondline__userbuttons_choosed">
@@ -295,404 +310,812 @@
                     <div class="category__section_title">
                       Каталог
                     </div>
-                    <div class="category__section_action"></div>
+                    <div class="category__section_action d-none d-lg-flex">
+            
+                      <div class="btn-group-toggle sort__param" data-toggle="buttons">
+                        <input type="checkbox" id="option01" autocomplete="off">
+                        <label for='option01' class="sort__param_abc btn  active">
+                          Алфавиту
+                          <span class="ico bg-down-arrow"></span>
+                        </label>
+                        <input type="checkbox" id="option02" autocomplete="off">
+                        <label for='option02' class="sort__param_cost btn ">
+                          По цене
+                          <span class="ico bg-down-arrow"></span>
+                        </label>
+                        <input type="checkbox" id="option03" autocomplete="off">
+                        <label for='option03' class="sort__param_rate btn ">
+                          По пулярности
+                          <span class="ico bg-down-arrow"></span>
+                        </label>
+                      </div>
+                      
+                      <div class="btn-group-toggle sort__view" data-toggle="buttons">
+                        <label class="sort__view_sq btn  active">
+                          <span class="ico bg-sq "></span>
+                          <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                        </label>
+                        <label class="sort__view_galery btn ">
+                          <span class="ico bg-galery "></span>
+                          <input type="radio" name="options" id="option2" autocomplete="off">
+                        </label>
+                        <label class="sort__view_row btn ">
+                          <span class="ico bg-row "></span>
+                          <input type="radio" name="options" id="option3" autocomplete="off">
+                        </label>
+                      </div>
+                      <!-- <div class="sort__view">
+                        <div class="sort__view_sq active">
+                        </div>
+                        <div class="sort__view_galery">
+                        </div>
+                        <div class="sort__view_row">
+                        </div>
+                      </div> -->
+                    </div>
                   </div>
-                  <div class="category__section_choose d-flex flex-column flex-lg-row">
-                    <div class="category__section_filter col-12 col-lg-3">
-                      <div class="filter__section site__ui">
-                        <div class="filter__title d-flex justify-content-between">
-                          <div class="filter__title_text">
-                            Подбор параметров
+                  <div class="category__section_choose d-flex flex-column">
+                    <div class="category__section_wrap d-flex flex-column flex-lg-row">
+            
+                      <div class="category__section_filter px-0 col-12 col-lg-3">
+                        <div class="filter__section site__ui">
+                          <div class="filter__title d-flex justify-content-between tooggled">
+                            <div class="filter__title_text">
+                              Подбор параметров
+                            </div>
+                            <span class="ico toogl-btn bg-levels d-lg-none d-inline-block"></span>
                           </div>
-                          <span class="ico bg-levels d-lg-none d-inline-block"></span>
-                        </div>
-                        <nav class="navbar navbar-light">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-                            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="filter__param_title">
-                              Диапазон цен
-                            </div>
-                            <span class="ico bg-plus"></span>
-                            <span class="ico bg-minus"></span>
-                          </button>
-                        </nav>
-                        <div class="collapse" id="navbarToggleExternalContent">
-                          <div class="filter__param_action">
-                            <div class="input__block_cost">
-                              <input id="multiMin" type="text" />
-                              <input id="multiMax" type="text" />
-                            </div>
-                            <div class="input__block_range">
-                              <input type="range" class="multi" multiple="" value="0,100">
-                            </div>
-                          </div>
-                        </div>
-                        <nav class="navbar navbar-light">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent2"
-                            aria-controls="navbarToggleExternalContent2" aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="filter__param_title">
-                              Изготовитель
-                            </div>
-                            <span class="ico bg-plus"></span>
-                            <span class="ico bg-minus"></span>
-                          </button>
-                        </nav>
-                        <div class="collapse" id="navbarToggleExternalContent2">
-                          <div class="filter__param_action">
-                            <div class="item__properties_radio d-flex flex-column plus color">
-                              <input class="styled-checkbox" id="styled-checkbox-31" type="checkbox" value="value1">
-                              <label for="styled-checkbox-31">
-                                text
-                              </label>
-                              <input class="styled-checkbox" id="styled-checkbox-32" type="checkbox" value="value2" checked="">
-                              <label for="styled-checkbox-32">
-                                text
-                              </label>
-                              <input class="styled-checkbox" id="styled-checkbox-33" type="checkbox" value="value3">
-                              <label for="styled-checkbox-33">
-                                text
-                              </label>
-                              <input class="styled-checkbox" id="styled-checkbox-34" type="checkbox" value="value4">
-                              <label for="styled-checkbox-34">
-                                text
-                              </label>
-                      
+                          <nav class="navbar navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                              aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <div class="filter__param_title">
+                                Диапазон цен
+                              </div>
+                              <span class="ico bg-plus"></span>
+                              <span class="ico bg-minus"></span>
+                            </button>
+                          </nav>
+                          <div class="collapse" id="navbarToggleExternalContent">
+                            <div class="filter__param_action">
+                              <div class="input__block_cost">
+                                <input id="multiMin" type="text" />
+                                <input id="multiMax" type="text" />
+                              </div>
+                              <div class="input__block_range">
+                                <input type="range" class="multi" multiple="" value="0,100">
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <nav class="navbar navbar-light">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent3"
-                            aria-controls="navbarToggleExternalContent3" aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="filter__param_title">
-                              Материал
-                            </div>
-                            <span class="ico bg-plus"></span>
-                            <span class="ico bg-minus"></span>
-                          </button>
-                        </nav>
-                        <div class="collapse" id="navbarToggleExternalContent3">
-                          <!-- <select class="custom-select custom-select-lg mb-3">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select> -->
-                          <div class="wrap-drop" id="noble-gases">
-                            <div class="arrow_d">
-                              <span class="choosed">All Noble Gases</span>
-                              <span class="ico bg-down-arrow"></span>
-                            </div>
-                            
-                            <ul class="drop">
-                              <li class="selected"><a>All Noble Gases</a></li>
-                              <li><a>Helium</a></li>
-                              <li><a>Neon</a></li>
-                              <li><a>Argon</a></li>
-                              <li><a>Krypton</a></li>
-                              <li><a>Xenon</a></li>
-                              <li><a>Radon</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <nav class="navbar navbar-light">
-                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent4"
-                            aria-controls="navbarToggleExternalContent4" aria-expanded="false" aria-label="Toggle navigation">
-                            <div class="filter__param_title">
-                              Бренд
-                            </div>
-                            <span class="ico bg-plus"></span>
-                            <span class="ico bg-minus"></span>
-                          </button>
-                        </nav>
-                        <div class="collapse" id="navbarToggleExternalContent4">
-                          <div class="filter__param_action">
-                            <div class="item__properties_radio d-flex flex-column circle color">
-                              <input class="styled-checkbox" id="styled-checkbox-11" type="radio" value="value1" name="variant2">
-                              <label for="styled-checkbox-11">
-                                text
-                              </label>
-                              <input class="styled-checkbox" id="styled-checkbox-12" type="radio" value="value2" name="variant2" checked="">
-                              <label for="styled-checkbox-12">
-                                text
-                              </label>
-                              <input class="styled-checkbox" id="styled-checkbox-13" type="radio" value="value3" name="variant2">
-                              <label for="styled-checkbox-13">
-                                text
-                              </label>
-                              <input class="styled-checkbox" id="styled-checkbox-14" type="radio" value="value4" name="variant2">
-                              <label for="styled-checkbox-14">
-                                text
-                              </label>
-                      
+                          <nav class="navbar navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent2"
+                              aria-controls="navbarToggleExternalContent2" aria-expanded="false" aria-label="Toggle navigation">
+                              <div class="filter__param_title">
+                                Изготовитель
+                              </div>
+                              <span class="ico bg-plus"></span>
+                              <span class="ico bg-minus"></span>
+                            </button>
+                          </nav>
+                          <div class="collapse" id="navbarToggleExternalContent2">
+                            <div class="filter__param_action">
+                              <div class="item__properties_radio d-flex flex-column plus color">
+                                <input class="styled-checkbox" id="styled-checkbox-31" type="checkbox" value="value1">
+                                <label for="styled-checkbox-31">
+                                  text
+                                </label>
+                                <input class="styled-checkbox" id="styled-checkbox-32" type="checkbox" value="value2" checked="">
+                                <label for="styled-checkbox-32">
+                                  text
+                                </label>
+                                <input class="styled-checkbox" id="styled-checkbox-33" type="checkbox" value="value3">
+                                <label for="styled-checkbox-33">
+                                  text
+                                </label>
+                                <input class="styled-checkbox" id="styled-checkbox-34" type="checkbox" value="value4">
+                                <label for="styled-checkbox-34">
+                                  text
+                                </label>
+                        
+                              </div>
                             </div>
                           </div>
+                          <nav class="navbar navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent3"
+                              aria-controls="navbarToggleExternalContent3" aria-expanded="false" aria-label="Toggle navigation">
+                              <div class="filter__param_title">
+                                Материал
+                              </div>
+                              <span class="ico bg-plus"></span>
+                              <span class="ico bg-minus"></span>
+                            </button>
+                          </nav>
+                          <div class="collapse" id="navbarToggleExternalContent3">
+                            <!-- <select class="custom-select custom-select-lg mb-3">
+                              <option selected>Open this select menu</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select> -->
+                            <div class="wrap-drop" id="noble-gases">
+                              <div class="arrow_d">
+                                <span class="choosed">All Noble Gases</span>
+                                <span class="ico bg-down-arrow"></span>
+                              </div>
+                              
+                              <ul class="drop">
+                                <li class="selected"><a>All Noble Gases</a></li>
+                                <li><a>Helium</a></li>
+                                <li><a>Neon</a></li>
+                                <li><a>Argon</a></li>
+                                <li><a>Krypton</a></li>
+                                <li><a>Xenon</a></li>
+                                <li><a>Radon</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <nav class="navbar navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent4"
+                              aria-controls="navbarToggleExternalContent4" aria-expanded="false" aria-label="Toggle navigation">
+                              <div class="filter__param_title">
+                                Бренд
+                              </div>
+                              <span class="ico bg-plus"></span>
+                              <span class="ico bg-minus"></span>
+                            </button>
+                          </nav>
+                          <div class="collapse" id="navbarToggleExternalContent4">
+                            <div class="filter__param_action">
+                              <div class="item__properties_radio d-flex flex-column circle color">
+                                <input class="styled-checkbox" id="styled-checkbox-11" type="radio" value="value1" name="variant2">
+                                <label for="styled-checkbox-11">
+                                  text
+                                </label>
+                                <input class="styled-checkbox" id="styled-checkbox-12" type="radio" value="value2" name="variant2" checked="">
+                                <label for="styled-checkbox-12">
+                                  text
+                                </label>
+                                <input class="styled-checkbox" id="styled-checkbox-13" type="radio" value="value3" name="variant2">
+                                <label for="styled-checkbox-13">
+                                  text
+                                </label>
+                                <input class="styled-checkbox" id="styled-checkbox-14" type="radio" value="value4" name="variant2">
+                                <label for="styled-checkbox-14">
+                                  text
+                                </label>
+                        
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                      <div class="selected__param">
-                      
-                        <div class="selected__param_item d-block d-lg-none">
-                            <span class="selected__param_item_text">
-                              Такой-то параметр
-                            </span>
-                            <span class="ico">+</span>
-                        </div>
+                          <div class="selected__param">
+                          
+                            <div class="selected__param_item">
+                                <span class="selected__param_item_text">
+                                  Такой-то параметр
+                                </span>
+                                <span class="drop__item_remove">+</span>
+                            </div>
+                          </div>
                       </div>
+                      <div class="category__section_items px-0 item_sq col-12 col-lg-9">
+                        <div class="section__items item_row">
+                          <div class="drop__row">
+                            <div class="drop__item_img">
+                              <img src="./img/logo_namaste.png" alt="" srcset="" />
+                            </div>
+                            <div class="drop__item_text">
+                              <div class="drop__item_rate">
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_s"></span>
+                                <span class="numbers">
+                                  (253)
+                                </span>
+                              </div>
+                              <div class="drop__item_title">Название бренда</div>
+                              <div class="drop__item_action_buttons">
+                                <button class="btn btn-xsm btn-outline-danger">
+                                  <span class="ico bg-heart2"></span>
+                                </button>
+                                <button class="btn btn-xsm btn-outline-warning">
+                                  <span class="ico bg-libra2"></span>
+                                </button>
+                              </div>
+            
+                            </div>
+                            <div class="drop__item_indicator">
+                              <div class="drop__item_indicator_status"></div>
+                              <div class="drop__item_indicator_status_av">В наличии</div>
+                              <div class="drop__item_indicator_status_notav"></div>
+                            </div>
+                            <div class="drop__item_amount">1 998 руб.</div>
+                            <div class="drop__item_counter">
+                              <div class="input-group">
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
+                                    data-field="quant[1]">
+                                    -
+                                  </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    +
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                            <button class="btn btn-success item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              Заказать
+                            </button>
+                          </div>
+            
+                        </div>
+                        <div class="section__items item_row">
+                          <div class="drop__row">
+                            <div class="drop__item_img">
+                              <img src="./img/logo_namaste.png" alt="" srcset="" />
+                            </div>
+                            <div class="drop__item_text">
+                              <div class="drop__item_rate">
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_s"></span>
+                                <span class="numbers">
+                                  (253)
+                                </span>
+                              </div>
+                              <div class="drop__item_title">Название бренда</div>
+                              <div class="drop__item_action_buttons">
+                                <button class="btn btn-xsm btn-outline-danger">
+                                  <span class="ico bg-heart2"></span>
+                                </button>
+                                <button class="btn btn-xsm btn-outline-warning">
+                                  <span class="ico bg-libra2"></span>
+                                </button>
+                              </div>
+            
+                            </div>
+                            <div class="drop__item_indicator">
+                              <div class="drop__item_indicator_status"></div>
+                              <div class="drop__item_indicator_status_av">В наличии</div>
+                              <div class="drop__item_indicator_status_notav"></div>
+                            </div>
+                            <div class="drop__item_amount">1 998 руб.</div>
+                            <div class="drop__item_counter">
+                              <div class="input-group">
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
+                                    data-field="quant[1]">
+                                    -
+                                  </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    +
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                            <button class="btn btn-success item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              Заказать
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__items item_row">
+                          <div class="drop__row">
+                            <div class="drop__item_img">
+                              <img src="./img/logo_namaste.png" alt="" srcset="" />
+                            </div>
+                            <div class="drop__item_text">
+                              <div class="drop__item_rate">
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_s"></span>
+                                <span class="numbers">
+                                  (253)
+                                </span>
+                              </div>
+                              <div class="drop__item_title">Название бренда</div>
+                              <div class="drop__item_action_buttons">
+                                <button class="btn btn-xsm btn-outline-danger">
+                                  <span class="ico bg-heart2"></span>
+                                </button>
+                                <button class="btn btn-xsm btn-outline-warning">
+                                  <span class="ico bg-libra2"></span>
+                                </button>
+                              </div>
+            
+                            </div>
+                            <div class="drop__item_indicator">
+                              <div class="drop__item_indicator_status"></div>
+                              <div class="drop__item_indicator_status_av">В наличии</div>
+                              <div class="drop__item_indicator_status_notav"></div>
+                            </div>
+                            <div class="drop__item_amount">1 998 руб.</div>
+                            <div class="drop__item_counter">
+                              <div class="input-group">
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
+                                    data-field="quant[1]">
+                                    -
+                                  </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    +
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                            <button class="btn btn-success item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              Заказать
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__items item_row">
+                          <div class="drop__row">
+                            <div class="drop__item_img">
+                              <img src="./img/logo_namaste.png" alt="" srcset="" />
+                            </div>
+                            <div class="drop__item_text">
+                              <div class="drop__item_rate">
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_g"></span>
+                                <span class="ico bg-star_s"></span>
+                                <span class="numbers">
+                                  (253)
+                                </span>
+                              </div>
+                              <div class="drop__item_title">Название бренда</div>
+                              <div class="drop__item_action_buttons">
+                                <button class="btn btn-xsm btn-outline-danger">
+                                  <span class="ico bg-heart2"></span>
+                                </button>
+                                <button class="btn btn-xsm btn-outline-warning">
+                                  <span class="ico bg-libra2"></span>
+                                </button>
+                              </div>
+            
+                            </div>
+                            <div class="drop__item_indicator">
+                              <div class="drop__item_indicator_status"></div>
+                              <div class="drop__item_indicator_status_av">В наличии</div>
+                              <div class="drop__item_indicator_status_notav"></div>
+                            </div>
+                            <div class="drop__item_amount">1 998 руб.</div>
+                            <div class="drop__item_counter">
+                              <div class="input-group">
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
+                                    data-field="quant[1]">
+                                    -
+                                  </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
+                                <span class="input-group-btn">
+                                  <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                    +
+                                  </button>
+                                </span>
+                              </div>
+                            </div>
+                            <button class="btn btn-success item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              Заказать
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__item col-6 col-lg-4 item_sq">
+                          <div class="section__item_pin pin_new">Новинка</div>
+                          <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
+                          <div class="section__item_title">Название бренда</div>
+                          <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
+                          <div class="section__item_price">
+                            <span class="price_new">999 руб.</span>
+                            <span class="price_old">1999 руб.</span>
+                          </div>
+                          <div class="section__item_actions d-flex justify-content-stretch">
+                            <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              <span class="d-none d-md-inline">
+                                Заказать
+                              </span>
+                            </button>
+                            <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                              <span class="ico bg-heart"></span>
+                            </button>
+                            <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
+                              <span class="ico bg-libra"></span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__item col-6 col-lg-4 item_sq">
+                          <div class="section__item_pin pin_new">Новинка</div>
+                          <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
+                          <div class="section__item_title">Название бренда</div>
+                          <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
+                          <div class="section__item_price">
+                            <span class="price_new">999 руб.</span>
+                            <span class="price_old">1999 руб.</span>
+                          </div>
+                          <div class="section__item_actions d-flex justify-content-stretch">
+                            <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              <span class="d-none d-md-inline">
+                                Заказать
+                              </span>
+                            </button>
+                            <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                              <span class="ico bg-heart"></span>
+                            </button>
+                            <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
+                              <span class="ico bg-libra"></span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__item col-6 col-lg-4 item_sq">
+                          <div class="section__item_pin pin_new">Новинка</div>
+                          <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
+                          <div class="section__item_title">Название бренда</div>
+                          <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
+                          <div class="section__item_price">
+                            <span class="price_new">999 руб.</span>
+                            <span class="price_old">1999 руб.</span>
+                          </div>
+                          <div class="section__item_actions d-flex justify-content-stretch">
+                            <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              <span class="d-none d-md-inline">
+                                Заказать
+                              </span>
+                            </button>
+                            <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                              <span class="ico bg-heart"></span>
+                            </button>
+                            <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
+                              <span class="ico bg-libra"></span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__item col-6 col-lg-4 item_sq">
+                          <div class="section__item_pin pin_new">Новинка</div>
+                          <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
+                          <div class="section__item_title">Название бренда</div>
+                          <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
+                          <div class="section__item_price">
+                            <span class="price_new">999 руб.</span>
+                            <span class="price_old">1999 руб.</span>
+                          </div>
+                          <div class="section__item_actions d-flex justify-content-stretch">
+                            <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              <span class="d-none d-md-inline">
+                                Заказать
+                              </span>
+                            </button>
+                            <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                              <span class="ico bg-heart"></span>
+                            </button>
+                            <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
+                              <span class="ico bg-libra"></span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__item col-6 col-lg-4 item_sq">
+                          <div class="section__item_pin pin_new">Новинка</div>
+                          <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
+                          <div class="section__item_title">Название бренда</div>
+                          <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
+                          <div class="section__item_price">
+                            <span class="price_new">999 руб.</span>
+                            <span class="price_old">1999 руб.</span>
+                          </div>
+                          <div class="section__item_actions d-flex justify-content-stretch">
+                            <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              <span class="d-none d-md-inline">
+                                Заказать
+                              </span>
+                            </button>
+                            <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                              <span class="ico bg-heart"></span>
+                            </button>
+                            <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
+                              <span class="ico bg-libra"></span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="section__item col-6 col-lg-4 item_sq">
+                          <div class="section__item_pin pin_new">Новинка</div>
+                          <div class="section__item_img"><img src="./img/logo_namaste.png" alt="def_item" srcset=""></div>
+                          <div class="section__item_title">Название бренда</div>
+                          <div class="section__item_description d-none d-md-block">Более детальное название бренда</div>
+                          <div class="section__item_price">
+                            <span class="price_new">999 руб.</span>
+                            <span class="price_old">1999 руб.</span>
+                          </div>
+                          <div class="section__item_actions d-flex justify-content-stretch">
+                            <button class="btn btn-success flex-shrink-2 flex-grow-1 item_buy">
+                              <span class="ico bg-shopping-cart"></span>
+                              <span class="d-none d-md-inline">
+                                Заказать
+                              </span>
+                            </button>
+                            <button class="btn btn-danger mx-1 flex-shrink-1 flex-grow-2 item_follow">
+                              <span class="ico bg-heart"></span>
+                            </button>
+                            <button class="btn btn-warning flex-shrink-1 flex-grow-2 item_equal">
+                              <span class="ico bg-libra"></span>
+                            </button>
+                          </div>
+                        </div>
+            
+                        <div class="section__items item_row item_galery">
+                          <div class="drop__row">
+                            <div class="drop__item_img">
+                              <img src="./img/logo_namaste.png" alt="" srcset="" />
+                            </div>
+                            <div class="drop__item_desc">
+            
+                              <div class="drop__item_text">
+            
+                                <div class="drop__item_title">Название бренда</div>
+                                <div class="drop__item_indicator">
+                                  <div class="drop__item_indicator_status"></div>
+                                  <div class="drop__item_indicator_status_av">В наличии</div>
+                                  <div class="drop__item_indicator_status_notav"></div>
+                                  <div class="drop__item_rate">
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_s"></span>
+                                    <span class="numbers">
+                                      (253)
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="drop__item_article">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos velit ducimus magni dolorum
+                                  assumenda numquam quibusdam cupiditate porro minus possimus temporibus a ratione magnam alias
+                                  consequuntur, expedita illo sunt aliquid delectus fuga atque. Dolore quisquam alias sequi enim
+                                  aliquid ad consectetur laboriosam ab, sapiente assumenda natus nesciunt vel quibusdam!
+                                </div>
+            
+                              </div>
+                              <div class="drop__item_action_buttons">
+            
+                                <div class="section__item_price">
+                                  <span class="price_old">1999 руб.</span>
+                                  <span class="price_new">999 руб.</span>
+                                </div>
+                                <div class="drop__item_act_btns">
+                                  <div class="drop__item_counter">
+                                    <div class="input-group">
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                          data-type="minus" data-field="quant[1]">
+                                          -
+                                        </button>
+                                      </span>
+                                      <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1"
+                                        max="9999" />
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                          data-field="quant[1]">
+                                          +
+                                        </button>
+                                      </span>
+                                    </div>
+                                  </div>
+            
+            
+                                  <button class="btn btn-success item_buy">
+                                    <span class="ico bg-shopping-cart"></span>
+                                    Заказать
+                                  </button>
+                                  <button class="btn btn-outline-danger">
+                                    <span class="ico bg-heart2"></span>
+                                  </button>
+                                  <button class="btn btn-outline-warning">
+                                    <span class="ico bg-libra2"></span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__items item_row item_galery">
+                          <div class="drop__row">
+                            <div class="drop__item_img">
+                              <img src="./img/logo_namaste.png" alt="" srcset="" />
+                            </div>
+                            <div class="drop__item_desc">
+            
+                              <div class="drop__item_text">
+            
+                                <div class="drop__item_title">Название бренда</div>
+                                <div class="drop__item_indicator">
+                                  <div class="drop__item_indicator_status"></div>
+                                  <div class="drop__item_indicator_status_av">В наличии</div>
+                                  <div class="drop__item_indicator_status_notav"></div>
+                                  <div class="drop__item_rate">
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_s"></span>
+                                    <span class="numbers">
+                                      (253)
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="drop__item_article">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos velit ducimus magni dolorum
+                                  assumenda numquam quibusdam cupiditate porro minus possimus temporibus a ratione magnam alias
+                                  consequuntur, expedita illo sunt aliquid delectus fuga atque. Dolore quisquam alias sequi enim
+                                  aliquid ad consectetur laboriosam ab, sapiente assumenda natus nesciunt vel quibusdam!
+                                </div>
+            
+                              </div>
+                              <div class="drop__item_action_buttons">
+            
+                                <div class="section__item_price">
+                                  <span class="price_old">1999 руб.</span>
+                                  <span class="price_new">999 руб.</span>
+                                </div>
+                                <div class="drop__item_act_btns">
+                                  <div class="drop__item_counter">
+                                    <div class="input-group">
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                          data-type="minus" data-field="quant[1]">
+                                          -
+                                        </button>
+                                      </span>
+                                      <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1"
+                                        max="9999" />
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                          data-field="quant[1]">
+                                          +
+                                        </button>
+                                      </span>
+                                    </div>
+                                  </div>
+            
+            
+                                  <button class="btn btn-success item_buy">
+                                    <span class="ico bg-shopping-cart"></span>
+                                    Заказать
+                                  </button>
+                                  <button class="btn btn-outline-danger">
+                                    <span class="ico bg-heart2"></span>
+                                  </button>
+                                  <button class="btn btn-outline-warning">
+                                    <span class="ico bg-libra2"></span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="section__items item_row item_galery">
+                          <div class="drop__row">
+                            <div class="drop__item_img">
+                              <img src="./img/logo_namaste.png" alt="" srcset="" />
+                            </div>
+                            <div class="drop__item_desc">
+            
+                              <div class="drop__item_text">
+            
+                                <div class="drop__item_title">Название бренда</div>
+                                <div class="drop__item_indicator">
+                                  <div class="drop__item_indicator_status"></div>
+                                  <div class="drop__item_indicator_status_av">В наличии</div>
+                                  <div class="drop__item_indicator_status_notav"></div>
+                                  <div class="drop__item_rate">
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_g"></span>
+                                    <span class="ico bg-star_s"></span>
+                                    <span class="numbers">
+                                      (253)
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="drop__item_article">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quos velit ducimus magni dolorum
+                                  assumenda numquam quibusdam cupiditate porro minus possimus temporibus a ratione magnam alias
+                                  consequuntur, expedita illo sunt aliquid delectus fuga atque. Dolore quisquam alias sequi enim
+                                  aliquid ad consectetur laboriosam ab, sapiente assumenda natus nesciunt vel quibusdam!
+                                </div>
+            
+                              </div>
+                              <div class="drop__item_action_buttons">
+            
+                                <div class="section__item_price">
+                                  <span class="price_old">1999 руб.</span>
+                                  <span class="price_new">999 руб.</span>
+                                </div>
+                                <div class="drop__item_act_btns">
+                                  <div class="drop__item_counter">
+                                    <div class="input-group">
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" disabled="disabled"
+                                          data-type="minus" data-field="quant[1]">
+                                          -
+                                        </button>
+                                      </span>
+                                      <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1"
+                                        max="9999" />
+                                      <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-number" data-type="plus"
+                                          data-field="quant[1]">
+                                          +
+                                        </button>
+                                      </span>
+                                    </div>
+                                  </div>
+            
+            
+                                  <button class="btn btn-success item_buy">
+                                    <span class="ico bg-shopping-cart"></span>
+                                    Заказать
+                                  </button>
+                                  <button class="btn btn-outline-danger">
+                                    <span class="ico bg-heart2"></span>
+                                  </button>
+                                  <button class="btn btn-outline-warning">
+                                    <span class="ico bg-libra2"></span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            
                       </div>
                     </div>
-                    <div class="category__section_items col-12 col-lg-9">
-                      <div class="section__items">
-                        <div class="drop__row">
-                          <div class="drop__item_img">
-                            <img src="./img/logo_namaste.png" alt="" srcset="" />
-                          </div>
-                          <div class="drop__item_text">
-                            <div class="drop__item_rate">
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_s"></span>
-                              <span class="numbers">
-                                (253)
-                              </span>
-                            </div>
-                            <div class="drop__item_title">Название бренда</div>
-                            <div class="drop__item_action_buttons">
-                              <button class="btn btn-xsm btn-outline-danger">
-                                <span class="ico bg-heart2"></span>
-                              </button>
-                              <button class="btn btn-xsm btn-outline-warning">
-                                <span class="ico bg-libra2"></span>
-                              </button>
-                            </div>
-                            <!-- <div class="drop__item_description">
-                              <div class="drop__item_cost">999 руб</div>
-                              <div class="drop__item_cost_type">розничная цена</div>
-                            </div> -->
-                          </div>
-                          <div class="drop__item_indicator">
-                            <div class="drop__item_indicator_status"></div>
-                            <div class="drop__item_indicator_status_av">В наличии</div>
-                            <div class="drop__item_indicator_status_notav"></div>
-                          </div>
-                          <div class="drop__item_amount">1 998 руб.</div>
-                          <div class="drop__item_counter">
-                            <div class="input-group">
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
-                                  data-field="quant[1]">
-                                  -
-                                </button>
-                              </span>
-                              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                  +
-                                </button>
-                              </span>
-                            </div>
-                          </div>
-                          <button class="btn btn-success item_buy">
-                            <span class="ico bg-shopping_cart__1_"></span>
-                            Заказать
-                          </button>
-                        </div>
-                      </div>
-                      <div class="section__items">
-                        <div class="drop__row">
-                          <div class="drop__item_img">
-                            <img src="./img/logo_namaste.png" alt="" srcset="" />
-                          </div>
-                          <div class="drop__item_text">
-                            <div class="drop__item_rate">
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_s"></span>
-                              <span class="numbers">
-                                (253)
-                              </span>
-                            </div>
-                            <div class="drop__item_title">Название бренда</div>
-                            <div class="drop__item_action_buttons">
-                              <button class="btn btn-xsm btn-outline-danger">
-                                <span class="ico bg-heart2"></span>
-                              </button>
-                              <button class="btn btn-xsm btn-outline-warning">
-                                <span class="ico bg-libra2"></span>
-                              </button>
-                            </div>
-                            <!-- <div class="drop__item_description">
-                              <div class="drop__item_cost">999 руб</div>
-                              <div class="drop__item_cost_type">розничная цена</div>
-                            </div> -->
-                          </div>
-                          <div class="drop__item_indicator">
-                            <div class="drop__item_indicator_status"></div>
-                            <div class="drop__item_indicator_status_av">В наличии</div>
-                            <div class="drop__item_indicator_status_notav"></div>
-                          </div>
-                          <div class="drop__item_amount">1 998 руб.</div>
-                          <div class="drop__item_counter">
-                            <div class="input-group">
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
-                                  data-field="quant[1]">
-                                  -
-                                </button>
-                              </span>
-                              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                  +
-                                </button>
-                              </span>
-                            </div>
-                          </div>
-                          <button class="btn btn-success item_buy">
-                            <span class="ico bg-shopping_cart__1_"></span>
-                            Заказать
-                          </button>
-                        </div>
-                      </div>
-                      <div class="section__items">
-                        <div class="drop__row">
-                          <div class="drop__item_img">
-                            <img src="./img/logo_namaste.png" alt="" srcset="" />
-                          </div>
-                          <div class="drop__item_text">
-                            <div class="drop__item_rate">
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_s"></span>
-                              <span class="numbers">
-                                (253)
-                              </span>
-                            </div>
-                            <div class="drop__item_title">Название бренда</div>
-                            <div class="drop__item_action_buttons">
-                              <button class="btn btn-xsm btn-outline-danger">
-                                <span class="ico bg-heart2"></span>
-                              </button>
-                              <button class="btn btn-xsm btn-outline-warning">
-                                <span class="ico bg-libra2"></span>
-                              </button>
-                            </div>
-                            <!-- <div class="drop__item_description">
-                              <div class="drop__item_cost">999 руб</div>
-                              <div class="drop__item_cost_type">розничная цена</div>
-                            </div> -->
-                          </div>
-                          <div class="drop__item_indicator">
-                            <div class="drop__item_indicator_status"></div>
-                            <div class="drop__item_indicator_status_av">В наличии</div>
-                            <div class="drop__item_indicator_status_notav"></div>
-                          </div>
-                          <div class="drop__item_amount">1 998 руб.</div>
-                          <div class="drop__item_counter">
-                            <div class="input-group">
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
-                                  data-field="quant[1]">
-                                  -
-                                </button>
-                              </span>
-                              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                  +
-                                </button>
-                              </span>
-                            </div>
-                          </div>
-                          <button class="btn btn-success item_buy">
-                            <span class="ico bg-shopping_cart__1_"></span>
-                            Заказать
-                          </button>
-                        </div>
-                      </div>
-                      <div class="section__items">
-                        <div class="drop__row">
-                          <div class="drop__item_img">
-                            <img src="./img/logo_namaste.png" alt="" srcset="" />
-                          </div>
-                          <div class="drop__item_text">
-                            <div class="drop__item_rate">
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_g"></span>
-                              <span class="ico bg-star_s"></span>
-                              <span class="numbers">
-                                (253)
-                              </span>
-                            </div>
-                            <div class="drop__item_title">Название бренда</div>
-                            <div class="drop__item_action_buttons">
-                              <button class="btn btn-xsm btn-outline-danger">
-                                <span class="ico bg-heart2"></span>
-                              </button>
-                              <button class="btn btn-xsm btn-outline-warning">
-                                <span class="ico bg-libra2"></span>
-                              </button>
-                            </div>
-                            <!-- <div class="drop__item_description">
-                              <div class="drop__item_cost">999 руб</div>
-                              <div class="drop__item_cost_type">розничная цена</div>
-                            </div> -->
-                          </div>
-                          <div class="drop__item_indicator">
-                            <div class="drop__item_indicator_status"></div>
-                            <div class="drop__item_indicator_status_av">В наличии</div>
-                            <div class="drop__item_indicator_status_notav"></div>
-                          </div>
-                          <div class="drop__item_amount">1 998 руб.</div>
-                          <div class="drop__item_counter">
-                            <div class="input-group">
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
-                                  data-field="quant[1]">
-                                  -
-                                </button>
-                              </span>
-                              <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="9999" />
-                              <span class="input-group-btn">
-                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                                  +
-                                </button>
-                              </span>
-                            </div>
-                          </div>
-                          <button class="btn btn-success item_buy">
-                            <span class="ico bg-shopping_cart__1_"></span>
-                            Заказать
-                          </button>
-                        </div>
-                      </div>
-                      <div class="section__items_pagination d-flex flex-column align-items-center jastify-content-center">
-                        <button class="btn dmore d-block btn-success mb-2 col-10">
-                          Загрузить еще
-                        </button>
-                        <nav aria-label="Page navigation example">
-                          <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                <span class="ico rev bg-next-arrow"></span>
-                                  </a> 
-                                </li> <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link current" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                              <a class="page-link" href="#">
-                                <span class="ico bg-next-arrow"></span>
-                              </a>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
+                    <div
+                      class="section__items_pagination d-flex flex-column align-items-center jastify-content-center col-lg-9 align-self-lg-end">
+                      <button class="btn dmore d-block d-lg-none btn-success mb-2 col-10">
+                        Загрузить еще
+                      </button>
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                              <span class="ico rev bg-next-arrow"></span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link current" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">
+                              <span class="ico bg-next-arrow"></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
+            
                   </div>
             
                 </div>
