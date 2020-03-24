@@ -1,0 +1,136 @@
+@mixin for-size($size) {
+  @if $size==xs {
+    @media (max-width: 576px) {
+      @content;
+    }
+  }
+
+  @else if $size==md {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $size==minmd {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $size==lg {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $size==minlg {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $size==xl {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin fs24 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin fs18 {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@mixin fs16 {
+  @include for-size(sm) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin fs14 {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin fs12 {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@mixin icons($name, $w, $h, $hover) {
+  @if (($hover==h) and (($name==shopping-cart) or ($name==home) or ($name==next-arrow) or ($name==catalog-icon) or ($name==search_button_mob) or ($name==shopping-cart-mobile) or ($name==shopping-cart-dd) or ($name==heart-silver) or ($name==libra-silver))) {
+    .bg-#{$name} {
+      width: $w;
+      height: $h;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../img/icons/h/'+$name+'.png');
+
+    }
+
+    *:hover>.bg-#{$name} {
+      background-image: url('../img/icons/h/'+$name+'-hover.png');
+      transition: 1.2s;
+    }
+
+    @include for-size(md) {
+      .bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'.png');
+      }
+
+      *:hover>.bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'-hover.png');
+      }
+    }
+  }
+
+  @else if(($hover==h)) {
+    .bg-#{$name} {
+      width: $w;
+      height: $h;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../img/icons/h/'+$name+'.png');
+
+    }
+
+    *:hover>.bg-#{$name} {
+      background-image: url('../img/icons/h/'+$name+'-hover.png');
+      transition: 1.2s;
+    }
+
+    @include for-size(md) {
+      .bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'-hover.png');
+      }
+
+      *:hover>.bg-#{$name} {
+        background-image: url('../img/icons/h/'+$name+'.png');
+      }
+    }
+  }
+
+  @else {
+    .bg-#{$name} {
+      width: $w;
+      height: $h;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url('../img/icons/nh/'+$name+'.png');
+    }
+  }
+
+}

@@ -297,11 +297,14 @@
                     </div>
                     <div class="category__section_action"></div>
                   </div>
-                  <div class="category__section_choose">
-                    <div class="category__section_filter">
+                  <div class="category__section_choose d-flex flex-column flex-lg-row">
+                    <div class="category__section_filter col-12 col-lg-3">
                       <div class="filter__section site__ui">
-                        <div class="filter__title">
-                          Подбор параметров
+                        <div class="filter__title d-flex justify-content-between">
+                          <div class="filter__title_text">
+                            Подбор параметров
+                          </div>
+                          <span class="ico bg-levels d-lg-none d-inline-block"></span>
                         </div>
                         <nav class="navbar navbar-light">
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
@@ -309,8 +312,8 @@
                             <div class="filter__param_title">
                               Диапазон цен
                             </div>
-                            <span class="ico bg-plus">+</span>
-                            <span class="ico bg-minus">-</span>
+                            <span class="ico bg-plus"></span>
+                            <span class="ico bg-minus"></span>
                           </button>
                         </nav>
                         <div class="collapse" id="navbarToggleExternalContent">
@@ -330,8 +333,8 @@
                             <div class="filter__param_title">
                               Изготовитель
                             </div>
-                            <span class="ico bg-plus">+</span>
-                            <span class="ico bg-minus">-</span>
+                            <span class="ico bg-plus"></span>
+                            <span class="ico bg-minus"></span>
                           </button>
                         </nav>
                         <div class="collapse" id="navbarToggleExternalContent2">
@@ -363,8 +366,8 @@
                             <div class="filter__param_title">
                               Материал
                             </div>
-                            <span class="ico bg-plus">+</span>
-                            <span class="ico bg-minus">-</span>
+                            <span class="ico bg-plus"></span>
+                            <span class="ico bg-minus"></span>
                           </button>
                         </nav>
                         <div class="collapse" id="navbarToggleExternalContent3">
@@ -376,8 +379,8 @@
                           </select> -->
                           <div class="wrap-drop" id="noble-gases">
                             <div class="arrow_d">
-                              <span>All Noble Gases</span>
-                              <div class="ar_d"></div>
+                              <span class="choosed">All Noble Gases</span>
+                              <span class="ico bg-down-arrow"></span>
                             </div>
                             
                             <ul class="drop">
@@ -397,8 +400,8 @@
                             <div class="filter__param_title">
                               Бренд
                             </div>
-                            <span class="ico bg-plus">+</span>
-                            <span class="ico bg-minus">-</span>
+                            <span class="ico bg-plus"></span>
+                            <span class="ico bg-minus"></span>
                           </button>
                         </nav>
                         <div class="collapse" id="navbarToggleExternalContent4">
@@ -424,10 +427,18 @@
                             </div>
                           </div>
                         </div>
+                      <div class="selected__param">
                       
+                        <div class="selected__param_item d-block d-lg-none">
+                            <span class="selected__param_item_text">
+                              Такой-то параметр
+                            </span>
+                            <span class="ico">+</span>
+                        </div>
+                      </div>
                       </div>
                     </div>
-                    <div class="category__section_items">
+                    <div class="category__section_items col-12 col-lg-9">
                       <div class="section__items">
                         <div class="drop__row">
                           <div class="drop__item_img">
@@ -660,7 +671,10 @@
                           </button>
                         </div>
                       </div>
-                      <div class="section__items_pagination">
+                      <div class="section__items_pagination d-flex flex-column align-items-center jastify-content-center">
+                        <button class="btn dmore d-block btn-success mb-2 col-10">
+                          Загрузить еще
+                        </button>
                         <nav aria-label="Page navigation example">
                           <ul class="pagination justify-content-center">
                             <li class="page-item disabled">
@@ -1015,7 +1029,7 @@
                         </div>
                         <div class="map_pin__place_adr">
                             Таганская площадь, 8
-                        </div> 
+                        </div>
                     </div>
                     <div class="map_pin__phone">
                         <div class="map_pin__phone_def">
@@ -1035,14 +1049,14 @@
                 <buton class="btn btn-danger d-block d-md-none col-12">Заказать звонок</buton>
             </div>
         </div>
-        <div id="YMapsID" style="width:100%;height:400px" class="YMaps YMaps-cursor-grab">        
+        <div id="YMapsID" style="width:100%;height:400px" class="YMaps YMaps-cursor-grab">
         </div>
     </div>
     <div class="content container footer__section">
-        <div class="row">        
+        <div class="row">
             <div class="footer__col col__first d-none d-md-flex align-items-center flex-column col-md-6 col-lg-3">
                 <a href="#" class="footer__logo">
-                    <img src="./img/Logo.png" alt="logo" srcset="">        
+                    <img src="./img/Logo.png" alt="logo" srcset="">
                 </a>
                 <div class="footer__col_call secondline__asktocontact col">
                     <a class="icon__sp" href="tel:88005553200">
@@ -1050,7 +1064,7 @@
                     </a>
                     <a href="tel:88005553200" class="secondline__asktocontact_sline">8 (800) 555-32-00</a>
                     <a href="#" class="secondline__asktocontact_fline">заказать звонок</a>
-                  </div>
+                </div>
                 <!-- <div class="footer__col_call">
                     <a href="tel:88005553200">
                         <span class="ico bg-green_call"></span>
@@ -1068,21 +1082,12 @@
             </div>
             <div class="footer__col d-none d-lg-block col-lg-4 col-xl-6">
                 <div class="footer__col_search input-group col-12">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Что Вас интересует?"
-                      aria-label="Что Вас интересует?"
-                      aria-describedby="button-addon2"
-                    />
+                    <input type="text" class="form-control" placeholder="Что Вас интересует?"
+                        aria-label="Что Вас интересует?" aria-describedby="button-addon2" />
                     <div class="input-group-append">
-                      <button
-                        class="btn btn-sm"
-                        type="button"
-                        id="button-addon2"
-                      >
-                        <span class="ico bg-search"></span>
-                      </button>
+                        <button class="btn btn-sm" type="button" id="button-addon2">
+                            <span class="ico bg-search"></span>
+                        </button>
                     </div>
                     
                                         <ul class="drop__items d-none">
@@ -1137,35 +1142,36 @@
                                           </ul>
                 </div>
                 <div class="container">
-                        <div class="footer__col_row row">
-                            <ul class="col_row__colinside col-4">
-                                <li class="colinside__title">Каталог</li>
-                                <li><a href="#">Пункт первый</a></li>
-                                <li><a href="#">Второй пункт</a></li>
-                                <li><a href="#">Ссылка номер три</a></li>
-                                <li><a href="#">По счету четвертая</a></li>
-                                <li><a href="#">Пятая последняя</a></li>
-                            </ul>
-                            <ul class="col_row__colinside col-4">
-                                <li class="colinside__title">Меню</li>
-                                <li><a href="#">Гарантия</a></li>
-                                <li><a href="#">Доставка и оплата</a></li>
-                                <li><a href="#">Контакты</a></li>
-                                <li><a href="#">Статьи</a></li>
-                                <li><a href="#">Преимущества</a></li>
-                            </ul>
-                            <ul class="col_row__colinside col-4">
-                                <li class="colinside__title">Каталог</li>
-                                <li><a href="#">Пункт первый</a></li>
-                                <li><a href="#">Второй пункт</a></li>
-                                <li><a href="#">Ссылка номер три</a></li>
-                                <li><a href="#">По счету четвертая</a></li>
-                                <li><a href="#">Пятая последняя</a></li>
-                            </ul>
-                        </div>
+                    <div class="footer__col_row row">
+                        <ul class="col_row__colinside col-4">
+                            <li class="colinside__title">Каталог</li>
+                            <li><a href="#">Пункт первый</a></li>
+                            <li><a href="#">Второй пункт</a></li>
+                            <li><a href="#">Ссылка номер три</a></li>
+                            <li><a href="#">По счету четвертая</a></li>
+                            <li><a href="#">Пятая последняя</a></li>
+                        </ul>
+                        <ul class="col_row__colinside col-4">
+                            <li class="colinside__title">Меню</li>
+                            <li><a href="#">Гарантия</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Преимущества</a></li>
+                        </ul>
+                        <ul class="col_row__colinside col-4">
+                            <li class="colinside__title">Каталог</li>
+                            <li><a href="#">Пункт первый</a></li>
+                            <li><a href="#">Второй пункт</a></li>
+                            <li><a href="#">Ссылка номер три</a></li>
+                            <li><a href="#">По счету четвертая</a></li>
+                            <li><a href="#">Пятая последняя</a></li>
+                        </ul>
                     </div>
+                </div>
             </div>
-            <div class="footer__col _pay d-flex flex-column justify-content-between col-sm-12 col-md-6 col-lg-5 col-xl-3 ml-xl-4">
+            <div
+                class="footer__col _pay d-flex flex-column justify-content-between col-sm-12 col-md-6 col-lg-5 col-xl-3 ml-xl-4">
                 <div class="footer__col_payment">
                     <div class="payment_item"><span class="ico bg-mastercard-2"></span></div>
                     <div class="payment_item"><span class="ico bg-paypal"></span></div>
@@ -1179,6 +1185,36 @@
         </div>
     </div>
 </footer>
+<div class="__remov_me col-1 d-none d-md-block position-fixed fixed-top">
+    <ul class="list-group">
+        <li class="list-group-item" style="font-weight: 700;">
+            
+                pages list
+            
+        </li>
+        <li class="list-group-item">
+            <a href="./index.html"> home</a>
+        </li>
+        <li class="list-group-item">
+            <a href="./page1.html"> payment</a>
+        </li>
+        <li class="list-group-item">
+            <a href="./page2.html"> category</a>
+        </li>
+        <li class="list-group-item">
+            <a href="./page3.html"> item</a>
+        </li>
+        <li class="list-group-item">
+            <a href="./page4.html"> catalog</a>
+        </li>
+        <li class="list-group-item">
+            <a href="./ui.html"> ui</a>
+        </li>
+        <li class="list-group-item">
+            <a href="./404.html">404</a>
+        </li>
+    </ul>
+</div>
 
 
 <!-- //don't touch under!********************* -->
