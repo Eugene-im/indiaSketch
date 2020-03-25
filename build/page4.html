@@ -377,13 +377,18 @@
                           </nav>
                           <div class="collapse" id="navbarToggleExternalContent">
                             <div class="filter__param_action">
-                              <div class="input__block_cost">
+                              <div class="range">
+                                <input type="number" id="data-first-node">
+                                <input type="number" id="data-last-node">
+                                <div id="slider" data-min="0" data-max="400" data-first-value="0" data-last-value="400"></div>
+                            </div>
+                              <!-- <div class="input__block_cost">
                                 <input id="multiMin" type="text" />
                                 <input id="multiMax" type="text" />
                               </div>
                               <div class="input__block_range">
                                 <input type="range" class="multi" multiple="" value="0,100">
-                              </div>
+                              </div> -->
                             </div>
                           </div>
                           <nav class="navbar navbar-light">
